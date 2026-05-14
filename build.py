@@ -139,6 +139,69 @@ REGION_KEYWORDS = {
 }
 
 
+# ── SUB-THEMES ──────────────────────────────────────────────────────
+# Each story rolls up to a top-level theme (THEMES) AND a sub-theme.
+# Sub-themes become the bubbles in the viz, sized by story count.
+# Each sub-theme: { label, parent_theme, keywords }
+SUB_THEMES = {
+    # AI sub-themes
+    "ai_infra":       {"label": "AI Infra",       "parent": "ai", "keywords": [r"data cent(er|re)|hyperscaler|GPU|H100|H200|Blackwell|AI infrastructure|inference|training cluster"]},
+    "ai_chips":       {"label": "AI Chips",       "parent": "ai", "keywords": [r"Nvidia|NVDA|AMD|TSMC|ASML|semiconductor|chipmaker|Cerebras|Hon Hai|silicon"]},
+    "ai_models":      {"label": "Foundation Models","parent": "ai", "keywords": [r"\bOpenAI\b|\bAnthropic\b|\bClaude\b|ChatGPT|Gemini|DeepSeek|Mistral|LLM|large language|foundation model|AGI"]},
+    "ai_apps":        {"label": "AI Applications","parent": "ai", "keywords": [r"AI tool|AI software|AI assistant|copilot|enterprise AI|AI feature"]},
+    "ai_governance":  {"label": "AI Governance",  "parent": "ai", "keywords": [r"AI regulation|AI safety|AI act|AI rules|AI export|AI policy"]},
+
+    # Geopolitics sub-themes
+    "us_china":       {"label": "US-China",       "parent": "geopolitics", "keywords": [r"Trump.{0,20}Xi|US.China|China.US|Beijing summit|chip export|Taiwan"]},
+    "iran_war":       {"label": "Iran War",       "parent": "geopolitics", "keywords": [r"Iran|Tehran|Strait of Hormuz|Israel|Gaza|Hamas|Hezbollah|Middle East"]},
+    "ukraine_russia": {"label": "Ukraine-Russia", "parent": "geopolitics", "keywords": [r"Ukraine|Russia|Putin|Zelenskyy|Kyiv|Moscow|Donbas"]},
+    "tariffs":        {"label": "Tariffs & Trade","parent": "geopolitics", "keywords": [r"tariff|trade war|trade deal|export control|sanction|WTO"]},
+    "elections":      {"label": "Elections",      "parent": "geopolitics", "keywords": [r"election|vote|ballot|primary|Starmer|leadership bid|coalition"]},
+
+    # Macro sub-themes
+    "inflation":      {"label": "Inflation",      "parent": "macro", "keywords": [r"\bCPI\b|\bPPI\b|\bPCE\b|inflation|deflation|price index|disinflation"]},
+    "growth_gdp":     {"label": "Growth & GDP",   "parent": "macro", "keywords": [r"\bGDP\b|recession|growth|expansion|contraction|economic output"]},
+    "jobs":           {"label": "Labor & Jobs",   "parent": "macro", "keywords": [r"jobs report|payrolls|unemployment|labor market|hiring|layoff|wage"]},
+    "commodities":    {"label": "Commodities",    "parent": "macro", "keywords": [r"\boil\b|crude|Brent|WTI|gold|copper|iron ore|commodity|OPEC|IEA"]},
+    "fx":             {"label": "FX",             "parent": "macro", "keywords": [r"\bdollar\b|euro\b|\byen\b|yuan|pound|sterling|currency|FX\b|DXY"]},
+
+    # Rates sub-themes
+    "fed":            {"label": "Fed",            "parent": "rates", "keywords": [r"\bFed\b|Federal Reserve|FOMC|Powell|Warsh|Fed chair"]},
+    "ecb_boe":        {"label": "ECB & BoE",      "parent": "rates", "keywords": [r"\bECB\b|\bBoE\b|Bank of England|European Central Bank|Lagarde|Bailey"]},
+    "boj_pboc":       {"label": "BoJ & PBOC",     "parent": "rates", "keywords": [r"\bBoJ\b|\bPBOC\b|Bank of Japan|People's Bank of China"]},
+    "treasuries":     {"label": "Treasuries",     "parent": "rates", "keywords": [r"Treasur|10-year|2-year|yield curve|sovereign|repo"]},
+    "gilts_bunds":    {"label": "Gilts & Bunds",  "parent": "rates", "keywords": [r"gilt|bund|JGB|UK bond|German bond|Japanese bond"]},
+    "credit":         {"label": "Credit",         "parent": "rates", "keywords": [r"\bcredit\b|spread|default|downgrade|high yield|investment grade|private credit|junk bond"]},
+    "stablecoin":     {"label": "Stablecoin Rules","parent": "rates","keywords": [r"stablecoin|digital currency rule|CBDC"]},
+
+    # Sustainability sub-themes
+    "climate":        {"label": "Climate Policy", "parent": "sustainability", "keywords": [r"climate|COP\d+|UN climate|Paris Agreement|net.?zero"]},
+    "ev_transport":   {"label": "EVs",            "parent": "sustainability", "keywords": [r"\bEV\b|electric vehicle|BYD|Tesla.{0,30}EV|battery vehicle"]},
+    "renewables":     {"label": "Renewables",     "parent": "sustainability", "keywords": [r"renewable|solar|wind power|hydrogen|clean energy"]},
+    "esg":            {"label": "ESG & Green Finance","parent": "sustainability","keywords": [r"\bESG\b|green bond|sustainab|climate risk|green finance"]},
+    "carbon":         {"label": "Carbon & Emissions","parent": "sustainability","keywords": [r"carbon|emissions|decarboni[sz]|coal phase"]},
+
+    # Tech sub-themes
+    "crypto":         {"label": "Crypto",         "parent": "tech", "keywords": [r"\bbitcoin\b|\bethereum\b|crypto|blockchain|tokeni[sz]"]},
+    "cyber":          {"label": "Cyber",          "parent": "tech", "keywords": [r"\bcyber\b|\bhack(ed|ing)?\b|breach|ransomware|zero.day"]},
+    "fintech":        {"label": "Fintech",        "parent": "tech", "keywords": [r"\bfintech\b|payment|digital wallet|app store|Klarna|Stripe"]},
+    "consumer_tech":  {"label": "Consumer Tech",  "parent": "tech", "keywords": [r"\bsmartphone\b|\bwearable\b|VR\b|AR\b|gaming|streaming"]},
+    "big_tech_corp":  {"label": "Big Tech Corp.", "parent": "tech", "keywords": [r"Apple|Tesla|Meta|Amazon|Microsoft|Samsung|Sony|Netflix"]},
+}
+
+
+def score_sub_theme(text, parent_theme):
+    """Find best sub-theme match within a parent theme. Returns sub-theme key or None."""
+    best_key, best_score = None, 0
+    for sub_key, cfg in SUB_THEMES.items():
+        if cfg["parent"] != parent_theme:
+            continue
+        score = sum(1 for pat in cfg["keywords"] if re.search(pat, text, re.IGNORECASE))
+        if score > best_score:
+            best_key, best_score = sub_key, score
+    return best_key  # may be None if no sub-theme matched
+
+
 def clean_html(s):
     """Strip HTML tags and decode entities."""
     if not s: return ""
@@ -236,6 +299,9 @@ def parse_feed(name, url, region_hint, publisher):
 
         region = detect_region(full_text, fallback=region_hint if region_hint != "global" else detect_region(full_text, "us"))
 
+        # Find sub-theme within parent theme (may be None if no match)
+        sub_theme = score_sub_theme(full_text, theme)
+
         # build a stable id
         uid = hashlib.md5(link.encode()).hexdigest()[:12]
 
@@ -249,6 +315,7 @@ def parse_feed(name, url, region_hint, publisher):
             "pub_iso": pub.isoformat() if pub else None,
             "pub_ts": pub.timestamp() if pub else 0,
             "theme": theme,
+            "sub_theme": sub_theme,
             "theme_score": score,
             "region": region,
         })
@@ -463,10 +530,11 @@ def main():
         print("\n  (Skipping LLM reclassify — set ANTHROPIC_API_KEY to enable)", file=sys.stderr)
 
     # Theme-balanced selection: max per theme, max per publisher
-    MAX_PER_THEME = 10
-    MAX_PER_PUBLISHER = 18
-    MIN_PER_THEME = 4
-    TARGET_N = 54
+    # Higher caps now since stories aggregate into sub-theme bubbles, not 1 story = 1 bubble.
+    MAX_PER_THEME = 25
+    MAX_PER_PUBLISHER = 40
+    MIN_PER_THEME = 6
+    TARGET_N = 130
 
     top = []
     theme_count = Counter()
@@ -496,9 +564,65 @@ def main():
             theme_count[theme] += 1
             need -= 1
 
-    threads = build_threads(top)
+    # ── Build sub-theme bubbles: aggregate stories by sub-theme ─────
+    # Each bubble = one named sub-theme with count + list of underlying story IDs.
+    # Stories without a sub-theme match are assigned a fallback bucket per parent theme.
+    from collections import defaultdict
+    bubble_stories = defaultdict(list)
+    for it in top:
+        sub = it.get("sub_theme")
+        if not sub:
+            # Fall back: parent_theme + "_other"
+            sub = f"{it['theme']}_other"
+        bubble_stories[sub].append(it["id"])
 
-    # Stats for header
+    # Build the bubble list
+    bubbles = []
+    for sub_key, story_ids in bubble_stories.items():
+        if sub_key in SUB_THEMES:
+            cfg = SUB_THEMES[sub_key]
+            label = cfg["label"]
+            parent = cfg["parent"]
+        else:
+            # _other fallback
+            parent = sub_key.replace("_other", "")
+            label = f"Other {THEMES[parent]['label']}"
+        bubbles.append({
+            "id": sub_key,
+            "label": label,
+            "parent": parent,
+            "color": THEMES[parent]["color"],
+            "count": len(story_ids),
+            "story_ids": story_ids,
+        })
+
+    # Drop trivially small bubbles (just 1 story in an "other" bucket can be noise)
+    bubbles = [b for b in bubbles if b["count"] >= 1]
+    # Sort by count desc
+    bubbles.sort(key=lambda b: -b["count"])
+
+    # Build cross-bubble links: when two bubbles share a region focus or have
+    # stories with overlapping entities. Simpler: link bubbles whose stories
+    # share salient terms.
+    bubble_links = []
+    bubble_token_sets = {}
+    STOPWORDS = set("the a an and or of to in for on at is are was were be been being with by from as that this it its".split())
+    for b in bubbles:
+        tokens = set()
+        for sid in b["story_ids"]:
+            story = next((x for x in top if x["id"] == sid), None)
+            if not story: continue
+            words = re.findall(r"[A-Za-z][A-Za-z0-9]{3,}", story["title"] + " " + story["summary"][:200])
+            tokens.update(w.lower() for w in words if w.lower() not in STOPWORDS and len(w) >= 4)
+        bubble_token_sets[b["id"]] = tokens
+
+    for i, a in enumerate(bubbles):
+        for b in bubbles[i+1:]:
+            overlap = bubble_token_sets[a["id"]] & bubble_token_sets[b["id"]]
+            if len(overlap) >= 4:  # at least 4 shared salient terms
+                bubble_links.append({"from": a["id"], "to": b["id"], "weight": len(overlap)})
+
+    # Stats
     theme_breakdown = Counter(it["theme"] for it in top)
     region_breakdown = Counter(it["region"] for it in top)
     publisher_breakdown = Counter(it["publisher"] for it in top)
@@ -506,11 +630,13 @@ def main():
     payload = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "themes": {k: {"label": v["label"], "color": v["color"]} for k, v in THEMES.items()},
-        "items": top,
-        "threads": threads,
+        "bubbles": bubbles,
+        "stories": top,
+        "links": bubble_links,
         "stats": {
-            "total_items": len(top),
-            "total_threads": len(threads),
+            "total_stories": len(top),
+            "total_bubbles": len(bubbles),
+            "total_links": len(bubble_links),
             "by_theme": dict(theme_breakdown),
             "by_region": dict(region_breakdown),
             "by_publisher": dict(publisher_breakdown),
@@ -521,7 +647,7 @@ def main():
 
     with open("data.json", "w") as f:
         json.dump(payload, f, indent=2, ensure_ascii=False)
-    print(f"\n✓ Wrote data.json — {len(top)} items, {len(threads)} threads", file=sys.stderr)
+    print(f"\n✓ Wrote data.json — {len(bubbles)} bubbles, {len(top)} stories, {len(bubble_links)} links", file=sys.stderr)
 
     # ── ALSO inject into index.html for fully self-contained single-file deploy ──
     try:
