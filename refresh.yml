@@ -1,0 +1,44 @@
+name: Daily News Refresh
+
+on:
+  schedule:
+    # Runs every day at 09:00, 15:00, and 21:00 UTC — covers all three trading sessions
+    - cron: '0 9,15,21 * * *'
+  workflow_dispatch:  # Allow manual trigger from Actions tab
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install feedparser
+
+      - name: Fetch news and rebuild data.json
+        env:
+          # Optional: add ANTHROPIC_API_KEY as a repo secret to enable
+          # semantic re-classification on top stories. Without it, the regex
+          # classifier is used (works fine, just less precise on edge cases).
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python build.py
+
+      - name: Commit refreshed data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data.json index.html
+          if ! git diff --cached --quiet; then
+            git commit -m "data: refresh $(date -u +%Y-%m-%dT%H:%MZ)"
+            git push
+          else
+            echo "No changes to commit"
+          fi

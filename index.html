@@ -1,0 +1,1030 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Market Pulse · Daily Market Themes</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter+Tight:wght@300..700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg-base: #0a0d14;
+    --bg-surface: #10141d;
+    --bg-elev: #161c28;
+    --bg-hover: #1d2533;
+
+    --line-faint: rgba(255,255,255,0.05);
+    --line-soft: rgba(255,255,255,0.09);
+    --line-strong: rgba(255,255,255,0.18);
+
+    --ink-bright: #f4ecd8;
+    --ink-primary: #d6cfbf;
+    --ink-secondary: #8893a6;
+    --ink-tertiary: #5c6473;
+    --ink-faint: #383f4d;
+
+    --r-us:   #f4ecd8;
+    --r-eu:   #c9a866;
+    --r-asia: #e07a5f;
+
+    --serif: 'Instrument Serif', 'Source Serif Pro', Georgia, serif;
+    --sans: 'Inter Tight', system-ui, -apple-system, sans-serif;
+    --mono: 'JetBrains Mono', 'SF Mono', Menlo, monospace;
+
+    --t-quick: 180ms cubic-bezier(0.4, 0, 0.2, 1);
+    --t-smooth: 420ms cubic-bezier(0.32, 0.72, 0.21, 0.99);
+  }
+
+  html { background: var(--bg-base); }
+  body {
+    font-family: var(--sans);
+    font-weight: 380;
+    color: var(--ink-primary);
+    background:
+      radial-gradient(ellipse 70% 50% at 15% 25%, rgba(184, 138, 255, 0.05), transparent 60%),
+      radial-gradient(ellipse 60% 45% at 85% 70%, rgba(255, 149, 88, 0.04), transparent 60%),
+      radial-gradient(ellipse 50% 40% at 50% 50%, rgba(74, 222, 128, 0.025), transparent 60%),
+      var(--bg-base);
+    line-height: 1.55;
+    overflow-x: hidden;
+    min-height: 100vh;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 1;
+    opacity: 0.03;
+    mix-blend-mode: overlay;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+  body::after {
+    content: '';
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 1;
+    background: repeating-linear-gradient(0deg, transparent 0px, transparent 3px, rgba(255,255,255,0.008) 3px, rgba(255,255,255,0.008) 4px);
+  }
+
+  header.app-header {
+    position: relative;
+    z-index: 2;
+    padding: 30px 44px 22px;
+    border-bottom: 1px solid var(--line-faint);
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 60px;
+  }
+
+  .brand { display: flex; flex-direction: column; gap: 4px; max-width: 620px; }
+
+  .brand-line {
+    font-family: var(--mono);
+    font-size: 10.5px;
+    font-weight: 500;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--ink-tertiary);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .brand-line .dot {
+    width: 7px; height: 7px;
+    background: #4ade80;
+    border-radius: 50%;
+    box-shadow: 0 0 14px #4ade80;
+    animation: pulse 2.4s ease-in-out infinite;
+  }
+  @keyframes pulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.5; transform: scale(0.85); }
+  }
+
+  .brand-title {
+    font-family: var(--serif);
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 1.02;
+    letter-spacing: -0.01em;
+    color: var(--ink-bright);
+    margin-top: 6px;
+  }
+  .brand-title em { font-style: italic; opacity: 0.94; }
+
+  .brand-sub {
+    font-size: 13.5px;
+    color: var(--ink-secondary);
+    margin-top: 10px;
+    line-height: 1.55;
+  }
+
+  .meta-strip { display: flex; gap: 36px; align-items: flex-start; flex-wrap: wrap; }
+  .meta-block { display: flex; flex-direction: column; gap: 3px; min-width: 60px; }
+  .meta-label {
+    font-family: var(--mono);
+    font-size: 9.5px;
+    font-weight: 500;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--ink-tertiary);
+  }
+  .meta-value {
+    font-family: var(--serif);
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 1.02;
+    color: var(--ink-bright);
+    font-feature-settings: "tnum";
+  }
+  .meta-value.small {
+    font-size: 13px;
+    font-family: var(--sans);
+    font-weight: 500;
+    color: var(--ink-primary);
+    letter-spacing: -0.01em;
+  }
+
+  .controls {
+    position: relative;
+    z-index: 2;
+    padding: 16px 44px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    border-bottom: 1px solid var(--line-faint);
+    flex-wrap: wrap;
+  }
+  .legend { display: flex; flex-wrap: wrap; gap: 4px; }
+  .legend-pill {
+    font-family: var(--mono);
+    font-size: 10.5px;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--ink-secondary);
+    padding: 6px 12px 6px 26px;
+    border-radius: 3px;
+    background: transparent;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: all var(--t-quick);
+    position: relative;
+    user-select: none;
+  }
+  .legend-pill::before {
+    content: '';
+    position: absolute;
+    left: 11px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    background: var(--pill-color, var(--ink-tertiary));
+    box-shadow: 0 0 8px var(--pill-color, transparent);
+  }
+  .legend-pill .ct {
+    font-size: 9px;
+    color: var(--ink-tertiary);
+    margin-left: 6px;
+  }
+  .legend-pill:hover { color: var(--ink-bright); background: var(--bg-hover); }
+  .legend-pill.active { color: var(--ink-bright); background: var(--bg-elev); border-color: var(--line-soft); }
+  .legend-pill.muted { opacity: 0.32; }
+
+  .region-tabs {
+    display: flex;
+    gap: 2px;
+    background: var(--bg-surface);
+    padding: 3px;
+    border-radius: 4px;
+    border: 1px solid var(--line-faint);
+  }
+  .region-tab {
+    font-family: var(--mono);
+    font-size: 10.5px;
+    font-weight: 500;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--ink-tertiary);
+    padding: 7px 14px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all var(--t-quick);
+    border: none;
+    background: transparent;
+    user-select: none;
+  }
+  .region-tab:hover { color: var(--ink-primary); }
+  .region-tab.active { color: var(--ink-bright); background: var(--bg-elev); }
+
+  .canvas-wrap {
+    position: relative;
+    z-index: 2;
+    height: calc(100vh - 240px);
+    min-height: 600px;
+  }
+  #stage { width: 100%; height: 100%; display: block; }
+
+  .theme-label-bg {
+    font-family: var(--serif);
+    font-style: italic;
+    font-weight: 400;
+    fill: var(--ink-bright);
+    text-anchor: middle;
+    opacity: 0.07;
+    letter-spacing: -0.02em;
+  }
+  .theme-label {
+    font-family: var(--mono);
+    font-size: 10px;
+    fill: var(--ink-tertiary);
+    text-anchor: middle;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+  }
+
+  .node { cursor: pointer; }
+  .node circle.core { transition: r var(--t-smooth); }
+  .node text.ticker {
+    font-family: var(--mono);
+    font-size: 8.5px;
+    font-weight: 600;
+    fill: var(--ink-bright);
+    text-anchor: middle;
+    pointer-events: none;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+  .node.dimmed { opacity: 0.16; }
+  .node:hover .core { filter: brightness(1.3); }
+  .node circle.ring {
+    fill: none;
+    stroke-width: 1.2;
+    stroke-dasharray: 1 2;
+  }
+
+  .thread {
+    stroke: var(--ink-secondary);
+    stroke-width: 0.9;
+    fill: none;
+    stroke-dasharray: 1.5 4;
+    opacity: 0.28;
+    pointer-events: none;
+    transition: opacity var(--t-smooth), stroke-dasharray var(--t-smooth), stroke-width var(--t-smooth);
+  }
+  .thread.active { opacity: 0.7; stroke-dasharray: none; stroke-width: 1.3; }
+
+  .detail-panel {
+    position: fixed;
+    top: 0; right: 0;
+    width: min(480px, 94vw);
+    height: 100vh;
+    background: var(--bg-surface);
+    border-left: 1px solid var(--line-soft);
+    z-index: 50;
+    transform: translateX(100%);
+    transition: transform var(--t-smooth);
+    overflow-y: auto;
+    box-shadow: -40px 0 60px rgba(0,0,0,0.4);
+  }
+  .detail-panel.open { transform: translateX(0); }
+  .detail-panel-inner { padding: 32px 36px 60px; }
+
+  .detail-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+    gap: 16px;
+  }
+  .detail-tags { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+  .detail-tag {
+    font-family: var(--mono);
+    font-size: 9.5px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--ink-secondary);
+    padding: 4px 9px;
+    border-radius: 2px;
+    background: var(--bg-elev);
+    border: 1px solid var(--line-faint);
+  }
+  .detail-tag.theme {
+    color: var(--tag-color);
+    border-color: var(--tag-color);
+    background: transparent;
+  }
+  .detail-tag.region { color: var(--ink-bright); }
+
+  .detail-close {
+    background: transparent;
+    border: 1px solid var(--line-soft);
+    color: var(--ink-secondary);
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    padding: 6px 11px;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: all var(--t-quick);
+    flex-shrink: 0;
+  }
+  .detail-close:hover { color: var(--ink-bright); border-color: var(--line-strong); }
+
+  .detail-publisher {
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--ink-tertiary);
+    margin-bottom: 14px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .detail-publisher .pub {
+    color: var(--ink-bright);
+    background: var(--bg-elev);
+    padding: 3px 8px;
+    border-radius: 2px;
+    border: 1px solid var(--line-faint);
+  }
+  .detail-publisher .sep { color: var(--ink-faint); }
+
+  .detail-headline {
+    font-family: var(--serif);
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 1.15;
+    letter-spacing: -0.005em;
+    color: var(--ink-bright);
+    margin: 14px 0 18px;
+  }
+
+  .detail-summary {
+    font-size: 14.5px;
+    line-height: 1.6;
+    color: var(--ink-primary);
+    margin-bottom: 22px;
+  }
+
+  .detail-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-family: var(--mono);
+    font-size: 10.5px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--ink-bright);
+    background: var(--bg-elev);
+    border: 1px solid var(--line-soft);
+    padding: 10px 16px;
+    text-decoration: none;
+    border-radius: 3px;
+    transition: all var(--t-quick);
+  }
+  .detail-link:hover { border-color: var(--ink-bright); background: var(--bg-hover); }
+  .detail-link .arrow { transition: transform var(--t-quick); }
+  .detail-link:hover .arrow { transform: translateX(3px); }
+
+  .detail-related {
+    margin-top: 32px;
+    padding-top: 22px;
+    border-top: 1px solid var(--line-faint);
+  }
+  .related-label {
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--ink-tertiary);
+    margin-bottom: 14px;
+  }
+  .related-item {
+    padding: 12px 0;
+    border-bottom: 1px solid var(--line-faint);
+    cursor: pointer;
+    transition: padding-left var(--t-quick), color var(--t-quick);
+    color: var(--ink-primary);
+    display: grid;
+    grid-template-columns: 10px 1fr auto;
+    gap: 10px;
+    align-items: start;
+  }
+  .related-item:hover { padding-left: 6px; color: var(--ink-bright); }
+  .related-item:last-child { border-bottom: none; }
+  .related-dot {
+    width: 7px; height: 7px;
+    border-radius: 50%;
+    background: var(--rd-color, var(--ink-tertiary));
+    margin-top: 7px;
+    box-shadow: 0 0 6px var(--rd-color, transparent);
+  }
+  .related-title { font-size: 13px; line-height: 1.4; }
+  .related-meta {
+    font-family: var(--mono);
+    font-size: 9px;
+    letter-spacing: 0.14em;
+    color: var(--ink-tertiary);
+    text-transform: uppercase;
+    text-align: right;
+    white-space: nowrap;
+  }
+
+  .tip {
+    position: fixed;
+    pointer-events: none;
+    background: var(--bg-elev);
+    border: 1px solid var(--line-soft);
+    padding: 10px 13px;
+    z-index: 100;
+    max-width: 320px;
+    opacity: 0;
+    transform: translate(-50%, -100%) translateY(-12px);
+    transition: opacity var(--t-quick);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    border-radius: 3px;
+  }
+  .tip.visible { opacity: 1; }
+  .tip-headline {
+    font-family: var(--serif);
+    font-size: 15px;
+    line-height: 1.25;
+    color: var(--ink-bright);
+    margin-bottom: 6px;
+  }
+  .tip-meta {
+    font-family: var(--mono);
+    font-size: 9.5px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--ink-tertiary);
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .tip-dot { width: 6px; height: 6px; border-radius: 50%; }
+
+  .loader {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--ink-secondary);
+  }
+  .loader::before {
+    content: '';
+    display: inline-block;
+    width: 8px; height: 8px;
+    background: var(--ink-secondary);
+    border-radius: 50%;
+    margin-right: 10px;
+    animation: pulse 1.4s ease-in-out infinite;
+  }
+
+  .footer {
+    position: relative;
+    z-index: 2;
+    padding: 14px 44px;
+    border-top: 1px solid var(--line-faint);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--mono);
+    font-size: 9.5px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--ink-tertiary);
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .footer .live::before {
+    content: '';
+    display: inline-block;
+    width: 6px; height: 6px;
+    background: #4ade80;
+    border-radius: 50%;
+    margin-right: 8px;
+    box-shadow: 0 0 8px #4ade80;
+    animation: pulse 2s ease-in-out infinite;
+  }
+
+  .region-chips { display: flex; gap: 14px; }
+  .region-chip { display: inline-flex; align-items: center; gap: 6px; }
+  .region-chip::before {
+    content: '';
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    border: 1.4px solid var(--chip-color);
+    background: transparent;
+  }
+
+  @media (max-width: 900px) {
+    header.app-header { flex-direction: column; gap: 24px; padding: 22px 24px 18px; }
+    .meta-strip { gap: 22px; }
+    .controls { padding: 14px 24px; gap: 14px; }
+    .brand-title { font-size: 36px; }
+    .canvas-wrap { height: calc(100vh - 320px); }
+    .footer { padding: 12px 24px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="app-header">
+  <div class="brand">
+    <div class="brand-line"><span class="dot"></span><span>Market Pulse · Daily Themes · v2</span></div>
+    <h1 class="brand-title">The day in <em>themes</em>, drawn from the wires</h1>
+    <p class="brand-sub">An evolving map of global financial news, aggregated from FT, Bloomberg, WSJ, CNBC, Nikkei Asia, SCMP and BBC. Stories cluster by theme; dashed threads link narratives that bridge regions. Click any bubble to open the original article.</p>
+  </div>
+
+  <div class="meta-strip">
+    <div class="meta-block">
+      <div class="meta-label">Generated</div>
+      <div class="meta-value small" id="m-time">—</div>
+    </div>
+    <div class="meta-block">
+      <div class="meta-label">Stories</div>
+      <div class="meta-value" id="m-items">—</div>
+    </div>
+    <div class="meta-block">
+      <div class="meta-label">Threads</div>
+      <div class="meta-value" id="m-threads">—</div>
+    </div>
+    <div class="meta-block">
+      <div class="meta-label">Wires</div>
+      <div class="meta-value" id="m-wires">—</div>
+    </div>
+  </div>
+</header>
+
+<div class="controls">
+  <div class="legend" id="legend"></div>
+  <div class="region-tabs">
+    <button class="region-tab active" data-region="all">All regions</button>
+    <button class="region-tab" data-region="us">Americas</button>
+    <button class="region-tab" data-region="eu">Europe</button>
+    <button class="region-tab" data-region="asia">Asia</button>
+  </div>
+</div>
+
+<div class="canvas-wrap">
+  <svg id="stage"></svg>
+  <div class="loader" id="loader">Loading wires</div>
+</div>
+
+<div class="footer">
+  <div class="live" id="footer-source">Live · sourced daily</div>
+  <div class="region-chips">
+    <span class="region-chip" style="--chip-color:#f4ecd8">Americas</span>
+    <span class="region-chip" style="--chip-color:#c9a866">Europe</span>
+    <span class="region-chip" style="--chip-color:#e07a5f">Asia</span>
+  </div>
+  <div>Drag any bubble · click to read · ring = region</div>
+</div>
+
+<aside class="detail-panel" id="detail-panel">
+  <div class="detail-panel-inner" id="detail-inner"></div>
+</aside>
+
+<div class="tip" id="tip"></div>
+
+<!-- Embedded news data — replaced by build.py on each run -->
+<script id="news-data" type="application/json">
+{"generated_at":"2026-05-14T09:30:46.289228+00:00","themes":{"ai":{"label":"AI","color":"#b88aff"},"geopolitics":{"label":"Geopolitics","color":"#ff9558"},"macro":{"label":"Macro","color":"#ff6b9d"},"rates":{"label":"Credit & Rates","color":"#6fa8ff"},"sustainability":{"label":"Sustainability","color":"#4ade80"},"tech":{"label":"Tech","color":"#5cd4e3"}},"items":[{"id":"57226d2608be","title":"UK Navy Says Ship in Gulf of Oman Taken, Heading to Iran","summary":"A UK naval group reported a commercial vessel was taken by unauthorized personnel at the entrance to the Strait of Hormuz and is now bound for Iranian waters. The ship was taken 38 nautical miles off the UAE in the Gulf of Oman where it was at anchor, the UK Maritime Trade Operations said in a statement. Bloomberg’s Anthony di Paola has more.","link":"https://www.bloomberg.com/news/videos/2026-05-14/uk-navy-says-ship-in-gulf-of-oman-taken-heading-to-iran-video","publisher":"Bloomberg","feed":"Bloomberg Mkts","pub_iso":"2026-05-14T09:22:07+00:00","pub_ts":1778750527.0,"theme":"geopolitics","theme_score":6,"region":"eu","impact":9},{"id":"eb719e0db50b","title":"US Says China Wants More Of Its Oil to Cut Middle East Reliance","summary":"Chinese President Xi Jinping opposes efforts to charge a toll to navigate the Strait of Hormuz and is interested in purchasing more US oil to reduce its dependence on the waterway in the future, according to a White House official.","link":"https://www.bloomberg.com/news/articles/2026-05-14/us-says-china-wants-more-of-its-oil-to-cut-middle-east-reliance","publisher":"Bloomberg","feed":"Bloomberg Mkts","pub_iso":"2026-05-14T09:07:28+00:00","pub_ts":1778749648.0,"theme":"geopolitics","theme_score":6,"region":"us","impact":9},{"id":"99f16c237643","title":"US Efforts to End Iran War Stumble as Ship Seized Near UAE","summary":"US efforts to end the war with Iran were dealt a setback after a commercial vessel was apparently seized by unauthorized personnel near the United Arab Emirates, increasing uncertainty over control of the critical Strait of Hormuz.","link":"https://www.bloomberg.com/news/articles/2026-05-14/us-efforts-to-end-iran-war-stumble-as-ship-seized-near-uae","publisher":"Bloomberg","feed":"Bloomberg Mkts","pub_iso":"2026-05-14T08:39:48+00:00","pub_ts":1778747988.0,"theme":"geopolitics","theme_score":8,"region":"us","impact":9},{"id":"c0eb7fb65a37","title":"Trump-Xi Summit: Lavish Welcome, Taiwan in Focus","summary":"Chinese President Xi Jinping warned US President Donald Trump of a potential conflict if the Taiwan issue is mismanaged, in blunt remarks that punctured an otherwise cordial start to the first trip to China by a sitting US president in nearly a decade. (Source: Bloomberg)","link":"https://www.bloomberg.com/news/videos/2026-05-14/trump-xi-summit-lavish-welcome-taiwan-in-focus-video","publisher":"Bloomberg","feed":"Bloomberg Mkts","pub_iso":"2026-05-14T08:32:49+00:00","pub_ts":1778747569.0,"theme":"geopolitics","theme_score":8,"region":"us","impact":9},{"id":"e5406f46df90","title":"Trump-Xi Summit: Xi Warns Trump Of ‘Clashes’ If Taiwan Issue Mishandled | Daybreak Europe 05/14/2026","summary":"Bloomberg Daybreak Europe is your essential morning viewing to stay ahead. Live from London, we set the agenda for your day, catching you up with overnight markets news from the US and Asia. And we'll tell you what matters for investors in Europe, giving you insight before trading begins. Chinese President Xi Jinping pressed US President Donald Trump on the issue of Taiwan and warned of a potentia","link":"https://www.bloomberg.com/news/videos/2026-05-14/daybreak-europe-05-14-2026-video","publisher":"Bloomberg","feed":"Bloomberg Mkts","pub_iso":"2026-05-14T08:23:46+00:00","pub_ts":1778747026.0,"theme":"geopolitics","theme_score":8,"region":"us","impact":9},{"id":"376b030ad8ef","title":"Martin Wolf on the 'Terrifying' Superpower the US Wields | Odd Lots","summary":"Last year, when we talked to Martin Wolf, the global order seemed like it was being upended after President Trump unveiled his sweeping tariffs against nearly every US trading partner. A lot has happened since then. Today we speak with Wolf, the chief economics commentator for the Financial Times, about all this chaos and why, so far, it seems disconnected from the logic of the market. There is, h","link":"https://www.bloomberg.com/news/videos/2026-05-14/martin-wolf-on-the-terrifying-superpower-the-us-wields-video","publisher":"Bloomberg","feed":"Bloomberg Mkts","pub_iso":"2026-05-14T08:16:48+00:00","pub_ts":1778746608.0,"theme":"macro","theme_score":6,"region":"us","impact":9},{"id":"fbe696cb6aed","title":"British navy says vessel seized off UAE coast and heading for Iran","summary":"Ship anchored north-east of Fujairah outside Strait of Hormuz taken by ‘unauthorised personnel’","link":"https://www.ft.com/content/794e619a-1b45-4d15-83fb-15299ac7de06","publisher":"FT","feed":"FT Companies","pub_iso":"2026-05-14T08:14:23+00:00","pub_ts":1778746463.0,"theme":"geopolitics","theme_score":6,"region":"eu","impact":9},{"id":"9ae10194ee48","title":"Odd Lots: Martin Wolf on the Roots of Our Recent Chaos (Podcast)","summary":"Last year, when we talked to Martin Wolf, the global order seemed like it was being upended after President Trump unveiled his sweeping tariffs against nearly every US trading partner. A lot has happened since then. In fact, April 2025 seems almost quaint when compared to 2026 so far, from the Supreme Court’s tariff ruling to the US-Israel war with Iran. The war’s effect on the world’s economy is ","link":"https://www.bloomberg.com/news/audio/2026-05-14/odd-lots-martin-wolf-on-the-roots-of-our-recent-chaos-podcast","publisher":"Bloomberg","feed":"Bloomberg Mkts","pub_iso":"2026-05-14T08:00:00+00:00","pub_ts":1778745600.0,"theme":"geopolitics","theme_score":8,"region":"us","impact":9},{"id":"ccf0771f2151","title":"Geely, Xiaomi lead the pack: battery EVs top China sales on rising oil costs","summary":"Surging oil prices are prompting Chinese buyers to shift to battery electric vehicles (BEVs), which dominated April sales rankings by taking nine out of the top 10 spots – a new high in China’s electrification drive. Only one petrol car model was among the bestsellers across all power trains, with Geely’s Binyue in eighth place on sales of 14,923 units, according to data from automotive platform D","link":"https://www.scmp.com/business/china-evs/article/3353525/geely-xiaomi-lead-pack-battery-evs-top-china-sales-rising-oil-costs?utm_source=rss_feed","publisher":"SCMP","feed":"SCMP Business","pub_iso":"2026-05-14T07:30:05+00:00","pub_ts":1778743805.0,"theme":"sustainability","theme_score":8,"region":"asia","impact":9},{"id":"de879256b82e","title":"UN Climate Chief Lavishes Praise on China as Trump Meets Xi","summary":"China is reaping benefits as a global leader on the green transition and other nations should follow as the Iran war shows the vulnerability of a fossil fuel-based economy, according to the top United Nations climate official.","link":"https://www.bloomberg.com/news/articles/2026-05-14/un-climate-chief-lavishes-praise-on-china-as-trump-meets-xi","publisher":"Bloomberg","feed":"Bloomberg Green","pub_iso":"2026-05-14T07:30:00+00:00","pub_ts":1778743800.0,"theme":"sustainability","theme_score":10,"region":"us","impact":9},{"id":"c189532e1fa1","title":"Cuba says oil and diesel supplies have run dry under U.S. sanctions","summary":"A Cuban official said the situation is “extremely tense” as blackouts sparked protests in Havana on Wednesday.","link":"https://www.cnbc.com/2026/05/14/cuba-oil-diesel-fuel-us-sanctions-blockade.html","publisher":"CNBC","feed":"CNBC Top","pub_iso":"2026-05-14T07:17:19+00:00","pub_ts":1778743039.0,"theme":"geopolitics","theme_score":7,"region":"us","impact":9},{"id":"93e73a122b74","title":"Ship Taken in Gulf of Oman and Heading to Iran, UK Navy Says","summary":"A UK naval group reported a commercial vessel was taken by unauthorized personnel at the entrance to the Strait of Hormuz and is now bound for Iranian waters, the latest indication of Tehran exerting control on shipping in the region.","link":"https://www.bloomberg.com/news/articles/2026-05-14/uk-navy-says-vessel-taken-off-fujairah-heading-to-iran-waters","publisher":"Bloomberg","feed":"Bloomberg Pol","pub_iso":"2026-05-14T07:16:20+00:00","pub_ts":1778742980.0,"theme":"geopolitics","theme_score":6,"region":"eu","impact":9},{"id":"46cf5228fef9","title":"Xi Tells US CEOs Accompanying Trump That China Will Open Up More","summary":"Xi Jinping signaled China is moving toward greater openness, striking an upbeat note during his meeting with US business leaders accompanying Donald Trump as the two presidents wrapped up morning talks that featured more divisive issues like trade and Taiwan.","link":"https://www.bloomberg.com/news/articles/2026-05-14/xi-tells-us-ceos-accompanying-trump-that-china-will-open-up-more","publisher":"Bloomberg","feed":"Bloomberg Pol","pub_iso":"2026-05-14T07:02:13+00:00","pub_ts":1778742133.0,"theme":"geopolitics","theme_score":8,"region":"us","impact":9},{"id":"979ebe63e989","title":"Adtek Is Said to Explore Hong Kong IPO at $4 Billion Valuation","summary":"Shenzhen Adtek Technology Co. is considering an initial public offering in Hong Kong, according to people familiar with the matter, adding to a wave of Chinese listings by businesses related to data centers and artificial intelligence.","link":"https://www.bloomberg.com/news/articles/2026-05-14/adtek-is-said-to-explore-hong-kong-ipo-at-4-billion-valuation","publisher":"Bloomberg","feed":"Bloomberg Tech","pub_iso":"2026-05-14T06:35:40+00:00","pub_ts":1778740540.0,"theme":"ai","theme_score":7,"region":"asia","impact":9},{"id":"a037454239e1","title":"Nvidia Partner Hon Hai Profit Jumps With AI Sales Boost","summary":"Nvidia Corp.’s major server assembly partner Hon Hai Precision Industry Co. reported a stronger-than-expected increase in quarterly profit, highlighting sustained spending on hardware essential for AI.","link":"https://www.bloomberg.com/news/articles/2026-05-14/nvidia-partner-hon-hai-profit-jumps-after-ai-fuels-server-sales","publisher":"Bloomberg","feed":"Bloomberg Mkts","pub_iso":"2026-05-14T06:24:41+00:00","pub_ts":1778739881.0,"theme":"ai","theme_score":8,"region":"us","impact":9},{"id":"8594a0e337e5","title":"Cerebras Raises $5.55 Billion in Year’s Biggest IPO","summary":"Artificial intelligence chipmaker Cerebras Systems Inc. raised $5.55 billion in its US initial public offering. The company priced its shares at $185 each, giving Cerebras a market value of about $40 billion, based on the shares offered and outstanding in its filings. Bloomberg’s Neil Campling reports.","link":"https://www.bloomberg.com/news/videos/2026-05-14/cerebras-raises-5-55-billion-in-year-s-biggest-ipo-video","publisher":"Bloomberg","feed":"Bloomberg Tech","pub_iso":"2026-05-14T06:16:00+00:00","pub_ts":1778739360.0,"theme":"ai","theme_score":7,"region":"us","impact":9},{"id":"a9d5878c7c80","title":"Treasury repo investments could be another route to a slightly smaller Fed balance sheet","summary":"The US Treasury has proposed investing some of the idle cash it keeps at the Federal Reserve into money markets","link":"https://www.ft.com/content/bcb00263-72c7-4644-a8b6-2f194ecfde37","publisher":"FT","feed":"FT Markets","pub_iso":"2026-05-14T04:30:04+00:00","pub_ts":1778733004.0,"theme":"rates","theme_score":6,"region":"us","impact":9},{"id":"b28e95ffce89","title":"Tech groups score win on clean energy rules for gas-powered data centres","summary":"Corporate climate watchdog drops stricter proposal on net zero claims after heavy lobbying","link":"https://www.ft.com/content/2ed922bb-266f-45cc-8930-c4ab5422bf95","publisher":"FT","feed":"FT Companies","pub_iso":"2026-05-14T04:00:06+00:00","pub_ts":1778731206.0,"theme":"sustainability","theme_score":7,"region":"us","impact":9},{"id":"5d33d155227d","title":"Franklin CEO Says Markets Are Underestimating Inflation","summary":"Franklin Templeton Chief Executive Officer Jenny Johnson says that the US economy is \"still very healthy\" and there are reasons for the \"euphoria\" around markets. Speaking on Bloomberg Television, Johnson also warns of inflation risks, saying that \"the reality of inflation is it's sticky\" and markets are underestimating the reality of it. (Source: Bloomberg)","link":"https://www.bloomberg.com/news/videos/2026-05-14/franklin-ceo-says-markets-are-underestimating-inflation-video","publisher":"Bloomberg","feed":"Bloomberg Mkts","pub_iso":"2026-05-14T09:20:36+00:00","pub_ts":1778750436.0,"theme":"macro","theme_score":4,"region":"us","impact":8},{"id":"ea62621b04f1","title":"Oil rises as IEA flags greater volatility ahead, OPEC cuts demand forecast","summary":"OPEC cut its demand growth estimates for 2026 to about 1.2 million barrels per day.","link":"https://www.cnbc.com/2026/05/14/oil-prices-today-wti-brent-hormuz-trump-xi-meeting.html","publisher":"CNBC","feed":"CNBC Top","pub_iso":"2026-05-14T08:38:08+00:00","pub_ts":1778747888.0,"theme":"macro","theme_score":4,"region":"us","impact":8},{"id":"b97e69a2074d","title":"War disruption grows and data centres go to space","summary":"The inside story on the Asia tech trends that matter, from Nikkei Asia and the Financial Times","link":"https://www.ft.com/content/85a5794f-d72b-41eb-85be-ad68c8ba08a7","publisher":"FT","feed":"FT Companies","pub_iso":"2026-05-14T08:17:33+00:00","pub_ts":1778746653.0,"theme":"tech","theme_score":3,"region":"asia","impact":8},{"id":"b0de59b84fc0","title":"UK Posts Strongest Growth in a Year Even as Headwinds Build","summary":"Panmure Liberum economist Simon French discusses the UK economy and the political crisis surrounding Prime Minister Keir Starmer. Gross domestic product grew 0.6% in the first quarter, a jump from the 0.2% in the previous three months and the fastest expansion for a year. French speaks on Bloomberg Television. (Source: Bloomberg)","link":"https://www.bloomberg.com/news/videos/2026-05-14/uk-economy-grew-0-6-in-first-quarter-video","publisher":"Bloomberg","feed":"Bloomberg Pol","pub_iso":"2026-05-14T07:56:10+00:00","pub_ts":1778745370.0,"theme":"macro","theme_score":4,"region":"eu","impact":8},{"id":"c1bbb855fcda","title":"'Better Than Ever': Trump, Xi Hail Ties at Beijing Summit | The China Show 5/14/2026","summary":"“Bloomberg: The China Show” is your definitive source for news and analysis on the world's second-biggest economy. From politics and policy to tech and trends, David Ingles and Yvonne Man give global investors unique insight, delivering in-depth discussions with the newsmakers who matter. (Source: Bloomberg)","link":"https://www.bloomberg.com/news/videos/2026-05-14/the-china-show-5-14-2026-video","publisher":"Bloomberg","feed":"Bloomberg Tech","pub_iso":"2026-05-14T05:47:27+00:00","pub_ts":1778737647.0,"theme":"tech","theme_score":4,"region":"us","impact":8},{"id":"dc2ec097bc2e","title":"Bank of England set to water down stablecoin rules after industry pressure","summary":"Deputy governor says initial plans may have been ‘overly conservative’ and central bank ‘looking very hard’ at alternatives","link":"https://www.ft.com/content/8a17d769-4e8a-4655-8aec-a683e7147322","publisher":"FT","feed":"FT Markets","pub_iso":"2026-05-14T04:00:15+00:00","pub_ts":1778731215.0,"theme":"tech","theme_score":4,"region":"us","impact":8},{"id":"af73dcc3e5dd","title":"Blackstone’s AirTrunk Seeks $2 Billion Loan for Malaysia Growth","summary":"Blackstone Inc.-owned data center firm AirTrunk is marketing a $2.3 billion loan to fund a Malaysia project, according to people familiar with the matter, part of a slew of tech-linked financings in Southeast Asia spurred by the artificial intelligence boom.","link":"https://www.bloomberg.com/news/articles/2026-05-14/blackstone-s-airtrunk-seeks-2-billion-loan-for-malaysia-growth","publisher":"Bloomberg","feed":"Bloomberg Tech","pub_iso":"2026-05-14T01:42:01+00:00","pub_ts":1778722921.0,"theme":"ai","theme_score":7,"region":"us","impact":8},{"id":"04a756a5877d","title":"Cerebras prices IPO above expected range, as Wall Street braces for AI tsunami","summary":"Cerebras raised $5.55 billion in its IPO, and with the chipmaker's offering, investors are gearing up for some even bigger AI deals later this year.","link":"https://www.cnbc.com/2026/05/13/cerebras-prices-ipo-above-expected-range-wall-street-expects-ai-flood.html","publisher":"CNBC","feed":"CNBC Top","pub_iso":"2026-05-14T00:39:53+00:00","pub_ts":1778719193.0,"theme":"ai","theme_score":7,"region":"us","impact":8},{"id":"59f6a3da16e7","title":"Cerebras boosts IPO price to raise $5.5bn","summary":"Chipmaker valued at $40bn in sign of high demand for AI stocks","link":"https://www.ft.com/content/4848fbef-d9af-46ee-b6ef-ad344a7a3814","publisher":"FT","feed":"FT Markets","pub_iso":"2026-05-13T23:10:01+00:00","pub_ts":1778713801.0,"theme":"ai","theme_score":7,"region":"us","impact":8},{"id":"1cf59b01a5c6","title":"Blackstone REIT Raises $1.75 Billion in IPO to Buy Data Centers","summary":"Blackstone Digital Infrastructure Trust Inc. raised $1.75 billion in a US initial public offering, as investors’ appetite for artificial intelligence infrastructure shows no sign of easing.","link":"https://www.bloomberg.com/news/articles/2026-05-13/blackstone-reit-raises-1-75-billion-in-ipo-to-buy-data-centers","publisher":"Bloomberg","feed":"Bloomberg Tech","pub_iso":"2026-05-13T23:05:32+00:00","pub_ts":1778713532.0,"theme":"ai","theme_score":7,"region":"us","impact":8},{"id":"5f7f9f9bf837","title":"Cisco's stock pops 17% on surging AI orders, as company says it's cutting almost 4,000 jobs","summary":"Cisco's AI story has finally started resonating with Wall Street, with the stock hitting a record late last year and continuing to rally in 2026.","link":"https://www.cnbc.com/2026/05/13/cisco-csco-q3-earnings-report-2026.html","publisher":"CNBC","feed":"CNBC Top","pub_iso":"2026-05-14T09:12:01+00:00","pub_ts":1778749921.0,"theme":"ai","theme_score":3,"region":"us","impact":7},{"id":"70605a0bc4ab","title":"Cuba has run out of diesel and oil, energy minister says","summary":"The minister says the situation in Cuba is \"extremely tense\", as a US-led blockade of oil to the country causes widespread power cuts.","link":"https://www.bbc.com/news/articles/cd7pyrj0vx7o?at_medium=RSS&at_campaign=rss","publisher":"BBC","feed":"BBC Business","pub_iso":"2026-05-14T09:06:23+00:00","pub_ts":1778749583.0,"theme":"rates","theme_score":3,"region":"us","impact":7},{"id":"95ef0bef68d2","title":"Nvidia's Jensen Huang on China trip: ‘President Trump asked me to come’","summary":"U.S. President Donald Trump on Wednesday landed in Beijing for the high-stakes summit with China.","link":"https://www.cnbc.com/2026/05/14/nvidias-jensen-huang-on-china-trip-trump.html","publisher":"CNBC","feed":"CNBC World","pub_iso":"2026-05-14T08:55:39+00:00","pub_ts":1778748939.0,"theme":"ai","theme_score":3,"region":"us","impact":7},{"id":"401de73e2856","title":"UK landlord Landsec says occupancy levels at 20-year high","summary":"FTSE 100 group posts stronger than expected growth in rental income","link":"https://www.ft.com/content/ffd4951c-b623-4ad3-bfde-562f2207c8e0","publisher":"FT","feed":"FT Companies","pub_iso":"2026-05-14T08:14:11+00:00","pub_ts":1778746451.0,"theme":"macro","theme_score":3,"region":"eu","impact":7},{"id":"1d47b61956eb","title":"Spire Healthcare shares soar on £1bn takeover offer","summary":"Activist investor Toscafund offers £2.50 a share for UK’s largest private hospital operator","link":"https://www.ft.com/content/97c78168-bb92-4039-ba5f-38f03b2a7bde","publisher":"FT","feed":"FT Companies","pub_iso":"2026-05-14T08:01:38+00:00","pub_ts":1778745698.0,"theme":"tech","theme_score":3,"region":"eu","impact":7},{"id":"6fcdad546562","title":"Burberry says turnaround on track as Americas and China fuel strong growth","summary":"Full-year revenue came in largely in line with expectations at £2.4 billion.","link":"https://www.cnbc.com/2026/05/14/burberry-stock-brby-earnings-fy-turnaround-americas-china-sales-growth.html","publisher":"CNBC","feed":"CNBC Top","pub_iso":"2026-05-14T07:41:03+00:00","pub_ts":1778744463.0,"theme":"macro","theme_score":3,"region":"us","impact":7},{"id":"1dc02d17baad","title":"3i shares tumble after sales growth slows at discount retailer Action","summary":"Private equity group has relied on Dutch retailer to power its returns in recent years","link":"https://www.ft.com/content/21708cbd-921c-4f60-96dc-d99c6b833a28","publisher":"FT","feed":"FT Markets","pub_iso":"2026-05-14T07:28:46+00:00","pub_ts":1778743726.0,"theme":"macro","theme_score":3,"region":"us","impact":7},{"id":"3e8cd4ed89c7","title":"UK first-quarter GDP gives BoE no urgency to cut rates","summary":"Stronger headline growth and deflator figures suggest rate setters’ main concern should be price growth not activity","link":"https://www.ft.com/content/f691fcb4-a784-4de5-84b8-fadffa58cb4f","publisher":"FT","feed":"FT World","pub_iso":"2026-05-14T06:56:00+00:00","pub_ts":1778741760.0,"theme":"macro","theme_score":3,"region":"eu","impact":7},{"id":"c5dc32bb3c83","title":"UK economy grew 0.6% in first quarter despite Middle East energy crisis","summary":"Expansion picks up after a lacklustre second half last year","link":"https://www.ft.com/content/c27cc9ec-efe5-4227-9f34-edadea11003b","publisher":"FT","feed":"FT World","pub_iso":"2026-05-14T06:53:41+00:00","pub_ts":1778741621.0,"theme":"tech","theme_score":3,"region":"eu","impact":7},{"id":"9ac281b758d7","title":"Xi tells Nvidia, Tesla and Apple CEOs that China will ‘open wider’","summary":"US business leaders praise ‘great importance’ of Chinese market on visit to Beijing alongside Donald Trump","link":"https://www.ft.com/content/013a9dd3-8835-4a0e-839e-ca8ed539233d","publisher":"FT","feed":"FT Home","pub_iso":"2026-05-14T06:20:31+00:00","pub_ts":1778739631.0,"theme":"ai","theme_score":3,"region":"us","impact":7},{"id":"108d9277cf0d","title":"Four scenarios for a Labour leadership war","summary":"Under Labour rules, someone seeking the party leadership needs the nominations of at least 81 MPs","link":"https://www.ft.com/content/8035196d-47eb-4705-b5a8-2420324b794b","publisher":"FT","feed":"FT World","pub_iso":"2026-05-14T06:12:01+00:00","pub_ts":1778739121.0,"theme":"tech","theme_score":3,"region":"us","impact":7},{"id":"5850ae25a9cf","title":"Honda slumps to first annual loss on near-$10bn EV charge","summary":"Japan’s second-biggest carmaker reports worse than expected result but forecasts return to profit this year","link":"https://www.ft.com/content/c7886f9a-2df0-40ab-9c67-068a5c132c57","publisher":"FT","feed":"FT Companies","pub_iso":"2026-05-14T05:31:38+00:00","pub_ts":1778736698.0,"theme":"sustainability","theme_score":3,"region":"asia","impact":7},{"id":"44dd4d6624dc","title":"The new circular trade in private credit","summary":"Private capital groups have a new opportunity to buy significant risk transfers tied to credit funds","link":"https://www.ft.com/content/ccf2a1da-2283-4c6c-a494-60e09fd120fc","publisher":"FT","feed":"FT Markets","pub_iso":"2026-05-14T04:00:25+00:00","pub_ts":1778731225.0,"theme":"rates","theme_score":3,"region":"us","impact":7},{"id":"a8b452ebf7c5","title":"EDF: Europe’s nuclear hope","summary":"The group needs to cut costs and rejuvenate its reactor-building expertise","link":"https://www.ft.com/content/4c48679b-edc3-4f81-b5be-9768fa2e63e5","publisher":"FT","feed":"FT Companies","pub_iso":"2026-05-14T04:00:07+00:00","pub_ts":1778731207.0,"theme":"tech","theme_score":3,"region":"eu","impact":7},{"id":"918196cefc9f","title":"Alibaba shares surge 7% in Hong Kong as firm accelerates pivot to AI","summary":"Shares of Alibaba Group Holding opened up 7.8 per cent in Hong Kong, after the firm reported strong growth from its artificial intelligence products and ramped up its commitment to the technology. The Chinese tech giant also saw its New York-listed shares surge 8.2 per cent on Wednesday, closing at US$145.81, after it confirmed that revenues from AI-related products had hit 8.97 billion yuan (US$1","link":"https://www.scmp.com/tech/big-tech/article/3353487/alibaba-shares-surge-8-new-york-firm-accelerates-pivot-ai?utm_source=rss_feed","publisher":"SCMP","feed":"SCMP Business","pub_iso":"2026-05-14T01:19:53+00:00","pub_ts":1778721593.0,"theme":"macro","theme_score":5,"region":"us","impact":7},{"id":"c0e6ecf341d7","title":"Australian giant Coles misled shoppers with fake discounts, court rules","summary":"The decision, which comes amid similar case against Woolworths, could mean significant penalties.","link":"https://www.bbc.com/news/articles/c202159x6x3o?at_medium=RSS&at_campaign=rss","publisher":"BBC","feed":"BBC Business","pub_iso":"2026-05-14T03:09:20+00:00","pub_ts":1778728160.0,"theme":"tech","theme_score":3,"region":"eu","impact":6},{"id":"e75b6bff5caf","title":"Analysis: Trump finally gets his man at the Fed. Will Kevin Warsh disappoint him?","summary":"Kevin Warsh received the fewest votes of any Fed chair in history. Will it cripple him?","link":"https://www.cnbc.com/2026/05/13/warsh-trump-congress-senate-analysis.html","publisher":"CNBC","feed":"CNBC Top","pub_iso":"2026-05-13T23:22:51+00:00","pub_ts":1778714571.0,"theme":"rates","theme_score":3,"region":"us","impact":6},{"id":"86932f5e54fa","title":"Kevin Warsh wins Senate confirmation as the next Federal Reserve chair","summary":"In the most divisive vote ever for a Fed chair, Warsh, 56, won confirmation to take over for Jerome Powell.","link":"https://www.cnbc.com/2026/05/13/kevin-warsh-wins-senate-confirmation-as-the-next-federal-reserve-chair.html","publisher":"CNBC","feed":"CNBC Top","pub_iso":"2026-05-13T23:21:35+00:00","pub_ts":1778714495.0,"theme":"rates","theme_score":3,"region":"us","impact":6},{"id":"9c557b999aa9","title":"Hong Kong’s Central office rents set to reverse multi-year slump with gains in second half","summary":"Office rents in Hong Kong’s Central district are expected to rise faster in the second quarter of the year, according to analysts, a reversal of a multi-year slump that began in the second half of 2019. The latest forecast was made by US bank Citi, which said premium offices in the city’s main business zone had seen rents rise 1.7 per cent from a trough in October, with room for further increments","link":"https://www.scmp.com/business/article/3353468/hong-kongs-central-office-rents-set-reverse-multi-year-slump-gains-second-half?utm_source=rss_feed","publisher":"SCMP","feed":"SCMP Business","pub_iso":"2026-05-13T23:00:05+00:00","pub_ts":1778713205.0,"theme":"tech","theme_score":3,"region":"us","impact":6},{"id":"28e82241bed7","title":"Shares surge in debut of power producer favoured by Trump energy agenda","summary":"Geothermal generator Fervo uses renewable energy technology that has garnered rare administration support","link":"https://www.ft.com/content/fd5ca76d-23b7-42b5-a09d-0a1fd7d1de01","publisher":"FT","feed":"FT Markets","pub_iso":"2026-05-13T20:57:56+00:00","pub_ts":1778705876.0,"theme":"sustainability","theme_score":3,"region":"us","impact":5},{"id":"1070361b905b","title":"Trump's Fed chair pick Kevin Warsh confirmed by US Senate","summary":"Kevin Warsh was confirmed by the narrowest margin since the role required a Senate confirmation vote.","link":"https://www.bbc.com/news/articles/ce8p71p4nezo?at_medium=RSS&at_campaign=rss","publisher":"BBC","feed":"BBC Business","pub_iso":"2026-05-13T20:15:33+00:00","pub_ts":1778703333.0,"theme":"rates","theme_score":3,"region":"us","impact":5},{"id":"6f5d11e05254","title":"UK regulator pushes private credit groups to share more data","summary":"Fast-growing market comes under greater scrutiny for potential risks after series of setbacks","link":"https://www.ft.com/content/e455b060-a5e6-4e6e-83e3-bf9bab1ac495","publisher":"FT","feed":"FT Markets","pub_iso":"2026-05-13T20:10:56+00:00","pub_ts":1778703056.0,"theme":"rates","theme_score":3,"region":"eu","impact":5},{"id":"e96498c0ad79","title":"Mortgage rates jump to highest level since March on hotter inflation reports","summary":"Mortgage rates surged to the highest level since March in reaction to two hotter-than-expected inflation reports.","link":"https://www.cnbc.com/2026/05/13/mortgage-rates-jump-to-highest-level-since-march.html","publisher":"CNBC","feed":"CNBC Top","pub_iso":"2026-05-13T18:25:30+00:00","pub_ts":1778696730.0,"theme":"macro","theme_score":3,"region":"us","impact":5},{"id":"6e17fd95fef9","title":"'Bond markets on edge' as King Charles sets out fragile UK government's agenda","summary":"U.K. gilts and bonds faced heavy selling pressure in response to the latest 'Starmer drama', as the prime minister faced down rivals ahead of the King's Speech.","link":"https://www.cnbc.com/2026/05/13/gilts-sterling-starmer-king-charles-uk.html","publisher":"CNBC","feed":"CNBC World","pub_iso":"2026-05-13T14:30:38+00:00","pub_ts":1778682638.0,"theme":"rates","theme_score":5,"region":"eu","impact":5},{"id":"463be73b67fa","title":"Tesla lures budget-conscious Chinese buyers with cheap loans ahead of state visit by Trump","summary":"Tesla China has launched a new financing scheme to attract more budget-conscious buyers after its sales in the world’s largest electric vehicle (EV) market fell behind its domestic rivals. The US carmaker said on Wednesday that the down payment for a Shanghai-made Model 3 vehicle – priced at 235,500 yuan (US$34,672) – would be slashed to 55,900 yuan from 79,900 yuan if the buyer chose a five-year ","link":"https://www.scmp.com/business/china-business/article/3353446/tesla-lures-budget-conscious-chinese-buyers-cheap-loans-ahead-state-visit-trump?utm_source=rss_feed","publisher":"SCMP","feed":"SCMP Business","pub_iso":"2026-05-13T10:44:52+00:00","pub_ts":1778669092.0,"theme":"tech","theme_score":4,"region":"us","impact":5},{"id":"50f3c9fc9666","title":"Hong Kong’s first biodiversity loan goes to Henderson Land for Central Yards green spaces","summary":"Henderson Land Development secured the first biodiversity loan in Hong Kong, receiving around HK$100 million (US$12.8 million) from HSBC and Hang Seng Bank for green initiatives at Central Yards, the company’s flagship mixed-use development on the New Central Harbourfront. This loan would provide a “scalable blueprint” for companies to achieve their sustainability goals and enhance Hong Kong’s pos","link":"https://www.scmp.com/business/article/3353428/hong-kongs-first-biodiversity-loan-goes-henderson-land-central-yards-green-spaces?utm_source=rss_feed","publisher":"SCMP","feed":"SCMP Business","pub_iso":"2026-05-13T09:30:05+00:00","pub_ts":1778664605.0,"theme":"sustainability","theme_score":5,"region":"us","impact":4}],"threads":[{"from":"57226d2608be","to":"eb719e0db50b","shared":["hormuz","strait","says","more"]},{"from":"57226d2608be","to":"99f16c237643","shared":["strait","ship","iran","vessel","personnel"]},{"from":"eb719e0db50b","to":"fbe696cb6aed","shared":["hormuz","strait","east","says"]},{"from":"eb719e0db50b","to":"ccf0771f2151","shared":["according","chinese","china"]},{"from":"99f16c237643","to":"fbe696cb6aed","shared":["strait","seized","ship","vessel","iran"]},{"from":"99f16c237643","to":"93e73a122b74","shared":["strait","ship","vessel","iran","personnel"]},{"from":"c0eb7fb65a37","to":"b0de59b84fc0","shared":["bloomberg","first","source"]},{"from":"e5406f46df90","to":"6e17fd95fef9","shared":["markets","agenda","ahead"]},{"from":"376b030ad8ef","to":"c5dc32bb3c83","shared":["last","year","after"]},{"from":"9ae10194ee48","to":"c5dc32bb3c83","shared":["last","year","economy","after"]},{"from":"ccf0771f2151","to":"463be73b67fa","shared":["sales","buyers","chinese","model","electric"]},{"from":"979ebe63e989","to":"8594a0e337e5","shared":["intelligence","public","artificial","billion","offering"]},{"from":"979ebe63e989","to":"af73dcc3e5dd","shared":["according","intelligence","people","matter","data"]},{"from":"979ebe63e989","to":"1cf59b01a5c6","shared":["intelligence","data","centers","public","artificial"]},{"from":"a037454239e1","to":"401de73e2856","shared":["stronger","than","expected"]},{"from":"a037454239e1","to":"5850ae25a9cf","shared":["profit","than","expected"]},{"from":"8594a0e337e5","to":"5850ae25a9cf","shared":["biggest","year","reports"]},{"from":"b28e95ffce89","to":"b97e69a2074d","shared":["data","tech","centres"]},{"from":"b28e95ffce89","to":"6f5d11e05254","shared":["data","groups","after"]},{"from":"5d33d155227d","to":"b0de59b84fc0","shared":["bloomberg","television","source","economy"]},{"from":"b97e69a2074d","to":"c1bbb855fcda","shared":["trends","tech","matter"]},{"from":"b97e69a2074d","to":"af73dcc3e5dd","shared":["data","asia","tech","matter"]},{"from":"b0de59b84fc0","to":"c1bbb855fcda","shared":["bloomberg","source","economy"]},{"from":"c1bbb855fcda","to":"5850ae25a9cf","shared":["biggest","than","second"]},{"from":"401de73e2856","to":"6fcdad546562","shared":["says","year","growth"]},{"from":"c5dc32bb3c83","to":"9c557b999aa9","shared":["half","quarter","year","second"]},{"from":"44dd4d6624dc","to":"6f5d11e05254","shared":["private","credit","groups"]},{"from":"6f5d11e05254","to":"463be73b67fa","shared":["after","market","more"]},{"from":"6e17fd95fef9","to":"463be73b67fa","shared":["down","ahead","rivals"]}],"stats":{"total_items":54,"total_threads":29,"by_theme":{"geopolitics":10,"macro":10,"sustainability":6,"ai":10,"rates":8,"tech":10},"by_region":{"eu":12,"us":38,"asia":4},"by_publisher":{"Bloomberg":18,"FT":18,"SCMP":5,"CNBC":10,"BBC":3},"feeds_active":21,"feeds_total":21}}
+</script>
+
+<script>
+const REGIONS = {
+  us:   { label: 'Americas', color: '#f4ecd8' },
+  eu:   { label: 'Europe',   color: '#c9a866' },
+  asia: { label: 'Asia',     color: '#e07a5f' },
+};
+
+let DATA = null;
+let THEMES = {};
+let ITEMS = [];
+let THREADS = [];
+
+const activeThemes = new Set();
+let activeRegion = 'all';
+let activeStoryId = null;
+
+function boot() {
+  // Try inline data first (self-contained mode); fall back to fetch (dev mode)
+  const inline = document.getElementById('news-data');
+  let parsed = null;
+  if (inline && inline.textContent.trim()) {
+    try {
+      parsed = JSON.parse(inline.textContent);
+    } catch (e) {
+      console.error('Inline data parse error', e);
+    }
+  }
+
+  if (parsed && parsed.items && parsed.items.length > 0) {
+    DATA = parsed;
+    init();
+  } else {
+    // Fall back to fetching data.json for dev workflows
+    fetch('data.json?ts=' + Date.now())
+      .then(r => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
+      .then(d => { DATA = d; init(); })
+      .catch(e => {
+        document.getElementById('loader').textContent = 'No data — run build.py first';
+        console.error(e);
+      });
+  }
+}
+
+function init() {
+  THEMES = DATA.themes;
+  ITEMS = DATA.items;
+  THREADS = DATA.threads;
+
+  Object.keys(THEMES).forEach(k => activeThemes.add(k));
+
+  const d = new Date(DATA.generated_at);
+  document.getElementById('m-time').textContent = d.toLocaleString('en-GB', {
+    day: '2-digit', month: 'short', year: 'numeric',
+    hour: '2-digit', minute: '2-digit', timeZone: 'UTC', timeZoneName: 'short'
+  });
+  document.getElementById('m-items').textContent = DATA.stats.total_items;
+  document.getElementById('m-threads').textContent = DATA.stats.total_threads;
+  document.getElementById('m-wires').textContent = DATA.stats.feeds_active + '/' + DATA.stats.feeds_total;
+  document.getElementById('footer-source').textContent = 'Live · ' + Object.keys(DATA.stats.by_publisher).join(' · ');
+
+  buildLegend();
+  buildViz();
+  document.getElementById('loader').style.display = 'none';
+}
+
+function buildLegend() {
+  const el = document.getElementById('legend');
+  el.innerHTML = '';
+  Object.entries(THEMES).forEach(([key, t]) => {
+    const count = DATA.stats.by_theme[key] || 0;
+    const pill = document.createElement('button');
+    pill.className = 'legend-pill active';
+    pill.dataset.theme = key;
+    pill.style.setProperty('--pill-color', t.color);
+    pill.innerHTML = `${t.label} <span class="ct">${count}</span>`;
+    pill.addEventListener('click', () => {
+      if (activeThemes.has(key)) activeThemes.delete(key);
+      else activeThemes.add(key);
+      if (activeThemes.size === 0) Object.keys(THEMES).forEach(k => activeThemes.add(k));
+      updateLegend();
+      applyFilters();
+    });
+    el.appendChild(pill);
+  });
+}
+
+function updateLegend() {
+  document.querySelectorAll('.legend-pill').forEach(p => {
+    if (activeThemes.has(p.dataset.theme)) {
+      p.classList.add('active'); p.classList.remove('muted');
+    } else {
+      p.classList.remove('active'); p.classList.add('muted');
+    }
+  });
+}
+
+document.querySelectorAll('.region-tab').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.region-tab').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    activeRegion = btn.dataset.region;
+    applyFilters();
+  });
+});
+
+const svg = d3.select('#stage');
+const stage = document.getElementById('stage');
+let width, height, themeCenters, simulation, nodeSel, threadSel;
+
+function buildViz() {
+  resizeStage();
+
+  svg.selectAll('defs, g').remove();
+  const defs = svg.append('defs');
+  const halo = defs.append('filter').attr('id', 'halo').attr('x', '-100%').attr('y', '-100%').attr('width', '300%').attr('height', '300%');
+  halo.append('feGaussianBlur').attr('stdDeviation', '8');
+  const glow = defs.append('filter').attr('id', 'glow').attr('x', '-50%').attr('y', '-50%').attr('width', '200%').attr('height', '200%');
+  glow.append('feGaussianBlur').attr('stdDeviation', '3').attr('result', 'b');
+  const m = glow.append('feMerge');
+  m.append('feMergeNode').attr('in', 'b');
+  m.append('feMergeNode').attr('in', 'SourceGraphic');
+
+  const bgLayer = svg.append('g').attr('class', 'bg-layer');
+  const threadLayer = svg.append('g').attr('class', 'thread-layer');
+  const nodeLayer = svg.append('g').attr('class', 'node-layer');
+
+  themeCenters = computeThemeCenters();
+  drawThemeLabels(bgLayer);
+
+  const nodes = ITEMS.map(s => ({
+    ...s,
+    r: 11 + (s.impact - 1) * 2.4,
+  }));
+  nodes.forEach(n => {
+    const c = themeCenters[n.theme];
+    n.x = c.x + (Math.random() - 0.5) * 50;
+    n.y = c.y + (Math.random() - 0.5) * 50;
+  });
+
+  const idMap = new Map(nodes.map(n => [n.id, n]));
+  const threadObjs = THREADS
+    .map(t => ({ source: idMap.get(t.from), target: idMap.get(t.to), shared: t.shared }))
+    .filter(t => t.source && t.target);
+
+  threadSel = threadLayer.selectAll('path.thread')
+    .data(threadObjs, d => d.source.id + '::' + d.target.id)
+    .enter().append('path').attr('class', 'thread');
+
+  nodeSel = nodeLayer.selectAll('g.node')
+    .data(nodes, d => d.id)
+    .enter().append('g')
+    .attr('class', 'node')
+    .call(d3.drag().on('start', dragStart).on('drag', dragged).on('end', dragEnd))
+    .on('mouseenter', onHover)
+    .on('mouseleave', onLeave)
+    .on('click', (e, d) => { e.stopPropagation(); openDetail(d.id); });
+
+  nodeSel.append('circle')
+    .attr('r', d => d.r * 1.7)
+    .attr('fill', d => THEMES[d.theme].color)
+    .attr('fill-opacity', 0.06)
+    .attr('filter', 'url(#halo)');
+
+  nodeSel.append('circle')
+    .attr('class', 'ring')
+    .attr('r', d => d.r + 3.5)
+    .attr('stroke', d => REGIONS[d.region]?.color || '#666')
+    .attr('stroke-opacity', 0.55);
+
+  nodeSel.append('circle')
+    .attr('class', 'core')
+    .attr('r', d => d.r)
+    .attr('fill', d => THEMES[d.theme].color)
+    .attr('fill-opacity', 0.17)
+    .attr('stroke', d => THEMES[d.theme].color)
+    .attr('stroke-width', 1.2)
+    .attr('stroke-opacity', 0.85);
+
+  nodeSel.append('circle')
+    .attr('r', 2.4)
+    .attr('fill', d => THEMES[d.theme].color)
+    .attr('filter', 'url(#glow)');
+
+  nodeSel.append('text')
+    .attr('class', 'ticker')
+    .attr('y', d => d.r + 12)
+    .text(d => shortPub(d.publisher));
+
+  simulation = d3.forceSimulation(nodes)
+    .force('x', d3.forceX(d => themeCenters[d.theme].x).strength(0.09))
+    .force('y', d3.forceY(d => themeCenters[d.theme].y).strength(0.09))
+    .force('collide', d3.forceCollide(d => d.r + 6).strength(0.9))
+    .force('charge', d3.forceManyBody().strength(-32))
+    .alphaDecay(0.022)
+    .on('tick', tick);
+}
+
+function tick() {
+  nodeSel.attr('transform', d => `translate(${d.x},${d.y})`);
+  threadSel.attr('d', d => {
+    const dx = d.target.x - d.source.x, dy = d.target.y - d.source.y;
+    const dr = Math.sqrt(dx*dx + dy*dy) * 1.7;
+    return `M${d.source.x},${d.source.y}A${dr},${dr} 0 0,1 ${d.target.x},${d.target.y}`;
+  });
+}
+
+function resizeStage() {
+  width = stage.clientWidth;
+  height = stage.clientHeight;
+  svg.attr('viewBox', `0 0 ${width} ${height}`).attr('preserveAspectRatio', 'xMidYMid meet');
+}
+
+function computeThemeCenters() {
+  // One open canvas — themes arranged across it with breathing room,
+  // not snapped to a rigid grid. Anchored positions tuned for narrative flow:
+  // top half = forward-looking themes (AI, Geopolitics, Sustainability);
+  // bottom half = financial-mechanics themes (Macro, Rates, Tech).
+  // Specific positions are percentage-based so they scale with viewport.
+  const layout = {
+    geopolitics:    { fx: 0.50, fy: 0.34 },  // top center
+    ai:             { fx: 0.24, fy: 0.38 },  // top left
+    sustainability: { fx: 0.78, fy: 0.36 },  // top right
+    macro:          { fx: 0.30, fy: 0.74 },  // bottom left
+    rates:          { fx: 0.56, fy: 0.76 },  // bottom center
+    tech:           { fx: 0.82, fy: 0.72 },  // bottom right
+  };
+
+  const centers = {};
+  Object.keys(THEMES).forEach(k => {
+    const pos = layout[k] || { fx: 0.5, fy: 0.5 };
+    const ct = ITEMS.filter(x => x.theme === k).length;
+    centers[k] = {
+      x: width * pos.fx,
+      y: height * pos.fy,
+      // approximate well radius based on item count, used only for label positioning
+      r: 40 + ct * 4.5,
+    };
+  });
+  return centers;
+}
+
+function drawThemeLabels(layer) {
+  layer.selectAll('text').remove();
+  Object.entries(themeCenters).forEach(([key, c]) => {
+    const cfg = THEMES[key];
+    // Single atmospheric italic label per theme, well above the cluster
+    layer.append('text')
+      .attr('class', 'theme-label-bg')
+      .attr('x', c.x)
+      .attr('y', c.y - 105)
+      .attr('font-size', 64)
+      .text(cfg.label.toLowerCase());
+  });
+}
+
+function shortPub(p) {
+  const m = { 'FT': 'FT', 'Bloomberg': 'BBG', 'WSJ': 'WSJ', 'CNBC': 'CNBC',
+              'BBC': 'BBC', 'MarketWatch': 'MW', 'Yahoo Finance': 'YF',
+              'Nikkei Asia': 'NKI', 'SCMP': 'SCMP' };
+  return m[p] || p.substring(0, 3).toUpperCase();
+}
+
+function dragStart(e, d) { if (!e.active) simulation.alphaTarget(0.25).restart(); d.fx = d.x; d.fy = d.y; }
+function dragged(e, d) { d.fx = e.x; d.fy = e.y; }
+function dragEnd(e, d) { if (!e.active) simulation.alphaTarget(0); d.fx = null; d.fy = null; }
+
+const tipEl = document.getElementById('tip');
+function onHover(e, d) {
+  const pubDate = d.pub_iso ? new Date(d.pub_iso).toLocaleString('en-GB',
+    { day:'2-digit', month:'short', hour:'2-digit', minute:'2-digit' }) : '—';
+  tipEl.innerHTML = `
+    <div class="tip-headline">${escapeHtml(d.title)}</div>
+    <div class="tip-meta">
+      <span class="tip-dot" style="background:${THEMES[d.theme].color}"></span>
+      <span>${THEMES[d.theme].label}</span><span>·</span>
+      <span>${REGIONS[d.region]?.label || d.region}</span><span>·</span>
+      <span>${d.publisher}</span><span>·</span>
+      <span>Impact ${d.impact}</span><span>·</span>
+      <span>${pubDate}</span>
+    </div>`;
+  tipEl.classList.add('visible');
+  positionTip(e);
+  threadSel.classed('active', t => t.source.id === d.id || t.target.id === d.id);
+}
+function onLeave() {
+  tipEl.classList.remove('visible');
+  threadSel.classed('active', false);
+}
+document.addEventListener('mousemove', e => {
+  if (tipEl.classList.contains('visible')) positionTip(e);
+});
+function positionTip(e) {
+  const x = Math.min(window.innerWidth - 170, Math.max(170, e.clientX));
+  tipEl.style.left = x + 'px';
+  tipEl.style.top = (e.clientY - 12) + 'px';
+}
+
+const panel = document.getElementById('detail-panel');
+const panelInner = document.getElementById('detail-inner');
+
+function openDetail(id) {
+  const s = ITEMS.find(x => x.id === id);
+  if (!s) return;
+  activeStoryId = id;
+
+  const related = THREADS
+    .filter(t => t.from === id || t.to === id)
+    .map(t => ITEMS.find(x => x.id === (t.from === id ? t.to : t.from)))
+    .filter(Boolean);
+
+  const pubDate = s.pub_iso ? new Date(s.pub_iso).toLocaleString('en-GB',
+    { day:'2-digit', month:'short', year:'numeric', hour:'2-digit', minute:'2-digit', timeZoneName: 'short' }) : 'unknown';
+
+  panelInner.innerHTML = `
+    <div class="detail-top">
+      <div class="detail-tags">
+        <span class="detail-tag theme" style="--tag-color:${THEMES[s.theme].color}">${THEMES[s.theme].label}</span>
+        <span class="detail-tag region">${REGIONS[s.region]?.label || s.region}</span>
+        <span class="detail-tag">Impact ${s.impact}/10</span>
+      </div>
+      <button class="detail-close" id="detail-close-btn">Close ✕</button>
+    </div>
+
+    <div class="detail-publisher">
+      <span class="pub">${s.publisher}</span>
+      <span class="sep">·</span>
+      <span>${pubDate}</span>
+    </div>
+
+    <h2 class="detail-headline">${escapeHtml(s.title)}</h2>
+
+    ${s.summary ? `<p class="detail-summary">${escapeHtml(s.summary)}</p>` : ''}
+
+    <a class="detail-link" href="${escapeHtml(s.link)}" target="_blank" rel="noopener">
+      <span>Read on ${s.publisher}</span>
+      <span class="arrow">→</span>
+    </a>
+
+    ${related.length > 0 ? `
+      <div class="detail-related">
+        <div class="related-label">Connected stories · ${related.length}</div>
+        ${related.map(r => `
+          <div class="related-item" data-id="${r.id}">
+            <span class="related-dot" style="--rd-color:${THEMES[r.theme].color}"></span>
+            <span class="related-title">${escapeHtml(r.title)}</span>
+            <span class="related-meta">${REGIONS[r.region]?.label || r.region} · ${r.publisher}</span>
+          </div>
+        `).join('')}
+      </div>
+    ` : ''}
+  `;
+
+  document.getElementById('detail-close-btn').addEventListener('click', closeDetail);
+  panelInner.querySelectorAll('.related-item').forEach(item => {
+    item.addEventListener('click', () => openDetail(item.dataset.id));
+  });
+
+  panel.classList.add('open');
+
+  const highlight = new Set([id]);
+  THREADS.forEach(t => {
+    if (t.from === id) highlight.add(t.to);
+    if (t.to === id) highlight.add(t.from);
+  });
+  nodeSel.classed('dimmed', n => !highlight.has(n.id));
+  threadSel.classed('active', t => t.source.id === id || t.target.id === id);
+}
+
+function closeDetail() {
+  panel.classList.remove('open');
+  activeStoryId = null;
+  applyFilters();
+}
+
+svg.on('click', () => { if (activeStoryId) closeDetail(); });
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape' && activeStoryId) closeDetail();
+});
+
+function applyFilters() {
+  if (!nodeSel) return;
+  nodeSel.each(function(d) {
+    const ok = (activeRegion === 'all' || d.region === activeRegion) && activeThemes.has(d.theme);
+    d3.select(this).classed('dimmed', !ok);
+  });
+  threadSel.each(function(t) {
+    const sOk = (activeRegion === 'all' || t.source.region === activeRegion) && activeThemes.has(t.source.theme);
+    const tOk = (activeRegion === 'all' || t.target.region === activeRegion) && activeThemes.has(t.target.theme);
+    d3.select(this).style('display', (sOk && tOk) ? null : 'none');
+  });
+}
+
+function escapeHtml(s) {
+  return String(s || '').replace(/[&<>"']/g, c =>
+    ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])
+  );
+}
+
+window.addEventListener('resize', () => {
+  if (!simulation) return;
+  resizeStage();
+  themeCenters = computeThemeCenters();
+  drawThemeLabels(svg.select('.bg-layer'));
+  simulation
+    .force('x', d3.forceX(d => themeCenters[d.theme].x).strength(0.09))
+    .force('y', d3.forceY(d => themeCenters[d.theme].y).strength(0.09))
+    .alpha(0.4).restart();
+});
+
+boot();
+</script>
+
+</body>
+</html>
