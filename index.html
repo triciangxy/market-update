@@ -660,7 +660,7 @@ function boot() {
 function init() {
   THEMES = DATA.themes;
   ITEMS = DATA.stories;
-  THREADS = DATA.threads;
+  THREADS = DATA.threads || [];
 
   Object.keys(THEMES).forEach(k => activeThemes.add(k));
 
