@@ -494,6 +494,71 @@ def llm_reclassify(items, api_key, theme_keys):
     return [it for it in items if not it.get("_drop")]
 
 
+# ── Market data (fetched once per build via yfinance) ──────
+MARKETS_CONFIG = [
+    # Equities
+    {"ticker": "^GSPC",    "name": "S&P 500",      "unit": "price", "group": "equities"},
+    {"ticker": "^IXIC",    "name": "Nasdaq",       "unit": "price", "group": "equities"},
+    {"ticker": "^DJI",     "name": "Dow",          "unit": "price", "group": "equities"},
+    {"ticker": "^STOXX",   "name": "STOXX 600",    "unit": "price", "group": "equities"},
+    {"ticker": "^N225",    "name": "Nikkei 225",   "unit": "price", "group": "equities"},
+    {"ticker": "^HSI",     "name": "Hang Seng",    "unit": "price", "group": "equities"},
+    {"ticker": "^STI",     "name": "Straits Times","unit": "price", "group": "equities"},
+    # Rates
+    {"ticker": "^TNX",     "name": "US 10Y",       "unit": "pct",   "group": "rates"},
+    # Commodities
+    {"ticker": "GC=F",     "name": "Gold",         "unit": "price", "group": "commod"},
+    {"ticker": "BZ=F",     "name": "Brent",        "unit": "price", "group": "commod"},
+    {"ticker": "CL=F",     "name": "WTI",          "unit": "price", "group": "commod"},
+    # FX
+    {"ticker": "DX-Y.NYB", "name": "DXY",          "unit": "price", "group": "fx"},
+    {"ticker": "JPY=X",    "name": "USD/JPY",      "unit": "price", "group": "fx"},
+    # Crypto
+    {"ticker": "BTC-USD",  "name": "Bitcoin",      "unit": "price", "group": "crypto"},
+]
+
+
+def fetch_markets():
+    """Pull latest + previous close for each ticker via yfinance.
+    Returns list of dicts. Skips silently if yfinance isn't installed
+    or a single ticker fails — doesn't break the whole build.
+    """
+    try:
+        import yfinance as yf
+    except ImportError:
+        print("  [WARN] yfinance not installed — skipping markets data", file=sys.stderr)
+        return []
+
+    out = []
+    for cfg in MARKETS_CONFIG:
+        try:
+            tk = yf.Ticker(cfg["ticker"])
+            hist = tk.history(period="5d", interval="1d")
+            if hist is None or len(hist) == 0:
+                print(f"    [skip] {cfg['ticker']}: no history", file=sys.stderr)
+                continue
+            closes = [float(x) for x in hist["Close"].dropna().tolist()]
+            if not closes:
+                continue
+            price = closes[-1]
+            prev = closes[-2] if len(closes) >= 2 else None
+            chg = ((price - prev) / prev * 100.0) if (prev and prev != 0) else None
+            out.append({
+                "ticker": cfg["ticker"],
+                "name":   cfg["name"],
+                "price":  round(price, 4),
+                "prev_close": round(prev, 4) if prev is not None else None,
+                "change_pct": round(chg, 3) if chg is not None else None,
+                "unit":   cfg["unit"],
+                "group":  cfg["group"],
+            })
+            shown = chg if chg is not None else 0.0
+            print(f"    {cfg['name']:14} {price:>12,.2f} ({shown:+.2f}%)", file=sys.stderr)
+        except Exception as e:
+            print(f"    [skip] {cfg['ticker']}: {str(e)[:80]}", file=sys.stderr)
+    return out
+
+
 def main():
     print("Fetching feeds...", file=sys.stderr)
     all_items = []
@@ -627,12 +692,17 @@ def main():
     region_breakdown = Counter(it["region"] for it in top)
     publisher_breakdown = Counter(it["publisher"] for it in top)
 
+    # ── Market data ──
+    print("\nFetching markets...", file=sys.stderr)
+    markets = fetch_markets()
+
     payload = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "themes": {k: {"label": v["label"], "color": v["color"]} for k, v in THEMES.items()},
         "bubbles": bubbles,
         "stories": top,
         "links": bubble_links,
+        "markets": markets,
         "stats": {
             "total_stories": len(top),
             "total_bubbles": len(bubbles),
