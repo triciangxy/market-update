@@ -2,8 +2,8 @@ name: Daily News Refresh
 
 on:
   schedule:
-    # Runs every day at 09:00, 15:00, and 21:00 UTC — covers all three trading sessions
-    - cron: '0 9,15,21 * * *'
+    # Runs daily at 23:30 UTC = 07:30 SGT (Singapore Standard Time)
+    - cron: '30 23 * * *'
   workflow_dispatch:  # Allow manual trigger from Actions tab
 
 permissions:
@@ -21,13 +21,12 @@ jobs:
           python-version: '3.11'
 
       - name: Install dependencies
-        run: pip install feedparser
+        run: pip install feedparser yfinance
 
       - name: Fetch news and rebuild data.json
         env:
           # Optional: add ANTHROPIC_API_KEY as a repo secret to enable
-          # semantic re-classification on top stories. Without it, the regex
-          # classifier is used (works fine, just less precise on edge cases).
+          # semantic re-classification on top stories.
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: python build.py
 
