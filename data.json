@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-11T00:56:40.282423+00:00",
+  "generated_at": "2026-07-12T01:03:51.938012+00:00",
   "themes": {
     "ai": {
       "label": "AI",
@@ -32,24 +32,26 @@
       "label": "Consumer Tech",
       "parent": "tech",
       "color": "#5cd4e3",
-      "count": 16,
+      "count": 18,
       "story_ids": [
-        "afa92cbdc65d",
+        "c8135fb39dae",
+        "26cb7efda00c",
+        "a67ea5c71da9",
+        "90669e436253",
+        "674a04a735b4",
+        "cf73f4faf5ee",
+        "5c6cddce2c04",
+        "fcdcb6facf55",
+        "4e6b8272a4d3",
+        "178b5aac4537",
         "af6ea921da6a",
-        "d62499f9a143",
-        "060fd23ca0ee",
-        "56047bcf8c1c",
-        "bedb2177c218",
-        "a07a1c2ec3da",
-        "de240b3735d4",
-        "839ed33ceb86",
-        "586c24d097c0",
+        "0b004b54fd9c",
         "edb1e9c5dab6",
-        "0eefd6c36b5d",
-        "d6e4193a8b53",
-        "96ecedd743c4",
-        "030b1cf8270f",
-        "36fb31c25827"
+        "7b6828468951",
+        "e2804803808a",
+        "de5b181bfabe",
+        "a7837c44134f",
+        "8b499e2e2b42"
       ]
     },
     {
@@ -57,22 +59,41 @@
       "label": "Iran War",
       "parent": "geopolitics",
       "color": "#ff9558",
-      "count": 14,
+      "count": 16,
       "story_ids": [
-        "5b4e53e881b6",
+        "06425204f679",
+        "2a4e066b448b",
+        "cdbcd8f4b1db",
+        "10adb29bf558",
+        "9d77a08f7e7e",
+        "ce1ab8e34385",
+        "59e039ec5d52",
+        "6ba8139b3726",
+        "aa5dc9af0c68",
+        "7ad9e80d990a",
         "fe5545e23657",
-        "e61eb4d5773e",
-        "5bd3bdbe7f9e",
-        "6579a1e713c0",
         "9ba974ef5d12",
-        "45981efbb529",
-        "67262c5e1290",
-        "95bfe054c002",
-        "902fe7f67b8c",
-        "f3bfdd1eb17d",
-        "c62d36da1fae",
-        "f7acd34f874b",
-        "d00d5b6b5806"
+        "eee0cb46e97f",
+        "6579a1e713c0",
+        "3ce02b9bf84a",
+        "9155d7c4d36f"
+      ]
+    },
+    {
+      "id": "ai_models",
+      "label": "Foundation Models",
+      "parent": "ai",
+      "color": "#b88aff",
+      "count": 8,
+      "story_ids": [
+        "41c27c0e8512",
+        "018ce241efba",
+        "289565cb4ba9",
+        "25a110455984",
+        "5ba9f195296a",
+        "b73aa230fd0c",
+        "761ca83f990b",
+        "7335be5da56d"
       ]
     },
     {
@@ -80,64 +101,31 @@
       "label": "Other AI",
       "parent": "ai",
       "color": "#b88aff",
-      "count": 11,
+      "count": 7,
       "story_ids": [
-        "9a81a2670cda",
-        "4a325dbe048a",
-        "2f2eeb30ba02",
-        "66fe142a8a52",
-        "897dcba59098",
-        "c1819676e726",
-        "321c694f7e33",
-        "a4b75285cf4d",
-        "8fbc7ca6c764",
-        "c3a790e23740",
-        "50e82c46b2d7"
+        "46ef09c5b48a",
+        "45e447a800a0",
+        "df86999767e3",
+        "61e28aa69a14",
+        "e9e339ba2141",
+        "c458f8014965",
+        "5a572b9be771"
       ]
     },
     {
-      "id": "ukraine_russia",
-      "label": "Ukraine-Russia",
-      "parent": "geopolitics",
-      "color": "#ff9558",
-      "count": 6,
+      "id": "ai_chips",
+      "label": "AI Chips",
+      "parent": "ai",
+      "color": "#b88aff",
+      "count": 7,
       "story_ids": [
-        "1570a4f080ae",
-        "9222ac69c955",
-        "dc1afe5fc9f1",
-        "eeb03e21a7f3",
-        "252af1626c3d",
-        "8c92c2cf6cda"
-      ]
-    },
-    {
-      "id": "rates_other",
-      "label": "Other Credit & Rates",
-      "parent": "rates",
-      "color": "#6fa8ff",
-      "count": 6,
-      "story_ids": [
-        "ce913bff5a1d",
-        "c01b735dccbd",
-        "b538e12207e7",
-        "4c27addadf26",
-        "1aca8c624c9e",
-        "b58604765cff"
-      ]
-    },
-    {
-      "id": "sustainability_other",
-      "label": "Other Sustainability",
-      "parent": "sustainability",
-      "color": "#4ade80",
-      "count": 6,
-      "story_ids": [
-        "eb90b6f8d8de",
-        "0c2b67c83f55",
-        "0983b925d074",
-        "abe77ce76725",
-        "e2ba7094384b",
-        "5c67501a3a25"
+        "466d55e5220c",
+        "94433d1ec6d8",
+        "0bd162a80b48",
+        "99f66fd8a2ec",
+        "58c65c002d89",
+        "1e9b9178bc75",
+        "71a5a28962f5"
       ]
     },
     {
@@ -147,40 +135,26 @@
       "color": "#ff6b9d",
       "count": 6,
       "story_ids": [
-        "29dbce6f693c",
+        "a13ae8f2edd4",
+        "78dc7363ca41",
+        "6a36d6ef6841",
+        "77967c9d34c5",
         "1c5d80eb84e2",
-        "249afcb9d092",
-        "281936898c4d",
-        "15a1cf710bb4",
-        "5f75524ac4ae"
+        "249afcb9d092"
       ]
     },
     {
-      "id": "ai_models",
-      "label": "Foundation Models",
-      "parent": "ai",
-      "color": "#b88aff",
+      "id": "sustainability_other",
+      "label": "Other Sustainability",
+      "parent": "sustainability",
+      "color": "#4ade80",
       "count": 5,
       "story_ids": [
-        "b73aa230fd0c",
-        "761ca83f990b",
-        "25a110455984",
-        "7335be5da56d",
-        "2a21785006b4"
-      ]
-    },
-    {
-      "id": "ai_chips",
-      "label": "AI Chips",
-      "parent": "ai",
-      "color": "#b88aff",
-      "count": 5,
-      "story_ids": [
-        "0bd162a80b48",
-        "58c65c002d89",
-        "1e9b9178bc75",
-        "71a5a28962f5",
-        "c6af4bb729a4"
+        "e635d557d75d",
+        "a615b561e1f5",
+        "0c2b67c83f55",
+        "0983b925d074",
+        "5c67501a3a25"
       ]
     },
     {
@@ -188,74 +162,50 @@
       "label": "Crypto",
       "parent": "tech",
       "color": "#5cd4e3",
-      "count": 5,
-      "story_ids": [
-        "6571c4098f94",
-        "e153db3bff20",
-        "3249947fb667",
-        "2822a07100ea",
-        "6cc52271cd1a"
-      ]
-    },
-    {
-      "id": "ai_infra",
-      "label": "AI Infra",
-      "parent": "ai",
-      "color": "#b88aff",
       "count": 4,
       "story_ids": [
-        "fed47d649725",
-        "756e8135347a",
-        "07e05c9a7e37",
-        "979800befcd4"
+        "d2f9661a2087",
+        "2bc0330738ba",
+        "6571c4098f94",
+        "3249947fb667"
       ]
     },
     {
-      "id": "fed",
-      "label": "Fed",
+      "id": "ev_transport",
+      "label": "EVs",
+      "parent": "sustainability",
+      "color": "#4ade80",
+      "count": 4,
+      "story_ids": [
+        "9a6f0a4fced5",
+        "e098bdc47321",
+        "86231c7aea9d",
+        "81d095cd0323"
+      ]
+    },
+    {
+      "id": "credit",
+      "label": "Credit",
       "parent": "rates",
       "color": "#6fa8ff",
       "count": 4,
       "story_ids": [
-        "9a8c141ed845",
-        "3c49da9d3fa3",
-        "7d7af9cdb27f",
-        "52c221f9843e"
+        "d81ba1f99d1e",
+        "192baee8cb5f",
+        "56c9ec837643",
+        "6849fc636c26"
       ]
     },
     {
-      "id": "tech_other",
-      "label": "Other Tech",
-      "parent": "tech",
-      "color": "#5cd4e3",
-      "count": 3,
-      "story_ids": [
-        "cfd1ef5f618c",
-        "36782dbeac75",
-        "0ea27f5c6a32"
-      ]
-    },
-    {
-      "id": "macro_other",
-      "label": "Other Macro",
-      "parent": "macro",
-      "color": "#ff6b9d",
-      "count": 3,
-      "story_ids": [
-        "d17b304b4a81",
-        "4bf34a4df373",
-        "27f3ac3a508e"
-      ]
-    },
-    {
-      "id": "tariffs",
-      "label": "Tariffs & Trade",
+      "id": "ukraine_russia",
+      "label": "Ukraine-Russia",
       "parent": "geopolitics",
       "color": "#ff9558",
-      "count": 2,
+      "count": 3,
       "story_ids": [
-        "2438b3ba2d79",
-        "cc8bdb334681"
+        "ac89394e9468",
+        "e07cd2a08fe8",
+        "983621edc76b"
       ]
     },
     {
@@ -263,10 +213,35 @@
       "label": "Other Geopolitics",
       "parent": "geopolitics",
       "color": "#ff9558",
-      "count": 2,
+      "count": 3,
       "story_ids": [
-        "769527bc0549",
-        "af6b6272397b"
+        "eb92b252d30f",
+        "39bc8c379b88",
+        "769527bc0549"
+      ]
+    },
+    {
+      "id": "rates_other",
+      "label": "Other Credit & Rates",
+      "parent": "rates",
+      "color": "#6fa8ff",
+      "count": 3,
+      "story_ids": [
+        "5c51a6b6f14d",
+        "ce913bff5a1d",
+        "b538e12207e7"
+      ]
+    },
+    {
+      "id": "ai_infra",
+      "label": "AI Infra",
+      "parent": "ai",
+      "color": "#b88aff",
+      "count": 3,
+      "story_ids": [
+        "fed47d649725",
+        "581c4fa98000",
+        "a0dcbc2aa694"
       ]
     },
     {
@@ -274,9 +249,53 @@
       "label": "Elections",
       "parent": "geopolitics",
       "color": "#ff9558",
+      "count": 2,
+      "story_ids": [
+        "609eb92634d5",
+        "a41d0a2c2a40"
+      ]
+    },
+    {
+      "id": "fed",
+      "label": "Fed",
+      "parent": "rates",
+      "color": "#6fa8ff",
+      "count": 2,
+      "story_ids": [
+        "10fe789461ca",
+        "2ad1b923890b"
+      ]
+    },
+    {
+      "id": "climate",
+      "label": "Climate Policy",
+      "parent": "sustainability",
+      "color": "#4ade80",
+      "count": 2,
+      "story_ids": [
+        "2c841f78b1df",
+        "951eb6a047c9"
+      ]
+    },
+    {
+      "id": "tech_other",
+      "label": "Other Tech",
+      "parent": "tech",
+      "color": "#5cd4e3",
+      "count": 2,
+      "story_ids": [
+        "cfd1ef5f618c",
+        "36782dbeac75"
+      ]
+    },
+    {
+      "id": "tariffs",
+      "label": "Tariffs & Trade",
+      "parent": "geopolitics",
+      "color": "#ff9558",
       "count": 1,
       "story_ids": [
-        "a41d0a2c2a40"
+        "2438b3ba2d79"
       ]
     },
     {
@@ -290,16 +309,6 @@
       ]
     },
     {
-      "id": "renewables",
-      "label": "Renewables",
-      "parent": "sustainability",
-      "color": "#4ade80",
-      "count": 1,
-      "story_ids": [
-        "16ff3c0c19d4"
-      ]
-    },
-    {
       "id": "treasuries",
       "label": "Treasuries",
       "parent": "rates",
@@ -310,43 +319,13 @@
       ]
     },
     {
-      "id": "cyber",
-      "label": "Cyber",
-      "parent": "tech",
-      "color": "#5cd4e3",
-      "count": 1,
-      "story_ids": [
-        "d33271efb1c2"
-      ]
-    },
-    {
-      "id": "ecb_boe",
-      "label": "ECB & BoE",
-      "parent": "rates",
-      "color": "#6fa8ff",
-      "count": 1,
-      "story_ids": [
-        "7992a7425dd0"
-      ]
-    },
-    {
-      "id": "credit",
-      "label": "Credit",
-      "parent": "rates",
-      "color": "#6fa8ff",
-      "count": 1,
-      "story_ids": [
-        "96221d257e32"
-      ]
-    },
-    {
-      "id": "growth_gdp",
-      "label": "Growth & GDP",
+      "id": "macro_other",
+      "label": "Other Macro",
       "parent": "macro",
       "color": "#ff6b9d",
       "count": 1,
       "story_ids": [
-        "600ff9bf8d85"
+        "27f3ac3a508e"
       ]
     },
     {
@@ -358,19 +337,564 @@
       "story_ids": [
         "573dc32040bc"
       ]
-    },
-    {
-      "id": "ev_transport",
-      "label": "EVs",
-      "parent": "sustainability",
-      "color": "#4ade80",
-      "count": 1,
-      "story_ids": [
-        "81d095cd0323"
-      ]
     }
   ],
   "stories": [
+    {
+      "id": "06425204f679",
+      "title": "US launches more strikes after Iran declares Strait of Hormuz closed",
+      "summary": "IRGC hits commercial ship transiting through waterway, with Centcom saying a crew member was missing from vessel",
+      "link": "https://www.ft.com/content/6b6c23e9-f24e-4c3e-bb1a-e5cb6860008d",
+      "publisher": "FT",
+      "feed": "FT Home",
+      "pub_iso": "2026-07-12T00:34:31+00:00",
+      "pub_ts": 1783816471.0,
+      "theme": "geopolitics",
+      "sub_theme": "iran_war",
+      "theme_score": 6,
+      "region": "us",
+      "impact": 9
+    },
+    {
+      "id": "2a4e066b448b",
+      "title": "US Launches Fresh Iran Strikes After Tehran Closes Hormuz",
+      "summary": "The US launched its third round of strikes on Iran this week as Tehran declared that it’s closing the Strait of Hormuz “until further notice.”",
+      "link": "https://www.bloomberg.com/news/articles/2026-07-11/iran-declares-strait-of-hormuz-closed-until-further-notice",
+      "publisher": "Bloomberg",
+      "feed": "Bloomberg Pol",
+      "pub_iso": "2026-07-11T23:25:41+00:00",
+      "pub_ts": 1783812341.0,
+      "theme": "geopolitics",
+      "sub_theme": "iran_war",
+      "theme_score": 6,
+      "region": "us",
+      "impact": 9
+    },
+    {
+      "id": "cdbcd8f4b1db",
+      "title": "Trump threatens to 'decimate' Iran if it tries to kill him, as Treasury sanctions alleged Iranian financier",
+      "summary": "Trump says 1,000 missiles are \"locked and loaded\" and will hit Iran if it carries out its threats to assassinate the U.S. president.",
+      "link": "https://www.cnbc.com/2026/07/11/trump-threat.html",
+      "publisher": "CNBC",
+      "feed": "CNBC Top",
+      "pub_iso": "2026-07-11T22:58:53+00:00",
+      "pub_ts": 1783810733.0,
+      "theme": "geopolitics",
+      "sub_theme": "iran_war",
+      "theme_score": 6,
+      "region": "us",
+      "impact": 9
+    },
+    {
+      "id": "d2f9661a2087",
+      "title": "Christopher Harborne suffered serious medical issues while donating £12mn to Reform UK",
+      "summary": "Thailand-based crypto billionaire paused US lawsuit for nearly a year until January 2026",
+      "link": "https://www.ft.com/content/b5b32b7e-7d4a-448a-b7f7-ebdc1533c6a9",
+      "publisher": "FT",
+      "feed": "FT World",
+      "pub_iso": "2026-07-11T17:16:11+00:00",
+      "pub_ts": 1783790171.0,
+      "theme": "tech",
+      "sub_theme": "crypto",
+      "theme_score": 7,
+      "region": "us",
+      "impact": 8
+    },
+    {
+      "id": "46ef09c5b48a",
+      "title": "The volatile AI trade marched higher, but oil kept Wall Street on edge last week",
+      "summary": "Chip stocks had a wild but strong week. Meta led our portfolio higher.",
+      "link": "https://www.cnbc.com/2026/07/11/the-volatile-ai-rally-marched-higher-but-oil-kept-wall-street-on-edge-last-week.html",
+      "publisher": "CNBC",
+      "feed": "CNBC Top",
+      "pub_iso": "2026-07-11T16:25:58+00:00",
+      "pub_ts": 1783787158.0,
+      "theme": "ai",
+      "sub_theme": null,
+      "theme_score": 7,
+      "region": "us",
+      "impact": 8
+    },
+    {
+      "id": "10adb29bf558",
+      "title": "US Iran Talks Face Persistent Impasse",
+      "summary": "Bloomberg Economics analysts Becca Wasser and Dina Esfandiary say the US and Iran remain far apart on key issues, with intermittent strikes and negotiations likely to define the conflict for the foreseeable future. They say technical talks on Iran's nuclear program are a constructive step, but disputes over the Strait of Hormuz, sanctions and implementation of the memorandum of understanding conti",
+      "link": "https://www.bloomberg.com/news/videos/2026-07-11/us-iran-talks-face-persistent-impasse-video",
+      "publisher": "Bloomberg",
+      "feed": "Bloomberg Mkts",
+      "pub_iso": "2026-07-11T15:09:55+00:00",
+      "pub_ts": 1783782595.0,
+      "theme": "geopolitics",
+      "sub_theme": "iran_war",
+      "theme_score": 11,
+      "region": "us",
+      "impact": 8
+    },
+    {
+      "id": "41c27c0e8512",
+      "title": "These underperforming trades could yield big returns over next six months",
+      "summary": "ETF Action's Mike Akins is encouraging investors to boost exposure to groups that underperformed compared with major artificial intelligence stocks.",
+      "link": "https://www.cnbc.com/2026/07/11/mag-7-and-software-could-boost-portfolio-in-second-half-etf-action.html",
+      "publisher": "CNBC",
+      "feed": "CNBC Top",
+      "pub_iso": "2026-07-11T15:00:01+00:00",
+      "pub_ts": 1783782001.0,
+      "theme": "ai",
+      "sub_theme": "ai_models",
+      "theme_score": 7,
+      "region": "us",
+      "impact": 8
+    },
+    {
+      "id": "018ce241efba",
+      "title": "Apple Sues OpenAI Over AI Talent Fight",
+      "summary": "Bloomberg Tech host Ed Ludlow says Apple's lawsuit against OpenAI reflects an intensifying battle for AI talent and hardware leadership, with Apple alleging former employees improperly took trade secrets as OpenAI expands its device ambitions. He also says SK Hynix expects AI memory demand to outpace supply, plans to increase US investment beyond $35 billion, and sees the next test for the AI boom",
+      "link": "https://www.bloomberg.com/news/videos/2026-07-11/apple-sues-openai-over-ai-talent-fight-video",
+      "publisher": "Bloomberg",
+      "feed": "Bloomberg Tech",
+      "pub_iso": "2026-07-11T14:37:15+00:00",
+      "pub_ts": 1783780635.0,
+      "theme": "ai",
+      "sub_theme": "ai_models",
+      "theme_score": 8,
+      "region": "us",
+      "impact": 8
+    },
+    {
+      "id": "9d77a08f7e7e",
+      "title": "Hormuz Reopening Faces Costly Hurdles",
+      "summary": "Senior Fellow at the Council on Foreign Relations Clara Gillespie says Gulf energy flows face an uncertain recovery as producers work to clear ships, bring in tankers, restart halted output and repair damage to refineries, LNG facilities and ports. She says the Strait of Hormuz remains unstable, with shipping still below prewar levels and US pressure on Iran complicating efforts to restore safe pa",
+      "link": "https://www.bloomberg.com/news/videos/2026-07-11/hormuz-reopening-faces-costly-hurdles-video",
+      "publisher": "Bloomberg",
+      "feed": "Bloomberg Mkts",
+      "pub_iso": "2026-07-11T13:57:43+00:00",
+      "pub_ts": 1783778263.0,
+      "theme": "geopolitics",
+      "sub_theme": "iran_war",
+      "theme_score": 8,
+      "region": "us",
+      "impact": 8
+    },
+    {
+      "id": "ce1ab8e34385",
+      "title": "Hormuz Dispute Clouds US Iran Diplomacy",
+      "summary": "Bloomberg News Middle East reporter Dan Williams says negotiations between the US and Iran remain focused on securing freedom of navigation through the Strait of Hormuz, even as President Donald Trump's escalating rhetoric underscores the fragile state of the ceasefire. Williams says Iran's leadership remains opaque, questioned claims that recent attacks on commercial shipping reflected a command ",
+      "link": "https://www.bloomberg.com/news/videos/2026-07-11/hormuz-dispute-clouds-us-iran-diplomacy-video",
+      "publisher": "Bloomberg",
+      "feed": "Bloomberg Mkts",
+      "pub_iso": "2026-07-11T13:57:06+00:00",
+      "pub_ts": 1783778226.0,
+      "theme": "geopolitics",
+      "sub_theme": "iran_war",
+      "theme_score": 8,
+      "region": "us",
+      "impact": 8
+    },
+    {
+      "id": "e635d557d75d",
+      "title": "China’s developers eagerly line up to offer commercial-property Reits amid recovery signs",
+      "summary": "China’s first four exchange-traded real estate investment trusts (Reits) backed by commercial properties have opened the floodgates for fundraising by office developers, shopping centre builders and hotel owners amid investors’ heightened hopes for a market recovery. According to data provider Wind Information, as of June 24 the pipelines of the Shanghai and Shenzhen stock exchanges had 19 listing",
+      "link": "https://www.scmp.com/business/banking-finance/article/3360156/chinas-developers-eagerly-line-offer-commercial-property-reits-amid-recovery-signs?utm_source=rss_feed",
+      "publisher": "SCMP",
+      "feed": "SCMP Business",
+      "pub_iso": "2026-07-12T01:00:07+00:00",
+      "pub_ts": 1783818007.0,
+      "theme": "sustainability",
+      "sub_theme": null,
+      "theme_score": 3,
+      "region": "asia",
+      "impact": 7
+    },
+    {
+      "id": "c8135fb39dae",
+      "title": "A Nuclear Debut in Bangladesh Tests Developing World’s Atomic Shift",
+      "summary": "A new, $13 billion Russian-built plant could generate 15% of the country's electricity.",
+      "link": "https://www.bloomberg.com/news/features/2026-07-12/bangladesh-s-nuclear-debut-tests-developing-world-s-atomic-ambitions",
+      "publisher": "Bloomberg",
+      "feed": "Bloomberg Green",
+      "pub_iso": "2026-07-12T00:00:20+00:00",
+      "pub_ts": 1783814420.0,
+      "theme": "tech",
+      "sub_theme": "consumer_tech",
+      "theme_score": 3,
+      "region": "us",
+      "impact": 7
+    },
+    {
+      "id": "26cb7efda00c",
+      "title": "UK police make new arrest in Ann Widdecombe murder case",
+      "summary": "Detention of 28-year-old man came hours after the release of a different suspect in the death of former Conservative minister",
+      "link": "https://www.ft.com/content/081cae25-024b-4965-9b7b-450adaf1216c",
+      "publisher": "FT",
+      "feed": "FT World",
+      "pub_iso": "2026-07-11T23:22:52+00:00",
+      "pub_ts": 1783812172.0,
+      "theme": "tech",
+      "sub_theme": "consumer_tech",
+      "theme_score": 3,
+      "region": "eu",
+      "impact": 7
+    },
+    {
+      "id": "a13ae8f2edd4",
+      "title": "Warsh and US Inflation Will Set Tone for July Fed Decision",
+      "summary": "Kevin Warsh is about to make his first appearance before Congress as Federal Reserve chairman, and during two days of testimony he’ll have new US inflation data to parse with lawmakers.",
+      "link": "https://www.bloomberg.com/news/articles/2026-07-11/warsh-and-us-inflation-will-set-tone-for-july-fed-decision",
+      "publisher": "Bloomberg",
+      "feed": "Bloomberg Mkts",
+      "pub_iso": "2026-07-11T20:00:00+00:00",
+      "pub_ts": 1783800000.0,
+      "theme": "macro",
+      "sub_theme": "inflation",
+      "theme_score": 3,
+      "region": "us",
+      "impact": 7
+    },
+    {
+      "id": "a67ea5c71da9",
+      "title": "McConnell’s Absence Prompts New Beshear Demand for Health Update",
+      "summary": "Kentucky Governor Andy Beshear, a Democrat, renewed his call for Mitch McConnell, the senior Republican senator from his state, to release information about his health after he was hospitalized on June 14 and hasn’t been seen publicly since.",
+      "link": "https://www.bloomberg.com/news/articles/2026-07-11/mcconnell-s-absence-prompts-new-beshear-demand-for-health-update",
+      "publisher": "Bloomberg",
+      "feed": "Bloomberg Pol",
+      "pub_iso": "2026-07-11T19:06:41+00:00",
+      "pub_ts": 1783796801.0,
+      "theme": "tech",
+      "sub_theme": "consumer_tech",
+      "theme_score": 3,
+      "region": "us",
+      "impact": 7
+    },
+    {
+      "id": "ac89394e9468",
+      "title": "Patriot Supply Strains Shape Ukraine Aid",
+      "summary": "Axios defense reporter Colin Demarest says President Donald Trump's proposal to let Ukraine produce Patriot interceptors faces significant manufacturing, licensing and technology hurdles, making it unlikely to address Kyiv's immediate air defense needs. He says shortages of advanced interceptors continue to raise broader questions about defense industrial capacity, while Ukraine's rapid innovation",
+      "link": "https://www.bloomberg.com/news/videos/2026-07-11/patriot-supply-strains-shape-ukraine-aid-video",
+      "publisher": "Bloomberg",
+      "feed": "Bloomberg Mkts",
+      "pub_iso": "2026-07-11T16:58:19+00:00",
+      "pub_ts": 1783789099.0,
+      "theme": "geopolitics",
+      "sub_theme": "ukraine_russia",
+      "theme_score": 5,
+      "region": "us",
+      "impact": 7
+    },
+    {
+      "id": "59e039ec5d52",
+      "title": "Bloomberg This Weekend | Trump Threats to “Decimate” Iran, Trade Secret Lawsuit",
+      "summary": "The news doesn’t stop when markets close. Hosts David Gura, Christina Ruffini and Lisa Mateo bring clarity, context and a bit of humor to the weekend’s biggest headlines, LIVE from New York. Joined by Adm. Daryl Caudle, US Dept of War Chief of Naval Operations, Clara Gillespie, Council on Foreign Relations Sr. Fellow for Climate & Energy, and Colin Demarest, Future of Defense Reporter for Axios. (",
+      "link": "https://www.bloomberg.com/news/videos/2026-07-11/bloomberg-this-weekend-7-11-2026-video",
+      "publisher": "Bloomberg",
+      "feed": "Bloomberg Pol",
+      "pub_iso": "2026-07-11T16:29:24+00:00",
+      "pub_ts": 1783787364.0,
+      "theme": "geopolitics",
+      "sub_theme": "iran_war",
+      "theme_score": 5,
+      "region": "us",
+      "impact": 7
+    },
+    {
+      "id": "609eb92634d5",
+      "title": "Malaysia’s Ex-Ruling Party Wins Johor Vote in Blow to Anwar",
+      "summary": "Malaysia’s former ruling party Barisan Nasional emerged as the comfortable winner of Johor state assembly elections on Saturday, delivering another setback to Prime Minister Anwar Ibrahim’s Pakatan Harapan coalition following its poor local election showing in Sabah last year.",
+      "link": "https://www.bloomberg.com/news/articles/2026-07-11/malaysia-s-ex-ruling-party-barisan-nasional-set-to-win-johor-in-blow-to-anwar",
+      "publisher": "Bloomberg",
+      "feed": "Bloomberg Pol",
+      "pub_iso": "2026-07-11T14:54:11+00:00",
+      "pub_ts": 1783781651.0,
+      "theme": "geopolitics",
+      "sub_theme": "elections",
+      "theme_score": 4,
+      "region": "us",
+      "impact": 7
+    },
+    {
+      "id": "6ba8139b3726",
+      "title": "Iran Rejects US Talks as Trump Issues Fresh Threat to Tehran",
+      "summary": "Iran rejected US President Donald Trump’s contention that peace talks could continue without a ceasefire, saying Washington must meet Tehran’s conditions for resolving transit issues through the Strait of Hormuz and normalizing its oil exports.",
+      "link": "https://www.bloomberg.com/news/articles/2026-07-11/iran-rejects-us-talks-unless-washington-meets-its-conditions",
+      "publisher": "Bloomberg",
+      "feed": "Bloomberg Pol",
+      "pub_iso": "2026-07-11T12:31:15+00:00",
+      "pub_ts": 1783773075.0,
+      "theme": "geopolitics",
+      "sub_theme": "iran_war",
+      "theme_score": 8,
+      "region": "us",
+      "impact": 7
+    },
+    {
+      "id": "e07cd2a08fe8",
+      "title": "McCaul Backs Deeper US Ukraine Defense Ties",
+      "summary": "Rep. Michael McCaul says Ukraine is gaining momentum on the battlefield but urgently needs more Patriot interceptors and stronger air defenses to counter Russia's escalating missile attacks. He urges deeper US-Ukraine defense cooperation, including licensed Patriot production and joint drone development, while arguing sustained military pressure offers the best path to negotiations with Russia. (S",
+      "link": "https://www.bloomberg.com/news/videos/2026-07-11/mccaul-backs-deeper-us-ukraine-defense-ties-video",
+      "publisher": "Bloomberg",
+      "feed": "Bloomberg Mkts",
+      "pub_iso": "2026-07-11T15:45:10+00:00",
+      "pub_ts": 1783784710.0,
+      "theme": "geopolitics",
+      "sub_theme": "ukraine_russia",
+      "theme_score": 3,
+      "region": "us",
+      "impact": 6
+    },
+    {
+      "id": "45e447a800a0",
+      "title": "How AI rebrands fail to deliver a lasting share price boost",
+      "summary": "Most of the groups that pivoted have not sustained their valuation gains, an FT analysis has found",
+      "link": "https://www.ft.com/content/07fa9ce9-ac21-484c-a57c-078b0bb0fd3b",
+      "publisher": "FT",
+      "feed": "FT Home",
+      "pub_iso": "2026-07-11T15:41:24+00:00",
+      "pub_ts": 1783784484.0,
+      "theme": "ai",
+      "sub_theme": null,
+      "theme_score": 3,
+      "region": "us",
+      "impact": 6
+    },
+    {
+      "id": "10fe789461ca",
+      "title": "Navy Chief Says US Needs More Warships",
+      "summary": "Chief of Naval Operations Adm. Daryl Caudle says the US Navy needs a larger fleet, faster shipbuilding and expanded munitions production to meet growing global demands while sustaining readiness across multiple theaters. He says the service remains prepared despite heavy operational commitments, points to record recruiting and retention, and argues rebuilding the US industrial base is critical to ",
+      "link": "https://www.bloomberg.com/news/videos/2026-07-11/navy-chief-says-us-needs-more-warships-video",
+      "publisher": "Bloomberg",
+      "feed": "Bloomberg Mkts",
+      "pub_iso": "2026-07-11T15:21:16+00:00",
+      "pub_ts": 1783783276.0,
+      "theme": "rates",
+      "sub_theme": "fed",
+      "theme_score": 3,
+      "region": "us",
+      "impact": 6
+    },
+    {
+      "id": "983621edc76b",
+      "title": "Ukraine Building Patriots Is in Lockheed’s Interest, McCaul Says",
+      "summary": "US defense contractors including Lockheed Martin Corp. have every interest to let Ukraine manufacture Patriot missile interceptors after President Donald Trump pledged the US would grant a license for the weapons system, a senior Republican lawmaker said.",
+      "link": "https://www.bloomberg.com/news/articles/2026-07-11/ukraine-building-patriots-is-in-lockheed-s-interest-mccaul-says",
+      "publisher": "Bloomberg",
+      "feed": "Bloomberg Pol",
+      "pub_iso": "2026-07-11T14:42:51+00:00",
+      "pub_ts": 1783780971.0,
+      "theme": "geopolitics",
+      "sub_theme": "ukraine_russia",
+      "theme_score": 3,
+      "region": "us",
+      "impact": 6
+    },
+    {
+      "id": "a615b561e1f5",
+      "title": "Another Brutal Summer Tests Arizona’s Decline in Heat-Linked Deaths",
+      "summary": "Maricopa County has made progress in preventing heat-related deaths. But another scorching summer and dwindling funding threaten that trend.",
+      "link": "https://www.bloomberg.com/news/articles/2026-07-11/arizona-s-maricopa-county-heat-death-prevention-faces-new-threat",
+      "publisher": "Bloomberg",
+      "feed": "Bloomberg Green",
+      "pub_iso": "2026-07-11T14:00:20+00:00",
+      "pub_ts": 1783778420.0,
+      "theme": "sustainability",
+      "sub_theme": null,
+      "theme_score": 3,
+      "region": "us",
+      "impact": 6
+    },
+    {
+      "id": "289565cb4ba9",
+      "title": "OpenAI Engineer’s ‘LOL’ Moment Set Stage for Legal Fight With Apple",
+      "summary": "When iPhone engineer Chang Liu quit for a job at OpenAI’s nascent hardware division, Apple Inc. says he left with more than just years of experience.",
+      "link": "https://www.bloomberg.com/news/articles/2026-07-11/openai-engineer-s-lol-moment-set-stage-for-legal-fight-with-apple",
+      "publisher": "Bloomberg",
+      "feed": "Bloomberg Tech",
+      "pub_iso": "2026-07-11T13:59:00+00:00",
+      "pub_ts": 1783778340.0,
+      "theme": "ai",
+      "sub_theme": "ai_models",
+      "theme_score": 3,
+      "region": "us",
+      "impact": 6
+    },
+    {
+      "id": "90669e436253",
+      "title": "While Musk's Neuralink drills into skulls, China's BrainCo bets the future of brain tech is wearable",
+      "summary": "Interest in brain-computer interfaces is rising as it promises to help people with compromised neural abilities.",
+      "link": "https://www.cnbc.com/2026/07/11/chinas-brainco-bets-on-wearable-brain-tech.html",
+      "publisher": "CNBC",
+      "feed": "CNBC Top",
+      "pub_iso": "2026-07-11T13:47:01+00:00",
+      "pub_ts": 1783777621.0,
+      "theme": "tech",
+      "sub_theme": "consumer_tech",
+      "theme_score": 3,
+      "region": "asia",
+      "impact": 6
+    },
+    {
+      "id": "78dc7363ca41",
+      "title": "Fuel Prices Are Slamming Consumers Even as Crude Crisis Fades",
+      "summary": "Prices for gasoline, diesel and jet fuel are rebounding even as crude oil eases, a rare divergence that’s swelling costs for peak-season travelers and threatening to undermine President Donald Trump’s pledge to quash inflation ahead of midterm elections.",
+      "link": "https://www.bloomberg.com/news/articles/2026-07-11/fuel-prices-are-slamming-consumers-even-as-crude-crisis-fades",
+      "publisher": "Bloomberg",
+      "feed": "Bloomberg Mkts",
+      "pub_iso": "2026-07-11T13:30:00+00:00",
+      "pub_ts": 1783776600.0,
+      "theme": "macro",
+      "sub_theme": "inflation",
+      "theme_score": 3,
+      "region": "us",
+      "impact": 6
+    },
+    {
+      "id": "674a04a735b4",
+      "title": "Berkshire Hathaway gains ground, but still trails the S&P 500 as '26 enters second half",
+      "summary": "With 2026 a bit more than half over, Berkshire Hathaway's B shares are down 1.8% year-to-date and 12.4 percentage points behind the S&P 500's 10.7% gain.",
+      "link": "https://www.cnbc.com/2026/07/11/berkshire-hathaway-gains-ground-but-still-trails-the-sp-500-as-26-enters-second-half.html",
+      "publisher": "CNBC",
+      "feed": "CNBC Top",
+      "pub_iso": "2026-07-11T13:07:41+00:00",
+      "pub_ts": 1783775261.0,
+      "theme": "tech",
+      "sub_theme": "consumer_tech",
+      "theme_score": 3,
+      "region": "us",
+      "impact": 6
+    },
+    {
+      "id": "cf73f4faf5ee",
+      "title": "From booksmaxxing to looksmaxxing: Why the viral trends concern some mental health experts",
+      "summary": "People are self-optimizing everything — protein, skincare, fitness — to such a degree that \"maxxing\" is one of social media's most popular suffixes.",
+      "link": "https://www.cnbc.com/2026/07/11/why-viral-maxxing-trends-concern-some-mental-health-experts.html",
+      "publisher": "CNBC",
+      "feed": "CNBC Top",
+      "pub_iso": "2026-07-11T13:05:01+00:00",
+      "pub_ts": 1783775101.0,
+      "theme": "tech",
+      "sub_theme": "consumer_tech",
+      "theme_score": 3,
+      "region": "us",
+      "impact": 6
+    },
+    {
+      "id": "eb92b252d30f",
+      "title": "Why Fox is ‘the most Disciplined’ Media Entertainment Company in the Streaming Era",
+      "summary": "Media veteran Michael Wolf discusses Allen & Company’s annual Sun Valley Conference and breaks down the mega deals that are reshaping the entertainment industry. He explains why free ad-supported content is the unsung winner of the streaming wars, and digs into the ways AI is changing the value of content. (Source: Bloomberg)",
+      "link": "https://www.bloomberg.com/news/videos/2026-07-11/michael-wolf-on-why-ai-is-changing-the-value-of-content-video",
+      "publisher": "Bloomberg",
+      "feed": "Bloomberg Tech",
+      "pub_iso": "2026-07-11T12:03:23+00:00",
+      "pub_ts": 1783771403.0,
+      "theme": "geopolitics",
+      "sub_theme": null,
+      "theme_score": 4,
+      "region": "us",
+      "impact": 6
+    },
+    {
+      "id": "aa5dc9af0c68",
+      "title": "China Tells Refiners to Keep Fuel Output High as Iran War Drags",
+      "summary": "China instructed some major refiners to keep fuel production high, according to people familiar with the matter, in an effort to protect domestic consumers as strikes in the Persian Gulf once again threaten oil shipments.",
+      "link": "https://www.bloomberg.com/news/articles/2026-07-11/china-tells-refiners-to-keep-fuel-output-high-as-iran-war-drags",
+      "publisher": "Bloomberg",
+      "feed": "Bloomberg Mkts",
+      "pub_iso": "2026-07-11T09:00:20+00:00",
+      "pub_ts": 1783760420.0,
+      "theme": "geopolitics",
+      "sub_theme": "iran_war",
+      "theme_score": 5,
+      "region": "asia",
+      "impact": 6
+    },
+    {
+      "id": "25a110455984",
+      "title": "Apple sues OpenAI alleging trade secret theft, says scheme was 'at every level'",
+      "summary": "The two companies entered into a high-profile partnership in 2024 when ChatGPT was integrated into the iPhone's operating system.",
+      "link": "https://www.cnbc.com/2026/07/10/apple-openai-lawsuit-trade-secrets.html",
+      "publisher": "CNBC",
+      "feed": "CNBC Top",
+      "pub_iso": "2026-07-11T04:09:20+00:00",
+      "pub_ts": 1783742960.0,
+      "theme": "ai",
+      "sub_theme": "ai_models",
+      "theme_score": 8,
+      "region": "us",
+      "impact": 6
+    },
+    {
+      "id": "df86999767e3",
+      "title": "Why the chips are down despite the AI boom",
+      "summary": "Some believe the boom-bust cycle in memory chips has ended — the market thinks otherwise",
+      "link": "https://www.ft.com/content/3990d688-f716-46d0-8508-0318265431f5",
+      "publisher": "FT",
+      "feed": "FT Markets",
+      "pub_iso": "2026-07-11T04:00:34+00:00",
+      "pub_ts": 1783742434.0,
+      "theme": "ai",
+      "sub_theme": null,
+      "theme_score": 7,
+      "region": "us",
+      "impact": 6
+    },
+    {
+      "id": "39bc8c379b88",
+      "title": "Xi Says China’s Backing for Kim and North Korea Won’t Change",
+      "summary": "President Xi Jinping said China’s commitment to its friendship with North Korea, support for Kim Jong Un’s leadership and determination to safeguard the two countries’ common interests “will not change,” Xinhua News Agency reported on Saturday.",
+      "link": "https://www.bloomberg.com/news/articles/2026-07-11/xi-says-china-s-backing-for-kim-and-north-korea-won-t-change",
+      "publisher": "Bloomberg",
+      "feed": "Bloomberg Mkts",
+      "pub_iso": "2026-07-11T03:19:32+00:00",
+      "pub_ts": 1783739972.0,
+      "theme": "geopolitics",
+      "sub_theme": null,
+      "theme_score": 8,
+      "region": "asia",
+      "impact": 6
+    },
+    {
+      "id": "466d55e5220c",
+      "title": "Expanding AI and chip firms push up rents in Beijing’s hi-tech district",
+      "summary": "Demand for Beijing’s grade-A office buildings increased in the first half of the year, with artificial intelligence and semiconductor companies making the Zhongguancun area a hot property at a time when office markets nationwide are still struggling. Home to the capital’s densest cluster of hi-tech firms, Zhongguancun was the only submarket to post rent growth in Beijing, China’s second-largest of",
+      "link": "https://www.scmp.com/business/china-business/article/3360154/expanding-ai-and-chip-firms-push-rents-beijings-hi-tech-district?utm_source=rss_feed",
+      "publisher": "SCMP",
+      "feed": "SCMP Business",
+      "pub_iso": "2026-07-11T03:00:14+00:00",
+      "pub_ts": 1783738814.0,
+      "theme": "ai",
+      "sub_theme": "ai_chips",
+      "theme_score": 7,
+      "region": "asia",
+      "impact": 6
+    },
+    {
+      "id": "5ba9f195296a",
+      "title": "OpenAI Safety Head Heidecke to Leave Firm After Reshuffle: Wired",
+      "summary": "OpenAI head of safety Johannes Heidecke is leaving the artificial intelligence company following a reorganization, according to Wired.",
+      "link": "https://www.bloomberg.com/news/articles/2026-07-11/openai-safety-head-heidecke-to-leave-firm-after-reshuffle-wired",
+      "publisher": "Bloomberg",
+      "feed": "Bloomberg Tech",
+      "pub_iso": "2026-07-11T02:15:21+00:00",
+      "pub_ts": 1783736121.0,
+      "theme": "ai",
+      "sub_theme": "ai_models",
+      "theme_score": 8,
+      "region": "us",
+      "impact": 6
+    },
+    {
+      "id": "94433d1ec6d8",
+      "title": "Star Market at 7: tech-centric stock exchange powers China’s innovation rise",
+      "summary": "President Xi Jinping gave investors a surprise in 2018 when he floated the idea of a tech-focused board on the Shanghai Stock Exchange (SSE). He also gave China a powerful asset, as the board – later dubbed the Star Market – has become a financial engine powering breakthroughs in frontier technologies including artificial intelligence, robotics and semiconductors. The Star Market, officially known",
+      "link": "https://www.scmp.com/business/china-business/article/3360094/star-market-7-tech-centric-stock-exchange-powers-chinas-innovation-rise?utm_source=rss_feed",
+      "publisher": "SCMP",
+      "feed": "SCMP Business",
+      "pub_iso": "2026-07-11T02:00:07+00:00",
+      "pub_ts": 1783735207.0,
+      "theme": "ai",
+      "sub_theme": "ai_chips",
+      "theme_score": 7,
+      "region": "asia",
+      "impact": 6
+    },
     {
       "id": "b73aa230fd0c",
       "title": "Apple Sues OpenAI for Trade Secret Theft",
@@ -384,7 +908,7 @@
       "sub_theme": "ai_models",
       "theme_score": 10,
       "region": "us",
-      "impact": 10
+      "impact": 6
     },
     {
       "id": "761ca83f990b",
@@ -399,37 +923,187 @@
       "sub_theme": "ai_models",
       "theme_score": 10,
       "region": "us",
-      "impact": 10
+      "impact": 6
     },
     {
-      "id": "25a110455984",
-      "title": "Apple sues OpenAI alleging trade secret theft, says scheme was 'at every level'",
-      "summary": "The two companies entered into a high-profile partnership in 2024 when ChatGPT was integrated into the iPhone's operating system.",
-      "link": "https://www.cnbc.com/2026/07/10/apple-openai-lawsuit-trade-secrets.html",
+      "id": "5c6cddce2c04",
+      "title": "Stocks Priced for ‘Sunshine and Rainbows’ Now Face Earnings Test",
+      "summary": "Wall Street is anticipating a near-record earnings season, but for investors a key question remains: Will it be enough to keep stock market bulls running?",
+      "link": "https://www.bloomberg.com/news/articles/2026-07-11/stocks-priced-for-sunshine-and-rainbows-now-face-earnings-test",
+      "publisher": "Bloomberg",
+      "feed": "Bloomberg Mkts",
+      "pub_iso": "2026-07-11T13:00:01+00:00",
+      "pub_ts": 1783774801.0,
+      "theme": "tech",
+      "sub_theme": "consumer_tech",
+      "theme_score": 3,
+      "region": "us",
+      "impact": 5
+    },
+    {
+      "id": "fcdcb6facf55",
+      "title": "The best states to live in for 2026: No. 1 has a six-year winning streak",
+      "summary": "Return to office mandates and a decline in remote work have companies looking more closely at the quality of life in the place where they establish offices.",
+      "link": "https://www.cnbc.com/2026/07/11/best-states-to-live-in-america-2026.html",
       "publisher": "CNBC",
       "feed": "CNBC Top",
-      "pub_iso": "2026-07-11T00:08:23+00:00",
-      "pub_ts": 1783728503.0,
-      "theme": "ai",
-      "sub_theme": "ai_models",
-      "theme_score": 8,
+      "pub_iso": "2026-07-11T13:00:01+00:00",
+      "pub_ts": 1783774801.0,
+      "theme": "tech",
+      "sub_theme": "consumer_tech",
+      "theme_score": 3,
       "region": "us",
-      "impact": 9
+      "impact": 5
     },
     {
-      "id": "5b4e53e881b6",
-      "title": "Trump says US has agreed to continue talks with Iran",
-      "summary": "President calls on Tehran to declare they will stop any attacks in the Strait of Hormuz",
-      "link": "https://www.ft.com/content/b04aea1d-cd15-4e4e-ac8e-d39be1f542a9",
+      "id": "5c51a6b6f14d",
+      "title": "Burnout, frustration and heartbreak: Amazon layoffs take their toll in saturated job market",
+      "summary": "In the eight-plus months since Amazon announced its most expansive job cuts ever, laid off workers have been thrust into an increasingly saturated labor market.",
+      "link": "https://www.cnbc.com/2026/07/11/burnout-frustration-and-heartbreak-amazon-layoffs-take-their-toll.html",
+      "publisher": "CNBC",
+      "feed": "CNBC Top",
+      "pub_iso": "2026-07-11T12:00:01+00:00",
+      "pub_ts": 1783771201.0,
+      "theme": "rates",
+      "sub_theme": null,
+      "theme_score": 3,
+      "region": "us",
+      "impact": 5
+    },
+    {
+      "id": "6a36d6ef6841",
+      "title": "Trump ups the pressure on US companies in drive to lower prices",
+      "summary": "Critics fear shift to ‘hyper-populist playbook’ as inflation lingers",
+      "link": "https://www.ft.com/content/3e3d18d8-d6c2-4846-93ad-67ea0aaa12a2",
       "publisher": "FT",
       "feed": "FT Home",
-      "pub_iso": "2026-07-10T23:43:33+00:00",
-      "pub_ts": 1783727013.0,
+      "pub_iso": "2026-07-11T11:00:08+00:00",
+      "pub_ts": 1783767608.0,
+      "theme": "macro",
+      "sub_theme": "inflation",
+      "theme_score": 3,
+      "region": "us",
+      "impact": 5
+    },
+    {
+      "id": "4e6b8272a4d3",
+      "title": "Marine Le Pen’s redemption story",
+      "summary": "Suspense over the far-right leader’s fate plays into her party’s hands",
+      "link": "https://www.ft.com/content/17c6d9ac-6793-4ef2-90c6-a6a3e9de9fc3",
+      "publisher": "FT",
+      "feed": "FT World",
+      "pub_iso": "2026-07-11T10:00:08+00:00",
+      "pub_ts": 1783764008.0,
+      "theme": "tech",
+      "sub_theme": "consumer_tech",
+      "theme_score": 3,
+      "region": "us",
+      "impact": 5
+    },
+    {
+      "id": "61e28aa69a14",
+      "title": "UK’s Reeves to Focus on AI Opportunities in Speech to City",
+      "summary": "Rachel Reeves heads to what’s likely to be her last City of London event next week, a final opportunity to defend her legacy after almost exactly two years as the UK’s first woman Chancellor of the Exchequer.",
+      "link": "https://www.bloomberg.com/news/articles/2026-07-11/uk-s-reeves-to-focus-on-ai-opportunities-in-speech-to-city",
+      "publisher": "Bloomberg",
+      "feed": "Bloomberg Pol",
+      "pub_iso": "2026-07-11T10:00:00+00:00",
+      "pub_ts": 1783764000.0,
+      "theme": "ai",
+      "sub_theme": null,
+      "theme_score": 3,
+      "region": "eu",
+      "impact": 5
+    },
+    {
+      "id": "77967c9d34c5",
+      "title": "UK inflation is not distributed equally",
+      "summary": "The poorest pay the most in an energy shock",
+      "link": "https://www.ft.com/content/8916354a-4c7c-4df6-8c9e-2303f883855d",
+      "publisher": "FT",
+      "feed": "FT Markets",
+      "pub_iso": "2026-07-11T09:30:08+00:00",
+      "pub_ts": 1783762208.0,
+      "theme": "macro",
+      "sub_theme": "inflation",
+      "theme_score": 3,
+      "region": "eu",
+      "impact": 5
+    },
+    {
+      "id": "9a6f0a4fced5",
+      "title": "BYD showcases battery, charging technology in 15,000km journey from Rome to Hong Kong",
+      "summary": "BYD, the world’s largest electric vehicle (EV) maker, has intensified efforts to promote its high-performance batteries and superfast charging technology around the world as it tests a car that it says boasts the world’s longest driving range in a journey from Rome to Hong Kong. A fleet of upgraded versions of the Z9GT, a car produced under BYD’s premium Denza brand, has been travelling across Eur",
+      "link": "https://www.scmp.com/business/china-evs/article/3360140/byd-showcases-battery-charging-technology-15000km-journey-rome-hong-kong?utm_source=rss_feed",
+      "publisher": "SCMP",
+      "feed": "SCMP Business",
+      "pub_iso": "2026-07-11T09:00:07+00:00",
+      "pub_ts": 1783760407.0,
+      "theme": "sustainability",
+      "sub_theme": "ev_transport",
+      "theme_score": 3,
+      "region": "eu",
+      "impact": 5
+    },
+    {
+      "id": "e098bdc47321",
+      "title": "Volkswagen China deliveries see 26% drop year on year to lowest point since 2010",
+      "summary": "Volkswagen Group’s deliveries in China slumped during the first half of 2026 to their lowest level in 16 years, as local electric vehicle (EV) brands further siphoned off buyers’ interest in petrol cars amid a slowing market. Through its three ventures with Chinese partners, the German car brand handed over a total of 971,000 units to customers in China between January and June, down 26.1 per cent",
+      "link": "https://www.scmp.com/business/china-business/article/3360214/volkswagen-china-deliveries-see-26-drop-year-year-lowest-point-2010?utm_source=rss_feed",
+      "publisher": "SCMP",
+      "feed": "SCMP Business",
+      "pub_iso": "2026-07-11T08:32:10+00:00",
+      "pub_ts": 1783758730.0,
+      "theme": "sustainability",
+      "sub_theme": "ev_transport",
+      "theme_score": 3,
+      "region": "asia",
+      "impact": 5
+    },
+    {
+      "id": "86231c7aea9d",
+      "title": "China Power Load Hits Early Record as Data, EV Demand Rises",
+      "summary": "China’s nationwide electricity load reached a record high for the first time this year on July 10, hitting 1.518 billion kilowatts, the National Energy Administration said in a statement posted on its official WeChat account Saturday.",
+      "link": "https://www.bloomberg.com/news/articles/2026-07-11/china-power-load-hits-early-record-as-data-ev-demand-rises",
+      "publisher": "Bloomberg",
+      "feed": "Bloomberg Mkts",
+      "pub_iso": "2026-07-11T07:29:13+00:00",
+      "pub_ts": 1783754953.0,
+      "theme": "sustainability",
+      "sub_theme": "ev_transport",
+      "theme_score": 3,
+      "region": "asia",
+      "impact": 5
+    },
+    {
+      "id": "7ad9e80d990a",
+      "title": "Trump Vows to Decimate Iran If It Carries Out Assassination Plot",
+      "summary": "President Donald Trump warned Iran that the US military would “completely decimate and destroy all areas” of the Islamic Republic if its leaders attempted or carried out his assassination.",
+      "link": "https://www.bloomberg.com/news/articles/2026-07-11/trump-vows-to-decimate-iran-if-it-carries-out-assassination-plot",
+      "publisher": "Bloomberg",
+      "feed": "Bloomberg Pol",
+      "pub_iso": "2026-07-11T04:25:30+00:00",
+      "pub_ts": 1783743930.0,
       "theme": "geopolitics",
       "sub_theme": "iran_war",
-      "theme_score": 6,
+      "theme_score": 5,
       "region": "us",
-      "impact": 9
+      "impact": 5
+    },
+    {
+      "id": "2c841f78b1df",
+      "title": "Sadiq Khan lobbies for Ed Miliband to become chancellor",
+      "summary": "Energy secretary wins support from London mayor but faces opposition from some Labour MPs over his net zero policies",
+      "link": "https://www.ft.com/content/b1881eb8-d342-42f5-b92e-c144c019b349",
+      "publisher": "FT",
+      "feed": "FT World",
+      "pub_iso": "2026-07-11T04:00:42+00:00",
+      "pub_ts": 1783742442.0,
+      "theme": "sustainability",
+      "sub_theme": "climate",
+      "theme_score": 5,
+      "region": "eu",
+      "impact": 5
     },
     {
       "id": "0bd162a80b48",
@@ -444,7 +1118,7 @@
       "sub_theme": "ai_chips",
       "theme_score": 7,
       "region": "us",
-      "impact": 9
+      "impact": 5
     },
     {
       "id": "fe5545e23657",
@@ -459,7 +1133,7 @@
       "sub_theme": "iran_war",
       "theme_score": 6,
       "region": "us",
-      "impact": 9
+      "impact": 5
     },
     {
       "id": "fed47d649725",
@@ -474,172 +1148,37 @@
       "sub_theme": "ai_infra",
       "theme_score": 7,
       "region": "us",
-      "impact": 9
+      "impact": 5
     },
     {
-      "id": "e61eb4d5773e",
-      "title": "US Sanctions Supreme Leader’s Network as Iran Ceasefire Frays",
-      "summary": "The US imposed sanctions on Iranian financier Ali Ansari, accusing him of managing a global network of assets for Supreme Leader Mojtaba Khamenei and other senior regime figures, the latest fracture in the truce between Washington and Tehran.",
-      "link": "https://www.bloomberg.com/news/articles/2026-07-10/us-sanctions-iran-supreme-leader-network-as-ceasefire-frays",
-      "publisher": "Bloomberg",
-      "feed": "Bloomberg Pol",
-      "pub_iso": "2026-07-10T19:41:44+00:00",
-      "pub_ts": 1783712504.0,
-      "theme": "geopolitics",
-      "sub_theme": "iran_war",
-      "theme_score": 10,
+      "id": "99f66fd8a2ec",
+      "title": "AI Sent AMD Soaring — But This Stock May Be the Better Value Play",
+      "summary": "",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/ai-sent-amd-soaring-stock-180739121.html",
+      "publisher": "Yahoo Finance",
+      "feed": "Yahoo Finance",
+      "pub_iso": "2026-07-10T18:07:39+00:00",
+      "pub_ts": 1783706859.0,
+      "theme": "ai",
+      "sub_theme": "ai_chips",
+      "theme_score": 7,
       "region": "us",
-      "impact": 9
+      "impact": 5
     },
     {
-      "id": "a41d0a2c2a40",
-      "title": "Sabato: Democrats Still Have A Chance In Maine",
-      "summary": "Larry Sabato, founder and director of the University of Virginia Center for Politics, says Democrats still have a chance to win Maine's Senate race after Graham Platner formally withdrew from the race, but warns party divisions could leave Susan Collins favored. Sabato notes Maine was supposed to be an easy pickup for Democrats, but is now \"turning out to be tough,\" while Senate races in Ohio, Iow",
-      "link": "https://www.bloomberg.com/news/videos/2026-07-10/sabato-democrats-still-have-a-chance-in-maine-video",
-      "publisher": "Bloomberg",
-      "feed": "Bloomberg Pol",
-      "pub_iso": "2026-07-10T22:35:39+00:00",
-      "pub_ts": 1783722939.0,
-      "theme": "geopolitics",
-      "sub_theme": "elections",
-      "theme_score": 4,
+      "id": "581c4fa98000",
+      "title": "Meta stock turns positive on the year on data center plans, new AI model pricing",
+      "summary": "",
+      "link": "https://finance.yahoo.com/technology/article/meta-stock-turns-positive-on-the-year-on-data-center-plans-new-ai-model-pricing-174120336.html",
+      "publisher": "Yahoo Finance",
+      "feed": "Yahoo Finance",
+      "pub_iso": "2026-07-10T17:41:20+00:00",
+      "pub_ts": 1783705280.0,
+      "theme": "ai",
+      "sub_theme": "ai_infra",
+      "theme_score": 7,
       "region": "us",
-      "impact": 8
-    },
-    {
-      "id": "2438b3ba2d79",
-      "title": "Trump admin eases export controls for UAE; Warren blasts 'corrupt' provision",
-      "summary": "The Commerce Department will favorably review exports involving MGX, which used a stablecoin linked to President Trump's family for a $2B Binance investment.",
-      "link": "https://www.cnbc.com/2026/07/10/trump-uae-mgx-crypto-export-commerce-warren.html",
-      "publisher": "CNBC",
-      "feed": "CNBC Top",
-      "pub_iso": "2026-07-10T22:02:04+00:00",
-      "pub_ts": 1783720924.0,
-      "theme": "geopolitics",
-      "sub_theme": "tariffs",
-      "theme_score": 5,
-      "region": "us",
-      "impact": 8
-    },
-    {
-      "id": "afa92cbdc65d",
-      "title": "Meta Shares Gain Most Since April 2025 | Closing Bell",
-      "summary": "Comprehensive cross-platform coverage of the U.S. market close on Bloomberg Television, Bloomberg Radio, and YouTube with Romaine Bostick, Katie Greifeld, Carol Massar and Isabelle Lee. (Source: Bloomberg)",
-      "link": "https://www.bloomberg.com/news/videos/2026-07-10/meta-shares-gain-most-since-april-2025-closing-bell-video",
-      "publisher": "Bloomberg",
-      "feed": "Bloomberg Mkts",
-      "pub_iso": "2026-07-10T20:47:59+00:00",
-      "pub_ts": 1783716479.0,
-      "theme": "tech",
-      "sub_theme": "consumer_tech",
-      "theme_score": 4,
-      "region": "us",
-      "impact": 8
-    },
-    {
-      "id": "769527bc0549",
-      "title": "Here Are the Week’s Winners and Losers",
-      "summary": "A NATO summit and a World Cup controversy dominated headlines.",
-      "link": "https://www.bloomberg.com/news/newsletters/2026-07-10/from-nato-to-world-cup-here-are-the-week-s-winners-and-losers",
-      "publisher": "Bloomberg",
-      "feed": "Bloomberg Pol",
-      "pub_iso": "2026-07-10T20:45:35+00:00",
-      "pub_ts": 1783716335.0,
-      "theme": "geopolitics",
-      "sub_theme": null,
-      "theme_score": 5,
-      "region": "us",
-      "impact": 8
-    },
-    {
-      "id": "5bd3bdbe7f9e",
-      "title": "US sends team to Beirut to shore up Israel-Hizbollah ceasefire",
-      "summary": "Lebanese president calls for ‘pressure’ on Israel to start pulling back forces",
-      "link": "https://www.ft.com/content/c82586af-60ca-476f-9961-f8b6b5e791ff",
-      "publisher": "FT",
-      "feed": "FT Home",
-      "pub_iso": "2026-07-10T20:36:41+00:00",
-      "pub_ts": 1783715801.0,
-      "theme": "geopolitics",
-      "sub_theme": "iran_war",
-      "theme_score": 5,
-      "region": "us",
-      "impact": 8
-    },
-    {
-      "id": "af6ea921da6a",
-      "title": "SK Hynix rises 13% in Nasdaq debut. Chairman tells CNBC 'demand is enormous'",
-      "summary": "SK Hynix has soared to a trillion-dollar market cap by serving some of the biggest names in technology, including Nvidia and Apple.",
-      "link": "https://www.cnbc.com/2026/07/10/sk-hynix-skhy-stock-nasdaq.html",
-      "publisher": "CNBC",
-      "feed": "CNBC Top",
-      "pub_iso": "2026-07-10T20:34:32+00:00",
-      "pub_ts": 1783715672.0,
-      "theme": "tech",
-      "sub_theme": "consumer_tech",
-      "theme_score": 4,
-      "region": "us",
-      "impact": 8
-    },
-    {
-      "id": "6579a1e713c0",
-      "title": "Trump Says Iran Ceasefire Is Over | Balance of Power 7/10/2026",
-      "summary": "On the early edition of Balance of Power, Bloomberg Washington Correspondent Joe Mathieu discusses the latest from DC. On today's show, former US Ambassador to Iraq James Jeffrey, Stonecourt Capital Partner Rick Davis, Harvard Kennedy School Ash Center Visiting Democracy Fellow Jeanne Sheehan Zaino and Quincy Institute for Responsible Statecraft Executive Vice President Trita Parsi. (Source: Bloom",
-      "link": "https://www.bloomberg.com/news/videos/2026-07-10/balance-of-power-7-10-2026-video",
-      "publisher": "Bloomberg",
-      "feed": "Bloomberg Pol",
-      "pub_iso": "2026-07-10T20:32:38+00:00",
-      "pub_ts": 1783715558.0,
-      "theme": "geopolitics",
-      "sub_theme": "iran_war",
-      "theme_score": 5,
-      "region": "us",
-      "impact": 8
-    },
-    {
-      "id": "cfd1ef5f618c",
-      "title": "Stablecoin issuer Circle just got the greenlight to operate as a bank. The shares are up 5%",
-      "summary": "Stablecoin issuer Circle surged in premarket trading after the U.S. Office of the Comptroller of the Currency granted it approval to operate as a trust bank.",
-      "link": "https://www.cnbc.com/2026/07/10/circle-gets-an-occ-bank-charter-as-stablecoin-competition-heats-up-shares-surge-14percent.html",
-      "publisher": "CNBC",
-      "feed": "CNBC Top",
-      "pub_iso": "2026-07-10T20:01:29+00:00",
-      "pub_ts": 1783713689.0,
-      "theme": "tech",
-      "sub_theme": null,
-      "theme_score": 4,
-      "region": "us",
-      "impact": 8
-    },
-    {
-      "id": "1570a4f080ae",
-      "title": "US senators strike deal with White House to tighten Russia sanctions",
-      "summary": "Potential breakthrough comes days after Donald Trump signalled shift towards more support for Kyiv",
-      "link": "https://www.ft.com/content/54fba496-986c-44a0-99db-dfb8bb6fce23",
-      "publisher": "FT",
-      "feed": "FT Home",
-      "pub_iso": "2026-07-10T18:30:33+00:00",
-      "pub_ts": 1783708233.0,
-      "theme": "geopolitics",
-      "sub_theme": "ukraine_russia",
-      "theme_score": 10,
-      "region": "us",
-      "impact": 8
-    },
-    {
-      "id": "9222ac69c955",
-      "title": "Senators Say They Have Deal With Trump on Russia Sanctions Bill",
-      "summary": "A bipartisan group of senators said they have an agreement with the Trump administration to move ahead with new Russian sanctions legislation, raising the prospect of more US economic pressure on the Kremlin to halt its war in Ukraine.",
-      "link": "https://www.bloomberg.com/news/articles/2026-07-10/senators-say-they-have-deal-with-trump-on-russia-sanctions-bill",
-      "publisher": "Bloomberg",
-      "feed": "Bloomberg Pol",
-      "pub_iso": "2026-07-10T18:29:14+00:00",
-      "pub_ts": 1783708154.0,
-      "theme": "geopolitics",
-      "sub_theme": "ukraine_russia",
-      "theme_score": 10,
-      "region": "us",
-      "impact": 8
+      "impact": 5
     },
     {
       "id": "9ba974ef5d12",
@@ -654,7 +1193,7 @@
       "sub_theme": "iran_war",
       "theme_score": 6,
       "region": "us",
-      "impact": 8
+      "impact": 5
     },
     {
       "id": "58c65c002d89",
@@ -669,7 +1208,7 @@
       "sub_theme": "ai_chips",
       "theme_score": 7,
       "region": "us",
-      "impact": 8
+      "impact": 5
     },
     {
       "id": "1e9b9178bc75",
@@ -684,7 +1223,7 @@
       "sub_theme": "ai_chips",
       "theme_score": 7,
       "region": "us",
-      "impact": 8
+      "impact": 5
     },
     {
       "id": "71a5a28962f5",
@@ -699,22 +1238,7 @@
       "sub_theme": "ai_chips",
       "theme_score": 7,
       "region": "us",
-      "impact": 8
-    },
-    {
-      "id": "756e8135347a",
-      "title": "AI, data center fears could be key in closely watched Michigan Democratic Senate primary",
-      "summary": "Abdul El-Sayed and Rep. Haley Stevens will face off in the Michigan Democratic Senate primary on Aug. 4.",
-      "link": "https://www.cnbc.com/2026/07/10/ai-data-center-fears-michigan-democratic-senate-primary.html",
-      "publisher": "CNBC",
-      "feed": "CNBC Top",
-      "pub_iso": "2026-07-10T15:18:37+00:00",
-      "pub_ts": 1783696717.0,
-      "theme": "ai",
-      "sub_theme": "ai_infra",
-      "theme_score": 7,
-      "region": "us",
-      "impact": 8
+      "impact": 5
     },
     {
       "id": "7335be5da56d",
@@ -729,292 +1253,262 @@
       "sub_theme": "ai_models",
       "theme_score": 7,
       "region": "us",
-      "impact": 8
+      "impact": 5
     },
     {
-      "id": "ce913bff5a1d",
-      "title": "SK Hynix Rises After Record US Offering | The Close 7/10/2026",
-      "summary": "Bloomberg Television brings you the latest news and analysis leading up to the final minutes and seconds before and after the closing bell on Wall Street. Today's guests are Winnie Cisar, CreditSights Global Head of Strategy, John Medina, Moody's Ratings SVP, Global Project and Infrastructure Finance, Tom Fitzgerald, TD Cowen VP, Equity Research, Gary Gensler, Former SEC Chair, Jeffrey Sherman, Do",
-      "link": "https://www.bloomberg.com/news/videos/2026-07-10/the-close-7-10-2026-video",
-      "publisher": "Bloomberg",
-      "feed": "Bloomberg Mkts",
-      "pub_iso": "2026-07-10T23:56:41+00:00",
-      "pub_ts": 1783727801.0,
-      "theme": "rates",
+      "id": "e9e339ba2141",
+      "title": "China's Nexchip has global ambitions as legacy chips thrive in AI's shadow",
+      "summary": "",
+      "link": "https://asia.nikkei.com/business/tech/semiconductors/china-s-nexchip-has-global-ambitions-as-legacy-chips-thrive-in-ai-s-shadow",
+      "publisher": "Nikkei Asia",
+      "feed": "Nikkei Asia",
+      "pub_iso": null,
+      "pub_ts": 0,
+      "theme": "ai",
       "sub_theme": null,
-      "theme_score": 3,
-      "region": "us",
-      "impact": 7
+      "theme_score": 7,
+      "region": "asia",
+      "impact": 5
     },
     {
-      "id": "c6af4bb729a4",
-      "title": "Apple sues OpenAI alleging theft of top-secret information",
-      "summary": "Lawsuit marks collapse of relationship between two of the biggest names in Silicon Valley",
-      "link": "https://www.ft.com/content/5054739e-7f97-455c-910a-dd8a8150fed2",
+      "id": "d81ba1f99d1e",
+      "title": "Typhoon Bavi Tracks Toward China With Heavy, Widespread Rains",
+      "summary": "A large and powerful typhoon is moving toward China, bringing heavy rain and strong winds ahead of its expected landfall later Saturday and triggering an emergency response in the Zhejiang province.",
+      "link": "https://www.bloomberg.com/news/articles/2026-07-11/typhoon-bavi-tracks-toward-china-with-heavy-widespread-rains",
+      "publisher": "Bloomberg",
+      "feed": "Bloomberg Green",
+      "pub_iso": "2026-07-11T04:49:22+00:00",
+      "pub_ts": 1783745362.0,
+      "theme": "rates",
+      "sub_theme": "credit",
+      "theme_score": 3,
+      "region": "asia",
+      "impact": 4
+    },
+    {
+      "id": "eee0cb46e97f",
+      "title": "Inside the risky race through the Strait of Hormuz",
+      "summary": "Vessels that dare to use route close to Oman’s coast face increased risk of Iranian missiles",
+      "link": "https://www.ft.com/content/68d396cd-2800-4ff8-b563-1f5c95beb9ba",
       "publisher": "FT",
       "feed": "FT Home",
-      "pub_iso": "2026-07-10T22:50:16+00:00",
-      "pub_ts": 1783723816.0,
-      "theme": "ai",
-      "sub_theme": "ai_chips",
+      "pub_iso": "2026-07-11T04:00:41+00:00",
+      "pub_ts": 1783742441.0,
+      "theme": "geopolitics",
+      "sub_theme": "iran_war",
       "theme_score": 3,
       "region": "us",
-      "impact": 7
+      "impact": 4
     },
     {
-      "id": "eb90b6f8d8de",
-      "title": "US, Canada Agree to Open Detroit-Windsor Bridge on July 27",
-      "summary": "The US and Canada agreed to open the delayed Gordie Howe International Bridge connecting Detroit with the city of Windsor, Ontario, on July 27, the Canadian government announced late Friday.",
-      "link": "https://www.bloomberg.com/news/articles/2026-07-10/us-canada-strike-deal-to-open-4-5-billion-gordie-howe-bridge",
-      "publisher": "Bloomberg",
-      "feed": "Bloomberg Pol",
-      "pub_iso": "2026-07-10T22:24:41+00:00",
-      "pub_ts": 1783722281.0,
-      "theme": "sustainability",
-      "sub_theme": null,
-      "theme_score": 3,
-      "region": "us",
-      "impact": 7
-    },
-    {
-      "id": "d62499f9a143",
-      "title": "Hedge Fund Elliott Builds Stake in Software Firm CCC",
-      "summary": "Elliott Investment Management has built a large stake in car-insurance software provider CCC Intelligent Solutions Holdings Inc., which has been exploring a potential sale, according to people familiar with the matter.",
-      "link": "https://www.bloomberg.com/news/articles/2026-07-10/hedge-fund-elliott-builds-stake-in-software-firm-ccc",
-      "publisher": "Bloomberg",
-      "feed": "Bloomberg Tech",
-      "pub_iso": "2026-07-10T22:19:12+00:00",
-      "pub_ts": 1783721952.0,
-      "theme": "tech",
-      "sub_theme": "consumer_tech",
-      "theme_score": 3,
-      "region": "us",
-      "impact": 7
-    },
-    {
-      "id": "9a8c141ed845",
-      "title": "Bloomberg Money 7/10/2026",
-      "summary": "Bloomberg Money takes the pulse of your financial life, powered by the reporting of our global newsroom. Today's guests are: University of Chicago Booth School Professor of Economics and Former Fed Governor Randall Kroszner and NewEdge Wealth CIO Cameron Dawson. (Source: Bloomberg)",
-      "link": "https://www.bloomberg.com/news/videos/2026-07-10/bloomberg-money-7-10-2026-video",
-      "publisher": "Bloomberg",
-      "feed": "Bloomberg Mkts",
-      "pub_iso": "2026-07-10T22:00:10+00:00",
-      "pub_ts": 1783720810.0,
+      "id": "2ad1b923890b",
+      "title": "Prepare for a perilous summer in markets",
+      "summary": "Potential hotspots include a reformist new Fed chair, weak Japanese yen and high-stakes earnings season",
+      "link": "https://www.ft.com/content/b04a8098-833f-4ca6-80b6-3a2cb595cbc3",
+      "publisher": "FT",
+      "feed": "FT Home",
+      "pub_iso": "2026-07-11T04:00:41+00:00",
+      "pub_ts": 1783742441.0,
       "theme": "rates",
       "sub_theme": "fed",
       "theme_score": 3,
-      "region": "us",
-      "impact": 7
+      "region": "asia",
+      "impact": 4
     },
     {
-      "id": "060fd23ca0ee",
-      "title": "Nuclear Energy Services Firm Holtec Joins Sector’s IPO Rush",
-      "summary": "Holtec Nuclear Corp. filed for a US initial public offering, becoming the latest in the sector to try to capitalize on data centers’ growing power demands.",
-      "link": "https://www.bloomberg.com/news/articles/2026-07-10/nuclear-energy-services-firm-holtec-joins-sector-s-ipo-rush",
-      "publisher": "Bloomberg",
-      "feed": "Bloomberg Mkts",
-      "pub_iso": "2026-07-10T21:40:08+00:00",
-      "pub_ts": 1783719608.0,
+      "id": "178b5aac4537",
+      "title": "London rental affordability improves despite recent rise",
+      "summary": "The salary needed to afford a rental home in the capital has fallen by 17% in the past year",
+      "link": "https://www.ft.com/content/44814d61-d4b9-4609-a010-a69b897fb9f9",
+      "publisher": "FT",
+      "feed": "FT Companies",
+      "pub_iso": "2026-07-11T04:00:41+00:00",
+      "pub_ts": 1783742441.0,
       "theme": "tech",
       "sub_theme": "consumer_tech",
       "theme_score": 3,
-      "region": "us",
-      "impact": 7
+      "region": "eu",
+      "impact": 4
     },
     {
-      "id": "9a81a2670cda",
-      "title": "The AI race is shifting from bigger models to cheaper, smarter systems",
-      "summary": "Companies are starting to choose AI models by task, cost and control, not just leaderboard rank.",
-      "link": "https://www.cnbc.com/2026/07/10/the-ai-race-is-shifting-from-bigger-models-to-cheaper-smarter-systems.html",
-      "publisher": "CNBC",
-      "feed": "CNBC Top",
-      "pub_iso": "2026-07-10T21:27:18+00:00",
-      "pub_ts": 1783718838.0,
-      "theme": "ai",
-      "sub_theme": null,
-      "theme_score": 3,
-      "region": "us",
-      "impact": 7
-    },
-    {
-      "id": "cc8bdb334681",
-      "title": "US relaxes export controls on advanced chips and drones for UAE",
-      "summary": "Gulf state will receive access to sophisticated American technology",
-      "link": "https://www.ft.com/content/8f33a9b2-bf8a-4c11-8a94-5d86a93b29ba",
+      "id": "c458f8014965",
+      "title": "Wealthy warned over HMRC’s use of AI in tax crackdown",
+      "summary": "Advisers put rich on alert after authority says digital tools brought in billions in tax last year",
+      "link": "https://www.ft.com/content/ab7f7fba-2e4a-4336-afd1-418b10c8248b",
       "publisher": "FT",
       "feed": "FT World",
-      "pub_iso": "2026-07-10T21:25:08+00:00",
-      "pub_ts": 1783718708.0,
+      "pub_iso": "2026-07-11T04:00:41+00:00",
+      "pub_ts": 1783742441.0,
+      "theme": "ai",
+      "sub_theme": null,
+      "theme_score": 3,
+      "region": "us",
+      "impact": 4
+    },
+    {
+      "id": "5a572b9be771",
+      "title": "Who cleans up after the vibe-coding party?",
+      "summary": "Our obsession with AI code-writing tools is overwhelming the web’s unsung human caretakers",
+      "link": "https://www.ft.com/content/cec8df9e-b43b-4cd1-8feb-c07e804e8d33",
+      "publisher": "FT",
+      "feed": "FT Companies",
+      "pub_iso": "2026-07-11T04:00:10+00:00",
+      "pub_ts": 1783742410.0,
+      "theme": "ai",
+      "sub_theme": null,
+      "theme_score": 3,
+      "region": "us",
+      "impact": 4
+    },
+    {
+      "id": "a41d0a2c2a40",
+      "title": "Sabato: Democrats Still Have A Chance In Maine",
+      "summary": "Larry Sabato, founder and director of the University of Virginia Center for Politics, says Democrats still have a chance to win Maine's Senate race after Graham Platner formally withdrew from the race, but warns party divisions could leave Susan Collins favored. Sabato notes Maine was supposed to be an easy pickup for Democrats, but is now \"turning out to be tough,\" while Senate races in Ohio, Iow",
+      "link": "https://www.bloomberg.com/news/videos/2026-07-10/sabato-democrats-still-have-a-chance-in-maine-video",
+      "publisher": "Bloomberg",
+      "feed": "Bloomberg Pol",
+      "pub_iso": "2026-07-10T22:35:39+00:00",
+      "pub_ts": 1783722939.0,
+      "theme": "geopolitics",
+      "sub_theme": "elections",
+      "theme_score": 4,
+      "region": "us",
+      "impact": 4
+    },
+    {
+      "id": "2438b3ba2d79",
+      "title": "Trump admin eases export controls for UAE; Warren blasts 'corrupt' provision",
+      "summary": "The Commerce Department will favorably review exports involving MGX, which used a stablecoin linked to President Trump's family for a $2B Binance investment.",
+      "link": "https://www.cnbc.com/2026/07/10/trump-uae-mgx-crypto-export-commerce-warren.html",
+      "publisher": "CNBC",
+      "feed": "CNBC Top",
+      "pub_iso": "2026-07-10T22:02:04+00:00",
+      "pub_ts": 1783720924.0,
       "theme": "geopolitics",
       "sub_theme": "tariffs",
-      "theme_score": 3,
+      "theme_score": 5,
       "region": "us",
-      "impact": 7
+      "impact": 4
     },
     {
-      "id": "56047bcf8c1c",
-      "title": "Insuring Rare and Collectible Cars and Boats: Masters in Business with McKeel Hagerty",
-      "summary": "Barry sits down with with CEO and Chairman of Hagerty, McKeel Hagerty. They discuss how he transformed the the family boat insurance business into a \"sexy\" driver forward business. Barry and McKeel also discuss their love of collectable cars and his love of his first car, a Porsche, that he bought at the age of 13. (Source: Bloomberg)",
-      "link": "https://www.bloomberg.com/news/videos/2026-07-10/masters-in-business-with-mckeel-hagerty-video",
-      "publisher": "Bloomberg",
-      "feed": "Bloomberg Mkts",
-      "pub_iso": "2026-07-10T21:15:18+00:00",
-      "pub_ts": 1783718118.0,
-      "theme": "tech",
-      "sub_theme": "consumer_tech",
-      "theme_score": 3,
-      "region": "us",
-      "impact": 7
-    },
-    {
-      "id": "c01b735dccbd",
-      "title": "Mali, Algeria Agree to Reopen Airspace After Months of Tensions",
-      "summary": "Mali and Algeria agreed to reopen their airspace to civilian and military aircraft and return ambassadors to their posts, signaling an easing of yearlong tensions between the northern African nations.",
-      "link": "https://www.bloomberg.com/news/articles/2026-07-10/mali-algeria-agree-to-reopen-airspace-after-months-of-tensions",
+      "id": "769527bc0549",
+      "title": "Here Are the Week’s Winners and Losers",
+      "summary": "A NATO summit and a World Cup controversy dominated headlines.",
+      "link": "https://www.bloomberg.com/news/newsletters/2026-07-10/from-nato-to-world-cup-here-are-the-week-s-winners-and-losers",
       "publisher": "Bloomberg",
       "feed": "Bloomberg Pol",
-      "pub_iso": "2026-07-10T21:12:09+00:00",
-      "pub_ts": 1783717929.0,
-      "theme": "rates",
+      "pub_iso": "2026-07-10T20:45:35+00:00",
+      "pub_ts": 1783716335.0,
+      "theme": "geopolitics",
       "sub_theme": null,
-      "theme_score": 3,
+      "theme_score": 5,
       "region": "us",
-      "impact": 7
+      "impact": 4
     },
     {
-      "id": "4a325dbe048a",
-      "title": "Seeing Signs of AI Fatigue: CreditSights Global Head of Strategy",
-      "summary": "CreditSights Global Head of Strategy Winnie Cisar discusses the tech sector and what to expect from AI. She speaks with Romaine Bostick and Katie Greifeld on “The Close.” (Source: Bloomberg)",
-      "link": "https://www.bloomberg.com/news/videos/2026-07-10/seeing-signs-of-ai-fatigue-creditsights-cisar-video",
-      "publisher": "Bloomberg",
-      "feed": "Bloomberg Mkts",
-      "pub_iso": "2026-07-10T20:53:23+00:00",
-      "pub_ts": 1783716803.0,
-      "theme": "ai",
-      "sub_theme": null,
-      "theme_score": 3,
-      "region": "us",
-      "impact": 7
-    },
-    {
-      "id": "2a21785006b4",
-      "title": "OpenAI power consolidates under co-founder Greg Brockman ahead of prospective IPO",
-      "summary": "With Fidji Simo's official departure from OpenAI due to a chronic medical issue, Greg Brockman's role has become clearer.",
-      "link": "https://www.cnbc.com/2026/07/10/openai-power-consolidates-under-co-founder-greg-brockman-ahead-of-ipo.html",
+      "id": "af6ea921da6a",
+      "title": "SK Hynix rises 13% in Nasdaq debut. Chairman tells CNBC 'demand is enormous'",
+      "summary": "SK Hynix has soared to a trillion-dollar market cap by serving some of the biggest names in technology, including Nvidia and Apple.",
+      "link": "https://www.cnbc.com/2026/07/10/sk-hynix-skhy-stock-nasdaq.html",
       "publisher": "CNBC",
       "feed": "CNBC Top",
-      "pub_iso": "2026-07-10T20:51:09+00:00",
-      "pub_ts": 1783716669.0,
-      "theme": "ai",
-      "sub_theme": "ai_models",
-      "theme_score": 3,
-      "region": "us",
-      "impact": 7
-    },
-    {
-      "id": "2f2eeb30ba02",
-      "title": "How Apple stock rode the AI rollercoaster to record highs in 1 chart",
-      "summary": "Apple stayed true to itself in the AI race, and Wall Street is finally rewarding the stock for it.",
-      "link": "https://www.cnbc.com/2026/07/10/how-apple-stock-rode-the-ai-rollercoaster-to-record-highs-in-1-chart.html",
-      "publisher": "CNBC",
-      "feed": "CNBC Top",
-      "pub_iso": "2026-07-10T20:25:11+00:00",
-      "pub_ts": 1783715111.0,
-      "theme": "ai",
-      "sub_theme": null,
-      "theme_score": 3,
-      "region": "us",
-      "impact": 7
-    },
-    {
-      "id": "66fe142a8a52",
-      "title": "AI Echoes the Dot-Com Market Split as Iran Threat Creeps Back",
-      "summary": "It was a split-screen week on Wall Street.",
-      "link": "https://www.bloomberg.com/news/articles/2026-07-10/ai-echoes-the-dot-com-market-split-as-iran-threat-creeps-back",
-      "publisher": "Bloomberg",
-      "feed": "Bloomberg Mkts",
-      "pub_iso": "2026-07-10T20:23:28+00:00",
-      "pub_ts": 1783715008.0,
-      "theme": "ai",
-      "sub_theme": null,
-      "theme_score": 3,
-      "region": "us",
-      "impact": 7
-    },
-    {
-      "id": "29dbce6f693c",
-      "title": "'Moana,' Rolling Stones, Retail Spending: Look Ahead",
-      "summary": "Bloomberg's Lisa Mateo joins Scarlet Fu and Tom Keene on \"Bloomberg Money.\" They discuss the new released live action Moana movie, the new Rolling Stones album \"Foreign Tongues,\" June CPI, PPI, and retail sails. (Source: Bloomberg)",
-      "link": "https://www.bloomberg.com/news/videos/2026-07-10/-moana-rolling-stones-retail-spending-look-ahead-video",
-      "publisher": "Bloomberg",
-      "feed": "Bloomberg Mkts",
-      "pub_iso": "2026-07-10T20:18:48+00:00",
-      "pub_ts": 1783714728.0,
-      "theme": "macro",
-      "sub_theme": "inflation",
-      "theme_score": 3,
-      "region": "us",
-      "impact": 7
-    },
-    {
-      "id": "bedb2177c218",
-      "title": "Men’s Wearhouse Owner Tailored Brands Files Publicly for US IPO",
-      "summary": "Menswear company Tailored Brands Inc. filed publicly for an initial public offering, marking the latest step in its return to public markets.",
-      "link": "https://www.bloomberg.com/news/articles/2026-07-10/men-s-wearhouse-owner-tailored-brands-files-publicly-for-us-ipo",
-      "publisher": "Bloomberg",
-      "feed": "Bloomberg Mkts",
-      "pub_iso": "2026-07-10T20:06:52+00:00",
-      "pub_ts": 1783714012.0,
+      "pub_iso": "2026-07-10T20:34:32+00:00",
+      "pub_ts": 1783715672.0,
       "theme": "tech",
       "sub_theme": "consumer_tech",
-      "theme_score": 3,
+      "theme_score": 4,
       "region": "us",
-      "impact": 7
+      "impact": 4
     },
     {
-      "id": "897dcba59098",
-      "title": "Meta's stock has best week since early 2024 as optimism builds around AI strategy",
-      "summary": "Meta released two AI models this week as part of its new Muse Spark family, under the leadership of Alexandr Wang.",
-      "link": "https://www.cnbc.com/2026/07/10/meta-shares-surge-6percent-as-optimism-grows-on-it.html",
-      "publisher": "CNBC",
-      "feed": "CNBC Top",
-      "pub_iso": "2026-07-10T20:06:19+00:00",
-      "pub_ts": 1783713979.0,
-      "theme": "ai",
-      "sub_theme": null,
-      "theme_score": 3,
-      "region": "us",
-      "impact": 7
-    },
-    {
-      "id": "b538e12207e7",
-      "title": "Meta stock got the 18% pop Jim Cramer said it could on cloud news. What's next?",
-      "summary": "Investors are also celebrating Meta's launch Thursday of Muse Spark 1.1.",
-      "link": "https://www.cnbc.com/2026/07/10/meta-got-18percent-pop-jim-cramer-said-it-could-on-cloud-news-what-is-next.html",
-      "publisher": "CNBC",
-      "feed": "CNBC Tech",
-      "pub_iso": "2026-07-10T19:39:24+00:00",
-      "pub_ts": 1783712364.0,
-      "theme": "rates",
-      "sub_theme": null,
-      "theme_score": 3,
-      "region": "us",
-      "impact": 7
-    },
-    {
-      "id": "45981efbb529",
-      "title": "Trump Says Ceasefire With Iran Is Over",
-      "summary": "James Jeffrey, former US ambassador to Iraq and Turkey, said a new US blockade of Iran and bombing of its railways would cripple Iran's economy and military capabilities. President Trump says the ceasefire is over, but both sides are still talking. Jeffrey speaks on \"Balance of Power.\" (Source: Bloomberg)",
-      "link": "https://www.bloomberg.com/news/videos/2026-07-10/trump-says-ceasefire-with-iran-is-over-video-mrfa4sa1",
+      "id": "6579a1e713c0",
+      "title": "Trump Says Iran Ceasefire Is Over | Balance of Power 7/10/2026",
+      "summary": "On the early edition of Balance of Power, Bloomberg Washington Correspondent Joe Mathieu discusses the latest from DC. On today's show, former US Ambassador to Iraq James Jeffrey, Stonecourt Capital Partner Rick Davis, Harvard Kennedy School Ash Center Visiting Democracy Fellow Jeanne Sheehan Zaino and Quincy Institute for Responsible Statecraft Executive Vice President Trita Parsi. (Source: Bloom",
+      "link": "https://www.bloomberg.com/news/videos/2026-07-10/balance-of-power-7-10-2026-video",
       "publisher": "Bloomberg",
       "feed": "Bloomberg Pol",
-      "pub_iso": "2026-07-10T18:39:03+00:00",
-      "pub_ts": 1783708743.0,
+      "pub_iso": "2026-07-10T20:32:38+00:00",
+      "pub_ts": 1783715558.0,
       "theme": "geopolitics",
       "sub_theme": "iran_war",
       "theme_score": 5,
       "region": "us",
-      "impact": 7
+      "impact": 4
+    },
+    {
+      "id": "cfd1ef5f618c",
+      "title": "Stablecoin issuer Circle just got the greenlight to operate as a bank. The shares are up 5%",
+      "summary": "Stablecoin issuer Circle surged in premarket trading after the U.S. Office of the Comptroller of the Currency granted it approval to operate as a trust bank.",
+      "link": "https://www.cnbc.com/2026/07/10/circle-gets-an-occ-bank-charter-as-stablecoin-competition-heats-up-shares-surge-14percent.html",
+      "publisher": "CNBC",
+      "feed": "CNBC Top",
+      "pub_iso": "2026-07-10T20:01:29+00:00",
+      "pub_ts": 1783713689.0,
+      "theme": "tech",
+      "sub_theme": null,
+      "theme_score": 4,
+      "region": "us",
+      "impact": 4
+    },
+    {
+      "id": "3ce02b9bf84a",
+      "title": "Crude Oil Prices Retreat as US-Iran Peace Talks Set to Continue",
+      "summary": "",
+      "link": "https://finance.yahoo.com/energy/articles/crude-oil-prices-retreat-us-192304523.html",
+      "publisher": "Yahoo Finance",
+      "feed": "Yahoo Finance",
+      "pub_iso": "2026-07-10T19:23:04+00:00",
+      "pub_ts": 1783711384.0,
+      "theme": "geopolitics",
+      "sub_theme": "iran_war",
+      "theme_score": 5,
+      "region": "us",
+      "impact": 4
+    },
+    {
+      "id": "0b004b54fd9c",
+      "title": "Dear META Stock Fans, Here’s 1 More Reason to Load Up on the Stock",
+      "summary": "",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/dear-meta-stock-fans-1-184155811.html",
+      "publisher": "Yahoo Finance",
+      "feed": "Yahoo Finance",
+      "pub_iso": "2026-07-10T18:41:55+00:00",
+      "pub_ts": 1783708915.0,
+      "theme": "tech",
+      "sub_theme": "consumer_tech",
+      "theme_score": 4,
+      "region": "us",
+      "impact": 4
+    },
+    {
+      "id": "9155d7c4d36f",
+      "title": "Oil Is Spiking and the Iran Ceasefire Is Cracking: What It Means for Your Stocks",
+      "summary": "",
+      "link": "https://finance.yahoo.com/energy/articles/oil-spiking-iran-ceasefire-cracking-184010063.html",
+      "publisher": "Yahoo Finance",
+      "feed": "Yahoo Finance",
+      "pub_iso": "2026-07-10T18:40:10+00:00",
+      "pub_ts": 1783708810.0,
+      "theme": "geopolitics",
+      "sub_theme": "iran_war",
+      "theme_score": 5,
+      "region": "us",
+      "impact": 4
+    },
+    {
+      "id": "2bc0330738ba",
+      "title": "Most crypto holders want a loan against their Bitcoin and never take one",
+      "summary": "",
+      "link": "https://finance.yahoo.com/markets/crypto/articles/most-crypto-holders-want-loan-183301709.html",
+      "publisher": "Yahoo Finance",
+      "feed": "Yahoo Finance",
+      "pub_iso": "2026-07-10T18:33:01+00:00",
+      "pub_ts": 1783708381.0,
+      "theme": "tech",
+      "sub_theme": "crypto",
+      "theme_score": 4,
+      "region": "us",
+      "impact": 4
     },
     {
       "id": "6571c4098f94",
@@ -1029,52 +1523,7 @@
       "sub_theme": "crypto",
       "theme_score": 4,
       "region": "us",
-      "impact": 7
-    },
-    {
-      "id": "e153db3bff20",
-      "title": "Top Senate Democrats Call for Probes Into Trump Crypto Earnings",
-      "summary": "A group of high-ranking Senate Democrats Friday called on their Republican counterparts to investigate whether President Donald Trump’s crypto ventures pose national security risks.",
-      "link": "https://www.bloomberg.com/news/articles/2026-07-10/top-senate-democrats-call-for-probes-into-trump-crypto-earnings",
-      "publisher": "Bloomberg",
-      "feed": "Bloomberg Pol",
-      "pub_iso": "2026-07-10T17:16:55+00:00",
-      "pub_ts": 1783703815.0,
-      "theme": "tech",
-      "sub_theme": "crypto",
-      "theme_score": 4,
-      "region": "us",
-      "impact": 7
-    },
-    {
-      "id": "a07a1c2ec3da",
-      "title": "Asha Sharma, the outsider handed the Xbox controls",
-      "summary": "Elevated to fix Microsoft’s struggling gaming division, she is making tough decisions about its future",
-      "link": "https://www.ft.com/content/5b20b409-3f5c-4856-9769-aa3a8d78c786",
-      "publisher": "FT",
-      "feed": "FT Home",
-      "pub_iso": "2026-07-10T16:29:19+00:00",
-      "pub_ts": 1783700959.0,
-      "theme": "tech",
-      "sub_theme": "consumer_tech",
-      "theme_score": 4,
-      "region": "us",
-      "impact": 7
-    },
-    {
-      "id": "67262c5e1290",
-      "title": "Trump says U.S. to continue talks with Iran despite scrapped ceasefire",
-      "summary": "The ceasefire signed last month came under serious strain in recent days as U.S. and Iranian forces exchanged attacks for consecutive days this week.",
-      "link": "https://www.cnbc.com/2026/07/10/us-iran-war-strikes-strait-of-hormuz-technical-talks-progress-.html",
-      "publisher": "CNBC",
-      "feed": "CNBC Top",
-      "pub_iso": "2026-07-10T16:24:28+00:00",
-      "pub_ts": 1783700668.0,
-      "theme": "geopolitics",
-      "sub_theme": "iran_war",
-      "theme_score": 5,
-      "region": "us",
-      "impact": 7
+      "impact": 4
     },
     {
       "id": "6e2610021fe8",
@@ -1089,7 +1538,7 @@
       "sub_theme": "carbon",
       "theme_score": 5,
       "region": "eu",
-      "impact": 7
+      "impact": 4
     },
     {
       "id": "3249947fb667",
@@ -1104,22 +1553,7 @@
       "sub_theme": "crypto",
       "theme_score": 4,
       "region": "us",
-      "impact": 7
-    },
-    {
-      "id": "af6b6272397b",
-      "title": "Nato’s carnival of Trumpian caprice",
-      "summary": "Alliance summits have become an exercise in managing an erratic US president",
-      "link": "https://www.ft.com/content/7e42d7fb-5d11-49b0-bc53-b2655f86b924",
-      "publisher": "FT",
-      "feed": "FT World",
-      "pub_iso": "2026-07-10T15:48:47+00:00",
-      "pub_ts": 1783698527.0,
-      "theme": "geopolitics",
-      "sub_theme": null,
-      "theme_score": 5,
-      "region": "us",
-      "impact": 7
+      "impact": 4
     },
     {
       "id": "36782dbeac75",
@@ -1134,172 +1568,82 @@
       "sub_theme": null,
       "theme_score": 4,
       "region": "us",
-      "impact": 7
+      "impact": 4
     },
     {
-      "id": "95bfe054c002",
-      "title": "Iran Supreme Leader to Hold Memorial Ceremony for Slain Father",
-      "summary": "Iran’s Supreme Leader Mojtaba Khamenei will hold a memorial ceremony for his predecessor and father Ali Khamenei on Friday, his office said, sparking speculation that the Islamic Republic’s top official could make his first public appearance since the war.",
-      "link": "https://www.bloomberg.com/news/articles/2026-07-10/iran-supreme-leader-to-hold-memorial-ceremony-for-slain-father-mrf1pwnj",
-      "publisher": "Bloomberg",
-      "feed": "Bloomberg Pol",
-      "pub_iso": "2026-07-10T14:43:32+00:00",
-      "pub_ts": 1783694612.0,
-      "theme": "geopolitics",
-      "sub_theme": "iran_war",
-      "theme_score": 5,
-      "region": "us",
-      "impact": 7
-    },
-    {
-      "id": "902fe7f67b8c",
-      "title": "Trump Says Iran Ceasefire Over But Talks on Deal to Continue",
-      "summary": "President Donald Trump said the US would continue talks with Iran but considers the ceasefire between the countries to be over. His administration quickly moved to add additional pressure on Tehran.",
-      "link": "https://www.bloomberg.com/news/articles/2026-07-10/trump-says-iran-ceasefire-over-but-talks-on-deal-to-continue",
-      "publisher": "Bloomberg",
-      "feed": "Bloomberg Pol",
-      "pub_iso": "2026-07-10T14:37:00+00:00",
-      "pub_ts": 1783694220.0,
-      "theme": "geopolitics",
-      "sub_theme": "iran_war",
-      "theme_score": 5,
-      "region": "us",
-      "impact": 7
-    },
-    {
-      "id": "f3bfdd1eb17d",
-      "title": "Qatar Blocks Defense Joint Venture Between VW, Israeli Firm",
-      "summary": "Qatar’s sovereign wealth fund vetoed a deal for Volkswagen AG to make vehicles supporting Israel’s Iron Dome mobile air-defense system, a plan intended to save hundreds of jobs at one of the German car manufacturer’s sites.",
-      "link": "https://www.bloomberg.com/news/articles/2026-07-10/qatar-blocks-defense-joint-venture-between-vw-and-israeli-firm",
-      "publisher": "Bloomberg",
-      "feed": "Bloomberg Pol",
-      "pub_iso": "2026-07-10T13:02:26+00:00",
-      "pub_ts": 1783688546.0,
-      "theme": "geopolitics",
-      "sub_theme": "iran_war",
-      "theme_score": 5,
-      "region": "us",
-      "impact": 7
-    },
-    {
-      "id": "c1819676e726",
-      "title": "Raytheon, Rheinmetall Anchor AI Training Effort for UK Army",
-      "summary": "The UK Ministry of Defense awarded a £2 billion ($2.7 billion) contract for AI-based military training to a Raytheon-led consortium that includes European defense prime Rheinmetall AG.",
-      "link": "https://www.bloomberg.com/news/articles/2026-07-10/raytheon-and-rheinmetall-anchor-ai-training-effort-for-uk-army",
-      "publisher": "Bloomberg",
-      "feed": "Bloomberg Tech",
-      "pub_iso": "2026-07-10T12:48:01+00:00",
-      "pub_ts": 1783687681.0,
-      "theme": "ai",
-      "sub_theme": null,
-      "theme_score": 7,
-      "region": "eu",
-      "impact": 7
-    },
-    {
-      "id": "07e05c9a7e37",
-      "title": "The billionaire dreaming of AI data centres in the desert",
-      "summary": "Servers should be powered by off-grid renewables, argues Envision founder Zhang Lei",
-      "link": "https://www.ft.com/content/2f46b60d-fef3-48bb-93ba-45bc71df8703",
-      "publisher": "FT",
-      "feed": "FT Markets",
-      "pub_iso": "2026-07-10T11:01:05+00:00",
-      "pub_ts": 1783681265.0,
-      "theme": "ai",
-      "sub_theme": "ai_infra",
-      "theme_score": 7,
-      "region": "us",
-      "impact": 7
-    },
-    {
-      "id": "2822a07100ea",
-      "title": "Why Payward chose Hong Kong to be its Asian stablecoin gateway",
-      "summary": "With its multi-currency advantages and regulatory clarity, Hong Kong has become a critical gateway connecting stablecoins – cryptocurrencies pegged to a stable asset like the US dollar – with traditional finance. Executives said this would help businesses cut costs, lower risks and support expansion into emerging markets. The city’s unique positioning stemmed from its century-long role as a gatewa",
-      "link": "https://www.scmp.com/business/banking-finance/article/3360137/why-payward-building-its-asian-stablecoin-gateway-hong-kong?utm_source=rss_feed",
-      "publisher": "SCMP",
-      "feed": "SCMP Business",
-      "pub_iso": "2026-07-10T10:08:52+00:00",
-      "pub_ts": 1783678132.0,
-      "theme": "tech",
-      "sub_theme": "crypto",
-      "theme_score": 7,
-      "region": "us",
-      "impact": 7
-    },
-    {
-      "id": "979800befcd4",
-      "title": "Nvidia gets China boost, Iran ceasefire breaks, GDP release",
-      "summary": "China eased a boycott of higher-end Nvidia processors, seeking to balance concerns about chip shortages hurting local artificial intelligence (AI) developers against the risk of over-reliance on US technology. Alibaba is among select businesses that will be eligible to buy H200s, Nvidia’s second-best AI chip, the South China Morning Post reported, citing an unidentified source. TikTok developer By",
-      "link": "https://www.scmp.com/plus/tech/tech-war/article/3360112/nvidia-gets-china-boost-iran-ceasefire-breaks-gdp-release?utm_source=rss_feed",
-      "publisher": "SCMP",
-      "feed": "SCMP Business",
-      "pub_iso": "2026-07-10T09:00:17+00:00",
-      "pub_ts": 1783674017.0,
-      "theme": "ai",
-      "sub_theme": "ai_infra",
-      "theme_score": 13,
-      "region": "us",
-      "impact": 7
-    },
-    {
-      "id": "16ff3c0c19d4",
-      "title": "Mexico Readies $4 Billion in Financing to Back Energy Projects",
-      "summary": "Mexican finance officials are exploring the possibility of creating an umbrella-financing package for renewable-energy projects that could be supported by more than $4 billion from development bank Banco Nacional de Obras y Servicios Publicos, the bank’s head said.",
-      "link": "https://www.bloomberg.com/news/articles/2026-07-10/mexico-readies-4-billion-in-financing-to-back-energy-projects",
-      "publisher": "Bloomberg",
-      "feed": "Bloomberg Pol",
-      "pub_iso": "2026-07-10T18:23:59+00:00",
-      "pub_ts": 1783707839.0,
+      "id": "951eb6a047c9",
+      "title": "Japan's scallop production feels heat of climate change",
+      "summary": "",
+      "link": "https://asia.nikkei.com/business/fisheries/japan-s-scallop-production-feels-heat-of-climate-change",
+      "publisher": "Nikkei Asia",
+      "feed": "Nikkei Asia",
+      "pub_iso": null,
+      "pub_ts": 0,
       "theme": "sustainability",
-      "sub_theme": "renewables",
-      "theme_score": 3,
-      "region": "us",
-      "impact": 6
+      "sub_theme": "climate",
+      "theme_score": 5,
+      "region": "asia",
+      "impact": 4
     },
     {
-      "id": "de240b3735d4",
-      "title": "SK Hynix CEO Expects Memory Crunch to Last Beyond 2030",
-      "summary": "The memory-chip shortages that are roiling the computer, car and device markets will probably persist beyond 2030, according to SK Hynix Inc. Chief Executive Officer Kwak Noh-Jung.",
-      "link": "https://www.bloomberg.com/news/articles/2026-07-10/sk-hynix-chief-expects-memory-shortage-to-last-into-next-decade",
+      "id": "a0dcbc2aa694",
+      "title": "Marubeni gears up for machine tool growth in India as chips, data centers boom",
+      "summary": "",
+      "link": "https://asia.nikkei.com/business/companies/marubeni-gears-up-for-machine-tool-growth-in-india-as-chips-data-centers-boom",
+      "publisher": "Nikkei Asia",
+      "feed": "Nikkei Asia",
+      "pub_iso": null,
+      "pub_ts": 0,
+      "theme": "ai",
+      "sub_theme": "ai_infra",
+      "theme_score": 4,
+      "region": "asia",
+      "impact": 4
+    },
+    {
+      "id": "ce913bff5a1d",
+      "title": "SK Hynix Rises After Record US Offering | The Close 7/10/2026",
+      "summary": "Bloomberg Television brings you the latest news and analysis leading up to the final minutes and seconds before and after the closing bell on Wall Street. Today's guests are Winnie Cisar, CreditSights Global Head of Strategy, John Medina, Moody's Ratings SVP, Global Project and Infrastructure Finance, Tom Fitzgerald, TD Cowen VP, Equity Research, Gary Gensler, Former SEC Chair, Jeffrey Sherman, Do",
+      "link": "https://www.bloomberg.com/news/videos/2026-07-10/the-close-7-10-2026-video",
       "publisher": "Bloomberg",
-      "feed": "Bloomberg Tech",
-      "pub_iso": "2026-07-10T17:42:21+00:00",
-      "pub_ts": 1783705341.0,
-      "theme": "tech",
-      "sub_theme": "consumer_tech",
+      "feed": "Bloomberg Mkts",
+      "pub_iso": "2026-07-10T23:56:41+00:00",
+      "pub_ts": 1783727801.0,
+      "theme": "rates",
+      "sub_theme": null,
       "theme_score": 3,
       "region": "us",
-      "impact": 6
+      "impact": 3
     },
     {
-      "id": "dc1afe5fc9f1",
-      "title": "UK to sign up to €60bn EU defence loan scheme for Ukraine",
-      "summary": "Keir Starmer keen to leave Downing Street with positive signal to Europe by pledging financial commitment",
-      "link": "https://www.ft.com/content/3c8b250f-535e-44ae-99c6-dc300125d68d",
-      "publisher": "FT",
-      "feed": "FT World",
-      "pub_iso": "2026-07-10T17:23:38+00:00",
-      "pub_ts": 1783704218.0,
-      "theme": "geopolitics",
-      "sub_theme": "ukraine_russia",
-      "theme_score": 3,
-      "region": "eu",
-      "impact": 6
-    },
-    {
-      "id": "839ed33ceb86",
-      "title": "Mexico, Peru Open Door To Restoring Relations After Bitter Political Fight",
-      "summary": "Keiko Fujimori’s looming inauguration as Peru’s next president is opening a path to repair the Andean nation’s relationship with Mexico, after Lima broke off diplomatic relations last year.",
-      "link": "https://www.bloomberg.com/news/articles/2026-07-10/mexico-peru-open-door-to-restoring-relations-after-bitter-political-fight",
-      "publisher": "Bloomberg",
-      "feed": "Bloomberg Pol",
-      "pub_iso": "2026-07-10T16:55:28+00:00",
-      "pub_ts": 1783702528.0,
-      "theme": "tech",
-      "sub_theme": "consumer_tech",
+      "id": "b538e12207e7",
+      "title": "Meta stock got the 18% pop Jim Cramer said it could on cloud news. What's next?",
+      "summary": "Investors are also celebrating Meta's launch Thursday of Muse Spark 1.1.",
+      "link": "https://www.cnbc.com/2026/07/10/meta-got-18percent-pop-jim-cramer-said-it-could-on-cloud-news-what-is-next.html",
+      "publisher": "CNBC",
+      "feed": "CNBC Tech",
+      "pub_iso": "2026-07-10T19:39:24+00:00",
+      "pub_ts": 1783712364.0,
+      "theme": "rates",
+      "sub_theme": null,
       "theme_score": 3,
       "region": "us",
-      "impact": 6
+      "impact": 3
+    },
+    {
+      "id": "192baee8cb5f",
+      "title": "Beyond Corporate Bonds: Enhance Income With Private Credit",
+      "summary": "",
+      "link": "https://finance.yahoo.com/markets/options/articles/beyond-corporate-bonds-enhance-income-192628534.html",
+      "publisher": "Yahoo Finance",
+      "feed": "Yahoo Finance",
+      "pub_iso": "2026-07-10T19:26:28+00:00",
+      "pub_ts": 1783711588.0,
+      "theme": "rates",
+      "sub_theme": "credit",
+      "theme_score": 3,
+      "region": "us",
+      "impact": 3
     },
     {
       "id": "0c2b67c83f55",
@@ -1307,14 +1651,14 @@
       "summary": "Passenger sitting next to window was nearly sucked out of Boeing 737 aircraft, according to reports",
       "link": "https://www.ft.com/content/8546fc0d-e556-438d-9ab1-16b467dda215",
       "publisher": "FT",
-      "feed": "FT Home",
+      "feed": "FT Companies",
       "pub_iso": "2026-07-10T16:47:29+00:00",
       "pub_ts": 1783702049.0,
       "theme": "sustainability",
       "sub_theme": null,
       "theme_score": 3,
       "region": "us",
-      "impact": 6
+      "impact": 3
     },
     {
       "id": "0983b925d074",
@@ -1329,67 +1673,37 @@
       "sub_theme": null,
       "theme_score": 3,
       "region": "eu",
-      "impact": 6
+      "impact": 3
     },
     {
-      "id": "eeb03e21a7f3",
-      "title": "Ukraine Says It Hit Two Russian Refineries, Slew of Fuel Tankers",
-      "summary": "Ukraine said it hit two Russian refineries and over a dozen fuel tankers, the latest in a series of attacks on energy assets that are deepening a nationwide fuel crunch.",
-      "link": "https://www.bloomberg.com/news/articles/2026-07-10/ukraine-says-it-hit-two-russian-refineries-slew-of-fuel-tankers",
-      "publisher": "Bloomberg",
-      "feed": "Bloomberg Pol",
-      "pub_iso": "2026-07-10T16:37:55+00:00",
-      "pub_ts": 1783701475.0,
-      "theme": "geopolitics",
-      "sub_theme": "ukraine_russia",
-      "theme_score": 3,
-      "region": "eu",
-      "impact": 6
-    },
-    {
-      "id": "321c694f7e33",
-      "title": "Investors sell longer-dated AI debt amid Big Tech borrowing spree",
-      "summary": "Waning demand highlights scepticism over sector’s long-term profitability",
-      "link": "https://www.ft.com/content/28380abc-72f9-4287-8d36-2823c73358ce",
-      "publisher": "FT",
-      "feed": "FT Home",
-      "pub_iso": "2026-07-10T16:29:50+00:00",
-      "pub_ts": 1783700990.0,
-      "theme": "ai",
-      "sub_theme": null,
+      "id": "56c9ec837643",
+      "title": "Leveraged loan default rate dips below 1% in June, though distress ratio rises",
+      "summary": "",
+      "link": "https://finance.yahoo.com/markets/options/articles/leveraged-loan-default-rate-dips-155849094.html",
+      "publisher": "Yahoo Finance",
+      "feed": "Yahoo Finance",
+      "pub_iso": "2026-07-10T15:58:49+00:00",
+      "pub_ts": 1783699129.0,
+      "theme": "rates",
+      "sub_theme": "credit",
       "theme_score": 3,
       "region": "us",
-      "impact": 6
+      "impact": 3
     },
     {
-      "id": "a4b75285cf4d",
-      "title": "New Fed task force members share Chairman Kevin Warsh's embrace of AI",
-      "summary": "The three members of a task force advising the Fed on artificial intelligence are strong proponents of the technology.",
-      "link": "https://www.cnbc.com/2026/07/09/fed-task-force-member-chairman-kevin-warsh-ai.html",
-      "publisher": "CNBC",
-      "feed": "CNBC World",
-      "pub_iso": "2026-07-10T15:51:35+00:00",
-      "pub_ts": 1783698695.0,
-      "theme": "ai",
-      "sub_theme": null,
+      "id": "6849fc636c26",
+      "title": "Credit card, debit card, or cash: What's best for travel?",
+      "summary": "",
+      "link": "https://finance.yahoo.com/personal-finance/banking/article/credit-card-debit-card-or-cash-when-traveling-153523544.html",
+      "publisher": "Yahoo Finance",
+      "feed": "Yahoo Finance",
+      "pub_iso": "2026-07-10T15:35:23+00:00",
+      "pub_ts": 1783697723.0,
+      "theme": "rates",
+      "sub_theme": "credit",
       "theme_score": 3,
       "region": "us",
-      "impact": 6
-    },
-    {
-      "id": "8fbc7ca6c764",
-      "title": "Government Action is Crucial for AI Entrepreneurs Says Pelgo CEO",
-      "summary": "Artificial intelligence could reshape the jobs of nearly 80 million people across Southeast Asia, but there is little sign it has led to large-scale employment cuts, according to the International Labour Organization. The ILO urged governments to strengthen AI governance and better integrate AI policies through a human-centered approach to help workers and businesses adapt. Pelgo CEO Chieh Huang d",
-      "link": "https://www.bloomberg.com/news/videos/2026-07-10/gov-action-vital-for-ai-entrepreneurs-says-pelgo-ceo-video",
-      "publisher": "Bloomberg",
-      "feed": "Bloomberg Tech",
-      "pub_iso": "2026-07-10T15:08:48+00:00",
-      "pub_ts": 1783696128.0,
-      "theme": "ai",
-      "sub_theme": null,
-      "theme_score": 3,
-      "region": "us",
-      "impact": 6
+      "impact": 3
     },
     {
       "id": "1c5d80eb84e2",
@@ -1397,44 +1711,14 @@
       "summary": "These are America's cheapest states to live in for 2026, where residents can still beat inflation.",
       "link": "https://www.cnbc.com/2026/07/10/americas-10-cheapest-places-to-live-top-states-for-business.html",
       "publisher": "CNBC",
-      "feed": "CNBC Top",
+      "feed": "CNBC World",
       "pub_iso": "2026-07-10T14:50:03+00:00",
       "pub_ts": 1783695003.0,
       "theme": "macro",
       "sub_theme": "inflation",
       "theme_score": 3,
       "region": "us",
-      "impact": 6
-    },
-    {
-      "id": "586c24d097c0",
-      "title": "Semiconductor Stocks Are Overbought, Morgan Stanley's Shalett Warns",
-      "summary": "Lisa Shalett, Morgan Stanley Wealth Management CIO, discusses the current state of the semiconductor sector, highlighting that chip stocks have become meaningfully overbought with some indexes up nearly 100% year-to-date before recent pullbacks. She speaks on \"Bloomberg Surveillance.\" (Source: Bloomberg)",
-      "link": "https://www.bloomberg.com/news/videos/2026-07-10/semiconductor-stocks-are-overbought-lisa-shalett-warns-video",
-      "publisher": "Bloomberg",
-      "feed": "Bloomberg Tech",
-      "pub_iso": "2026-07-10T14:21:14+00:00",
-      "pub_ts": 1783693274.0,
-      "theme": "tech",
-      "sub_theme": "consumer_tech",
-      "theme_score": 3,
-      "region": "us",
-      "impact": 6
-    },
-    {
-      "id": "d17b304b4a81",
-      "title": "Morgan Stanley Sees Pressure Rising on Chipmakers’ Pricing Power",
-      "summary": "Morgan Stanley’s Lisa Shalett urged investors to be cautious on chipmakers as evidence mounts that their pricing power is limited, suggesting that the stocks may have rallied too far on optimism around artificial-intelligence spending.",
-      "link": "https://www.bloomberg.com/news/articles/2026-07-10/morgan-stanley-sees-pressure-rising-on-chipmakers-pricing-power",
-      "publisher": "Bloomberg",
-      "feed": "Bloomberg Tech",
-      "pub_iso": "2026-07-10T14:13:05+00:00",
-      "pub_ts": 1783692785.0,
-      "theme": "macro",
-      "sub_theme": null,
-      "theme_score": 3,
-      "region": "us",
-      "impact": 6
+      "impact": 3
     },
     {
       "id": "e631c3e55847",
@@ -1449,7 +1733,7 @@
       "sub_theme": "treasuries",
       "theme_score": 3,
       "region": "us",
-      "impact": 6
+      "impact": 3
     },
     {
       "id": "edb1e9c5dab6",
@@ -1457,29 +1741,14 @@
       "summary": "Following a more than sevenfold rally in its stock price over the past year, South Korea's SK Hynix is listing on the Nasdaq.",
       "link": "https://www.cnbc.com/2026/07/09/meet-sk-hynix-the-trillion-dollar-chipmaker-debuting-on-us-markets-.html",
       "publisher": "CNBC",
-      "feed": "CNBC Tech",
+      "feed": "CNBC World",
       "pub_iso": "2026-07-10T14:02:22+00:00",
       "pub_ts": 1783692142.0,
       "theme": "tech",
       "sub_theme": "consumer_tech",
       "theme_score": 3,
       "region": "us",
-      "impact": 6
-    },
-    {
-      "id": "0eefd6c36b5d",
-      "title": "Reform UK Decries ‘Smear Campaign’ After Fresh Finance Probe Report",
-      "summary": "Reform UK’s deputy leader Richard Tice said his party was being subjected to a “smear campaign” after a newspaper reported that London police are investigating a £500,000 ($671,000) donation.",
-      "link": "https://www.bloomberg.com/news/articles/2026-07-10/reform-decries-smear-campaign-after-fresh-finance-probe-report",
-      "publisher": "Bloomberg",
-      "feed": "Bloomberg Pol",
-      "pub_iso": "2026-07-10T14:00:29+00:00",
-      "pub_ts": 1783692029.0,
-      "theme": "tech",
-      "sub_theme": "consumer_tech",
-      "theme_score": 3,
-      "region": "eu",
-      "impact": 6
+      "impact": 3
     },
     {
       "id": "249afcb9d092",
@@ -1487,418 +1756,43 @@
       "summary": "These 10 U.S. states are the most expensive places to live in America in 2026, with inflation punishing residents to an extreme degree.",
       "link": "https://www.cnbc.com/2026/07/10/10-most-expensive-places-to-live-america-top-states-for-business.html",
       "publisher": "CNBC",
-      "feed": "CNBC Top",
+      "feed": "CNBC World",
       "pub_iso": "2026-07-10T13:56:43+00:00",
       "pub_ts": 1783691803.0,
       "theme": "macro",
       "sub_theme": "inflation",
       "theme_score": 3,
       "region": "us",
-      "impact": 6
+      "impact": 3
     },
     {
-      "id": "252af1626c3d",
-      "title": "Ukraine escalates attacks on tankers near Crimea as Russian fuel shortages bite",
-      "summary": "The drone strikes form part of Ukraine's campaign designed to choke off supplies and transportation routes in and out of Crimea.",
-      "link": "https://www.cnbc.com/2026/07/10/ukraine-russia-crimea-fuel-oil.html",
-      "publisher": "CNBC",
-      "feed": "CNBC World",
-      "pub_iso": "2026-07-10T13:13:22+00:00",
-      "pub_ts": 1783689202.0,
-      "theme": "geopolitics",
-      "sub_theme": "ukraine_russia",
-      "theme_score": 3,
-      "region": "eu",
-      "impact": 6
-    },
-    {
-      "id": "c62d36da1fae",
-      "title": "Iran is seeing through Trump’s bluff",
-      "summary": "The US president finds himself stuck in a cul-de-sac of his own making",
-      "link": "https://www.ft.com/content/0f454436-6e63-4726-b284-04146e33bf0e",
-      "publisher": "FT",
-      "feed": "FT World",
-      "pub_iso": "2026-07-10T13:00:09+00:00",
-      "pub_ts": 1783688409.0,
-      "theme": "geopolitics",
-      "sub_theme": "iran_war",
-      "theme_score": 3,
-      "region": "us",
-      "impact": 6
-    },
-    {
-      "id": "8c92c2cf6cda",
-      "title": "IEA warns of petrol and diesel supply crunch",
-      "summary": "Refineries in Gulf and Russia hit by impact of wars, while global consumption has remained high",
-      "link": "https://www.ft.com/content/54261075-72c5-4b47-9d53-8c94738201e3",
-      "publisher": "FT",
-      "feed": "FT Markets",
-      "pub_iso": "2026-07-10T12:06:16+00:00",
-      "pub_ts": 1783685176.0,
-      "theme": "geopolitics",
-      "sub_theme": "ukraine_russia",
-      "theme_score": 5,
-      "region": "us",
-      "impact": 6
-    },
-    {
-      "id": "d33271efb1c2",
-      "title": "Meta found to breach EU laws with 'addictive' Instagram, Facebook designs",
-      "summary": "Instagram and Facebook's \"addictive\" designs have put Meta in breach of the European Union's digital laws, the EU concluded Friday in a preliminary report.",
-      "link": "https://www.cnbc.com/2026/07/10/meta-instagram-facebook-addictive-design-breach-eu-laws.html",
-      "publisher": "CNBC",
-      "feed": "CNBC Top",
-      "pub_iso": "2026-07-10T11:48:12+00:00",
-      "pub_ts": 1783684092.0,
-      "theme": "tech",
-      "sub_theme": "cyber",
-      "theme_score": 4,
-      "region": "eu",
-      "impact": 6
-    },
-    {
-      "id": "f7acd34f874b",
-      "title": "Delta reports record demand but falling profits as fuel costs hit results",
-      "summary": "Iran war drove jet fuel costs 77% higher than year-ago levels in preview of wider knock to US corporate profits",
-      "link": "https://www.ft.com/content/2a25d6d6-874a-4861-9876-7964e97f230e",
-      "publisher": "FT",
-      "feed": "FT Companies",
-      "pub_iso": "2026-07-10T10:33:49+00:00",
-      "pub_ts": 1783679629.0,
-      "theme": "geopolitics",
-      "sub_theme": "iran_war",
-      "theme_score": 5,
-      "region": "us",
-      "impact": 6
-    },
-    {
-      "id": "d00d5b6b5806",
-      "title": "World oil demand set for first annual decline since 2020, IEA says",
-      "summary": "Renewed escalation in the U.S.-Iran war could complicate matters and further cloud the outlook, the IEA warned Friday.",
-      "link": "https://www.cnbc.com/2026/07/10/iea-world-oil-demand-declines-iran-war.html",
-      "publisher": "CNBC",
-      "feed": "CNBC World",
-      "pub_iso": "2026-07-10T09:15:22+00:00",
-      "pub_ts": 1783674922.0,
-      "theme": "geopolitics",
-      "sub_theme": "iran_war",
-      "theme_score": 5,
-      "region": "us",
-      "impact": 6
-    },
-    {
-      "id": "d6e4193a8b53",
-      "title": "Inside the secretive Fifa committee that suspended the US red card",
-      "summary": "The body that suspended US star Folarin Balogun’s ban is run by an Emirati ex-lawmaker who can make unilateral rulings",
-      "link": "https://www.ft.com/content/2f15c24e-4284-42b6-a1d1-834fad62f8bc",
-      "publisher": "FT",
-      "feed": "FT Companies",
-      "pub_iso": "2026-07-10T12:48:25+00:00",
-      "pub_ts": 1783687705.0,
-      "theme": "tech",
-      "sub_theme": "consumer_tech",
-      "theme_score": 3,
-      "region": "us",
-      "impact": 5
-    },
-    {
-      "id": "3c49da9d3fa3",
-      "title": "Chip rally, Fed task forces, Delta earnings and more in Morning Squawk",
-      "summary": "Here are five key things investors need to know to start the trading day.",
-      "link": "https://www.cnbc.com/2026/07/10/5-things-to-know-before-the-stock-market-opens.html",
-      "publisher": "CNBC",
-      "feed": "CNBC Tech",
-      "pub_iso": "2026-07-10T12:46:38+00:00",
-      "pub_ts": 1783687598.0,
-      "theme": "rates",
-      "sub_theme": "fed",
-      "theme_score": 3,
-      "region": "us",
-      "impact": 5
-    },
-    {
-      "id": "c3a790e23740",
-      "title": "Why the stock market and economy may seem out of sync",
-      "summary": "The stock market has boomed on AI euphoria, while the trajectory of the U.S. economy has been more tepid, economists said.",
-      "link": "https://www.cnbc.com/2026/07/10/stock-market-and-economy-out-of-sync.html",
-      "publisher": "CNBC",
-      "feed": "CNBC Top",
-      "pub_iso": "2026-07-10T12:15:02+00:00",
-      "pub_ts": 1783685702.0,
-      "theme": "ai",
-      "sub_theme": null,
-      "theme_score": 3,
-      "region": "us",
-      "impact": 5
-    },
-    {
-      "id": "50e82c46b2d7",
-      "title": "The Tech Download: Teen social media bans miss a key part of the puzzle: AI chatbots",
-      "summary": "Teenagers are increasingly becoming dependent on AI chatbots, echoing a familiar problem with social media in the 2010s.",
-      "link": "https://www.cnbc.com/2026/07/10/tech-download-social-media-bans-ai-chatbots.html",
-      "publisher": "CNBC",
-      "feed": "CNBC World",
-      "pub_iso": "2026-07-10T11:32:53+00:00",
-      "pub_ts": 1783683173.0,
-      "theme": "ai",
-      "sub_theme": null,
-      "theme_score": 3,
-      "region": "us",
-      "impact": 5
-    },
-    {
-      "id": "96ecedd743c4",
-      "title": "Hong Kong keeps tight grip on housing land supply despite property rebound",
-      "summary": "Hong Kong’s government will release just one residential site for sale in the July to September quarter, maintaining a cautious approach even as the housing market rebounds, while officials argue that supply from other channels will keep the city on track to meet its housing targets. A 5,170-square-metre (55,649 sq ft) site on Fat Kwong Street in Ho Man Tin, Kowloon, will be offered through tender",
-      "link": "https://www.scmp.com/business/article/3360157/hong-kong-keeps-tight-grip-housing-land-supply-despite-property-rebound?utm_source=rss_feed",
-      "publisher": "SCMP",
-      "feed": "SCMP Business",
-      "pub_iso": "2026-07-10T11:14:53+00:00",
-      "pub_ts": 1783682093.0,
+      "id": "7b6828468951",
+      "title": "Anwar coalition suffers heavy defeat to ally in Malaysia's Johor vote",
+      "summary": "",
+      "link": "https://asia.nikkei.com/politics/anwar-coalition-suffers-heavy-defeat-to-ally-in-malaysia-s-johor-vote",
+      "publisher": "Nikkei Asia",
+      "feed": "Nikkei Asia",
+      "pub_iso": null,
+      "pub_ts": 0,
       "theme": "tech",
       "sub_theme": "consumer_tech",
       "theme_score": 3,
       "region": "asia",
-      "impact": 5
+      "impact": 3
     },
     {
-      "id": "030b1cf8270f",
-      "title": "EasyJet pops 13% as airline weighs $7.7 billion rival takeover bid from Apollo",
-      "summary": "A bidding war has broken out for budget carrier easyJet after Apollo and Castlelake have both submitted takeover offers.",
-      "link": "https://www.cnbc.com/2026/07/10/easyjet-apollo-takeover-bid-castlelake-share-price.html",
-      "publisher": "CNBC",
-      "feed": "CNBC World",
-      "pub_iso": "2026-07-10T08:00:03+00:00",
-      "pub_ts": 1783670403.0,
+      "id": "e2804803808a",
+      "title": "Subaru embraces sports car roots with revival of manual 6-speed",
+      "summary": "",
+      "link": "https://asia.nikkei.com/business/automobiles/subaru-embraces-sports-car-roots-with-revival-of-manual-6-speed",
+      "publisher": "Nikkei Asia",
+      "feed": "Nikkei Asia",
+      "pub_iso": null,
+      "pub_ts": 0,
       "theme": "tech",
       "sub_theme": "consumer_tech",
       "theme_score": 3,
-      "region": "us",
-      "impact": 5
-    },
-    {
-      "id": "0ea27f5c6a32",
-      "title": "Uniqlo defies sluggish China market with double-digit profit growth",
-      "summary": "Japanese apparel retailer Uniqlo posted higher revenue and double-digit profit growth in mainland China over the three-month period ending in May, defying sluggish domestic consumption and lingering bilateral tensions. Same-store sales rose, driven by enhanced marketing and “buoyant demand” for summer products in May, when temperatures started to rise. Easy pants, UV-protection items, T-shirts and",
-      "link": "https://www.scmp.com/business/companies/article/3360017/uniqlo-defies-sluggish-china-market-double-digit-profit-growth?utm_source=rss_feed",
-      "publisher": "SCMP",
-      "feed": "SCMP Business",
-      "pub_iso": "2026-07-10T01:00:19+00:00",
-      "pub_ts": 1783645219.0,
-      "theme": "tech",
-      "sub_theme": null,
-      "theme_score": 4,
       "region": "asia",
-      "impact": 5
-    },
-    {
-      "id": "7992a7425dd0",
-      "title": "Interest rates may need to rise this year, says Bank of England economist",
-      "summary": "Chief economist at the Bank of England says slower growth and inflationary pressures mean rate rise needed",
-      "link": "https://www.bbc.co.uk/news/articles/c932ed8nv75o?at_medium=RSS&at_campaign=rss",
-      "publisher": "BBC",
-      "feed": "BBC Business",
-      "pub_iso": "2026-07-09T17:37:11+00:00",
-      "pub_ts": 1783618631.0,
-      "theme": "rates",
-      "sub_theme": "ecb_boe",
-      "theme_score": 6,
-      "region": "eu",
-      "impact": 5
-    },
-    {
-      "id": "281936898c4d",
-      "title": "China’s appeal as portfolio diversifier grows, BlackRock strategist says",
-      "summary": "China is increasingly being viewed by global investors as not only a growth opportunity but also a potential portfolio diversifier, as higher inflation, market volatility and changing correlations challenge traditional asset-allocation strategies, according to BlackRock’s global chief investment strategist. “China can provide exposure to different economic drivers,” Li Wei said at the asset manage",
-      "link": "https://www.scmp.com/business/markets/article/3360071/chinas-appeal-portfolio-diversifier-grows-blackrock-strategist-says?utm_source=rss_feed",
-      "publisher": "SCMP",
-      "feed": "SCMP Business",
-      "pub_iso": "2026-07-10T06:00:07+00:00",
-      "pub_ts": 1783663207.0,
-      "theme": "macro",
-      "sub_theme": "inflation",
-      "theme_score": 3,
-      "region": "asia",
-      "impact": 4
-    },
-    {
-      "id": "abe77ce76725",
-      "title": "Wall Street’s giant memory windfall",
-      "summary": "The blockbuster listing of South Korean chipmaker SK Hynix could earn investment bankers nine figures in fees",
-      "link": "https://www.ft.com/content/eca588b0-2729-4c8e-8319-ee1d9eee4d95",
-      "publisher": "FT",
-      "feed": "FT Markets",
-      "pub_iso": "2026-07-10T04:00:26+00:00",
-      "pub_ts": 1783656026.0,
-      "theme": "sustainability",
-      "sub_theme": null,
-      "theme_score": 3,
-      "region": "us",
-      "impact": 4
-    },
-    {
-      "id": "96221d257e32",
-      "title": "UBS helped trigger exodus from Blue Owl private credit fund",
-      "summary": "Bank advised some clients to cut exposure, hitting a fund it had been instrumental in setting up",
-      "link": "https://www.ft.com/content/4c75ea97-8411-445d-b1fd-393b2b4222f8",
-      "publisher": "FT",
-      "feed": "FT Markets",
-      "pub_iso": "2026-07-10T04:00:19+00:00",
-      "pub_ts": 1783656019.0,
-      "theme": "rates",
-      "sub_theme": "credit",
-      "theme_score": 3,
-      "region": "us",
-      "impact": 4
-    },
-    {
-      "id": "6cc52271cd1a",
-      "title": "If you invested $10,000 in Bitcoin, Trump meme coin, and gold when Trump took office, here's what you'd have today",
-      "summary": "",
-      "link": "https://finance.yahoo.com/markets/crypto/articles/invested-10-000-bitcoin-trump-222200005.html",
-      "publisher": "Yahoo Finance",
-      "feed": "Yahoo Finance",
-      "pub_iso": "2026-07-09T22:22:00+00:00",
-      "pub_ts": 1783635720.0,
-      "theme": "tech",
-      "sub_theme": "crypto",
-      "theme_score": 4,
-      "region": "us",
-      "impact": 4
-    },
-    {
-      "id": "36fb31c25827",
-      "title": "Haleon Signs a Five-Year Agreement With Microsoft (MSFT) to Deploy Agentic AI Across Its Global Operations",
-      "summary": "",
-      "link": "https://finance.yahoo.com/technology/ai/articles/haleon-signs-five-agreement-microsoft-172322731.html",
-      "publisher": "Yahoo Finance",
-      "feed": "Yahoo Finance",
-      "pub_iso": "2026-07-09T17:23:22+00:00",
-      "pub_ts": 1783617802.0,
-      "theme": "tech",
-      "sub_theme": "consumer_tech",
-      "theme_score": 4,
-      "region": "us",
-      "impact": 4
-    },
-    {
-      "id": "e2ba7094384b",
-      "title": "How the RMB Business Facility will help consolidate Hong Kong’s financial role",
-      "summary": "Hong Kong’s updated yuan financing tool for banks, featuring a quota 150 per cent larger than before, was launched on Friday, giving a significant boost to the use of the Chinese currency in daily global business. What is the RMB Business Facility? The RMB Business Facility is a funding window run by the Hong Kong Monetary Authority (HKMA) that allows participating banks to borrow yuan at the rela",
-      "link": "https://www.scmp.com/business/banking-finance/article/3359981/how-rmb-business-facility-will-help-consolidate-hong-kongs-financial-role?utm_source=rss_feed",
-      "publisher": "SCMP",
-      "feed": "SCMP Business",
-      "pub_iso": "2026-07-10T00:00:16+00:00",
-      "pub_ts": 1783641616.0,
-      "theme": "sustainability",
-      "sub_theme": null,
-      "theme_score": 3,
-      "region": "asia",
-      "impact": 3
-    },
-    {
-      "id": "4bf34a4df373",
-      "title": "At high-end Hong Kong hotels, rates check in above pre-pandemic highs, outpace market",
-      "summary": "Hong Kong’s luxury hotels have outpaced the city’s broader hospitality market since last year, with their room rates exceeding 2018 levels as demand recovers, according to a report by global property consultancy Jones Lang LaSalle (JLL). Citing official tourism figures, JLL said high-end properties were the only segment that returned to 2018’s average daily rates (ADRs) in 2025, hitting HK$2,169 (",
-      "link": "https://www.scmp.com/business/article/3360010/high-end-hong-kong-hotels-rates-check-above-pre-pandemic-highs-outpace-market?utm_source=rss_feed",
-      "publisher": "SCMP",
-      "feed": "SCMP Business",
-      "pub_iso": "2026-07-09T23:30:06+00:00",
-      "pub_ts": 1783639806.0,
-      "theme": "macro",
-      "sub_theme": null,
-      "theme_score": 3,
-      "region": "us",
-      "impact": 3
-    },
-    {
-      "id": "7d7af9cdb27f",
-      "title": "Kevin Warsh names members of his Federal Reserve task forces, including Marc Andreessen, Doug McMillon",
-      "summary": "Federal Reserve Chairman Kevin Warsh on Thursday released names of the experts who will comprise five task forces to examine the institution's operations.",
-      "link": "https://www.cnbc.com/2026/07/09/kevin-warsh-names-members-of-his-federal-reserve-task-forces-including-marc-andreessen-doug-mcmillon.html",
-      "publisher": "CNBC",
-      "feed": "CNBC World",
-      "pub_iso": "2026-07-09T19:53:20+00:00",
-      "pub_ts": 1783626800.0,
-      "theme": "rates",
-      "sub_theme": "fed",
-      "theme_score": 3,
-      "region": "us",
-      "impact": 3
-    },
-    {
-      "id": "15a1cf710bb4",
-      "title": "Retirees worry inflation will ravage their savings, but the reality is often less scary",
-      "summary": "",
-      "link": "https://finance.yahoo.com/economy/article/retirees-worry-inflation-will-ravage-their-savings-but-the-reality-is-often-less-scary-173527324.html",
-      "publisher": "Yahoo Finance",
-      "feed": "Yahoo Finance",
-      "pub_iso": "2026-07-09T17:35:27+00:00",
-      "pub_ts": 1783618527.0,
-      "theme": "macro",
-      "sub_theme": "inflation",
-      "theme_score": 3,
-      "region": "us",
-      "impact": 3
-    },
-    {
-      "id": "4c27addadf26",
-      "title": "Benchmark Maintains a Hold Rating on Snap Inc (SNAP) Despite SPECS Release",
-      "summary": "",
-      "link": "https://finance.yahoo.com/technology/articles/benchmark-maintains-hold-rating-snap-172717432.html",
-      "publisher": "Yahoo Finance",
-      "feed": "Yahoo Finance",
-      "pub_iso": "2026-07-09T17:27:17+00:00",
-      "pub_ts": 1783618037.0,
-      "theme": "rates",
-      "sub_theme": null,
-      "theme_score": 3,
-      "region": "us",
-      "impact": 3
-    },
-    {
-      "id": "1aca8c624c9e",
-      "title": "Here’s Why BofA Initiated Kosmos Energy (KOS) With a Sell Rating",
-      "summary": "",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/why-bofa-initiated-kosmos-energy-172702086.html",
-      "publisher": "Yahoo Finance",
-      "feed": "Yahoo Finance",
-      "pub_iso": "2026-07-09T17:27:02+00:00",
-      "pub_ts": 1783618022.0,
-      "theme": "rates",
-      "sub_theme": null,
-      "theme_score": 3,
-      "region": "us",
-      "impact": 3
-    },
-    {
-      "id": "600ff9bf8d85",
-      "title": "PriceSmart Stock Eyes $220 as Chile Expansion Fuels Growth",
-      "summary": "",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/pricesmart-stock-eyes-220-chile-172000379.html",
-      "publisher": "Yahoo Finance",
-      "feed": "Yahoo Finance",
-      "pub_iso": "2026-07-09T17:20:00+00:00",
-      "pub_ts": 1783617600.0,
-      "theme": "macro",
-      "sub_theme": "growth_gdp",
-      "theme_score": 3,
-      "region": "us",
-      "impact": 3
-    },
-    {
-      "id": "52c221f9843e",
-      "title": "Fed minutes expose deep divide over interest-rate outlook",
-      "summary": "",
-      "link": "https://finance.yahoo.com/economy/policy/articles/fed-minutes-expose-deep-divide-141700465.html",
-      "publisher": "Yahoo Finance",
-      "feed": "Yahoo Finance",
-      "pub_iso": "2026-07-09T14:17:00+00:00",
-      "pub_ts": 1783606620.0,
-      "theme": "rates",
-      "sub_theme": "fed",
-      "theme_score": 3,
-      "region": "us",
       "impact": 3
     },
     {
@@ -1917,6 +1811,36 @@
       "impact": 3
     },
     {
+      "id": "de5b181bfabe",
+      "title": "Japan to expand research grants, seeking 20,000 Ph.Ds a year",
+      "summary": "",
+      "link": "https://asia.nikkei.com/economy/japan-to-expand-research-grants-seeking-20-000-ph.ds-a-year",
+      "publisher": "Nikkei Asia",
+      "feed": "Nikkei Asia",
+      "pub_iso": null,
+      "pub_ts": 0,
+      "theme": "tech",
+      "sub_theme": "consumer_tech",
+      "theme_score": 3,
+      "region": "asia",
+      "impact": 3
+    },
+    {
+      "id": "a7837c44134f",
+      "title": "China's BYD taps Japan luxury car dealer to drive expansion",
+      "summary": "",
+      "link": "https://asia.nikkei.com/spotlight/electric-cars-in-china/china-s-byd-taps-japan-luxury-car-dealer-to-drive-expansion",
+      "publisher": "Nikkei Asia",
+      "feed": "Nikkei Asia",
+      "pub_iso": null,
+      "pub_ts": 0,
+      "theme": "tech",
+      "sub_theme": "consumer_tech",
+      "theme_score": 3,
+      "region": "asia",
+      "impact": 3
+    },
+    {
       "id": "573dc32040bc",
       "title": "Yen rises, JGB yields fall on Japan finance minister's pension fund remarks",
       "summary": "",
@@ -1927,6 +1851,21 @@
       "pub_ts": 0,
       "theme": "rates",
       "sub_theme": "gilts_bunds",
+      "theme_score": 3,
+      "region": "asia",
+      "impact": 3
+    },
+    {
+      "id": "8b499e2e2b42",
+      "title": "Editor's Choice: War and high fuel costs reshape Asia's vacation plans",
+      "summary": "",
+      "link": "https://asia.nikkei.com/editor-s-picks/editor-in-chief-s-picks/editor-s-choice-war-and-high-fuel-costs-reshape-asia-s-vacation-plans",
+      "publisher": "Nikkei Asia",
+      "feed": "Nikkei Asia",
+      "pub_iso": null,
+      "pub_ts": 0,
+      "theme": "tech",
+      "sub_theme": "consumer_tech",
       "theme_score": 3,
       "region": "asia",
       "impact": 3
@@ -1960,458 +1899,353 @@
       "theme_score": 3,
       "region": "us",
       "impact": 3
-    },
-    {
-      "id": "b58604765cff",
-      "title": "Japan moves quicker to lower travel risk advisories, easing business trips",
-      "summary": "",
-      "link": "https://asia.nikkei.com/politics/international-relations/japan-moves-quicker-to-lower-travel-risk-advisories-easing-business-trips",
-      "publisher": "Nikkei Asia",
-      "feed": "Nikkei Asia",
-      "pub_iso": null,
-      "pub_ts": 0,
-      "theme": "rates",
-      "sub_theme": null,
-      "theme_score": 3,
-      "region": "asia",
-      "impact": 3
-    },
-    {
-      "id": "5f75524ac4ae",
-      "title": "Walmart targets Japanese food as US inflation brings wealthier shoppers",
-      "summary": "",
-      "link": "https://asia.nikkei.com/business/retail/walmart-targets-japanese-food-as-us-inflation-brings-wealthier-shoppers",
-      "publisher": "Nikkei Asia",
-      "feed": "Nikkei Asia",
-      "pub_iso": null,
-      "pub_ts": 0,
-      "theme": "macro",
-      "sub_theme": "inflation",
-      "theme_score": 3,
-      "region": "us",
-      "impact": 3
     }
   ],
   "links": [
     {
       "from": "consumer_tech",
       "to": "iran_war",
-      "weight": 27
-    },
-    {
-      "from": "consumer_tech",
-      "to": "ai_other",
-      "weight": 33
-    },
-    {
-      "from": "consumer_tech",
-      "to": "ukraine_russia",
-      "weight": 18
-    },
-    {
-      "from": "consumer_tech",
-      "to": "rates_other",
-      "weight": 19
-    },
-    {
-      "from": "consumer_tech",
-      "to": "sustainability_other",
-      "weight": 20
-    },
-    {
-      "from": "consumer_tech",
-      "to": "inflation",
-      "weight": 10
+      "weight": 25
     },
     {
       "from": "consumer_tech",
       "to": "ai_models",
+      "weight": 24
+    },
+    {
+      "from": "consumer_tech",
+      "to": "ai_other",
+      "weight": 18
+    },
+    {
+      "from": "consumer_tech",
+      "to": "ai_chips",
+      "weight": 29
+    },
+    {
+      "from": "consumer_tech",
+      "to": "inflation",
+      "weight": 17
+    },
+    {
+      "from": "consumer_tech",
+      "to": "sustainability_other",
+      "weight": 6
+    },
+    {
+      "from": "consumer_tech",
+      "to": "crypto",
+      "weight": 7
+    },
+    {
+      "from": "consumer_tech",
+      "to": "ev_transport",
+      "weight": 15
+    },
+    {
+      "from": "consumer_tech",
+      "to": "credit",
+      "weight": 4
+    },
+    {
+      "from": "consumer_tech",
+      "to": "ukraine_russia",
+      "weight": 6
+    },
+    {
+      "from": "consumer_tech",
+      "to": "geopolitics_other",
+      "weight": 8
+    },
+    {
+      "from": "consumer_tech",
+      "to": "rates_other",
       "weight": 14
     },
     {
       "from": "consumer_tech",
-      "to": "ai_chips",
-      "weight": 30
-    },
-    {
-      "from": "consumer_tech",
-      "to": "crypto",
-      "weight": 16
-    },
-    {
-      "from": "consumer_tech",
       "to": "ai_infra",
-      "weight": 18
+      "weight": 9
+    },
+    {
+      "from": "consumer_tech",
+      "to": "elections",
+      "weight": 11
     },
     {
       "from": "consumer_tech",
       "to": "fed",
-      "weight": 12
-    },
-    {
-      "from": "consumer_tech",
-      "to": "tech_other",
       "weight": 7
     },
     {
       "from": "consumer_tech",
-      "to": "macro_other",
-      "weight": 21
-    },
-    {
-      "from": "consumer_tech",
-      "to": "tariffs",
-      "weight": 8
-    },
-    {
-      "from": "consumer_tech",
-      "to": "carbon",
+      "to": "climate",
       "weight": 4
     },
     {
       "from": "consumer_tech",
-      "to": "renewables",
-      "weight": 8
+      "to": "tech_other",
+      "weight": 6
+    },
+    {
+      "from": "iran_war",
+      "to": "ai_models",
+      "weight": 19
     },
     {
       "from": "iran_war",
       "to": "ai_other",
-      "weight": 21
+      "weight": 12
     },
     {
       "from": "iran_war",
-      "to": "ukraine_russia",
-      "weight": 17
-    },
-    {
-      "from": "iran_war",
-      "to": "rates_other",
+      "to": "ai_chips",
       "weight": 13
     },
     {
       "from": "iran_war",
-      "to": "sustainability_other",
-      "weight": 10
-    },
-    {
-      "from": "iran_war",
       "to": "inflation",
-      "weight": 6
-    },
-    {
-      "from": "iran_war",
-      "to": "ai_models",
-      "weight": 10
-    },
-    {
-      "from": "iran_war",
-      "to": "ai_chips",
-      "weight": 11
-    },
-    {
-      "from": "iran_war",
-      "to": "crypto",
-      "weight": 8
-    },
-    {
-      "from": "iran_war",
-      "to": "ai_infra",
       "weight": 12
     },
     {
       "from": "iran_war",
-      "to": "fed",
-      "weight": 10
+      "to": "sustainability_other",
+      "weight": 8
     },
     {
       "from": "iran_war",
-      "to": "tech_other",
-      "weight": 4
-    },
-    {
-      "from": "iran_war",
-      "to": "macro_other",
-      "weight": 10
-    },
-    {
-      "from": "iran_war",
-      "to": "geopolitics_other",
+      "to": "crypto",
       "weight": 5
     },
     {
-      "from": "ai_other",
+      "from": "iran_war",
+      "to": "ev_transport",
+      "weight": 8
+    },
+    {
+      "from": "iran_war",
       "to": "ukraine_russia",
-      "weight": 9
-    },
-    {
-      "from": "ai_other",
-      "to": "rates_other",
-      "weight": 18
-    },
-    {
-      "from": "ai_other",
-      "to": "sustainability_other",
-      "weight": 8
-    },
-    {
-      "from": "ai_other",
-      "to": "inflation",
-      "weight": 8
-    },
-    {
-      "from": "ai_other",
-      "to": "ai_models",
-      "weight": 12
-    },
-    {
-      "from": "ai_other",
-      "to": "ai_chips",
       "weight": 11
     },
     {
-      "from": "ai_other",
-      "to": "crypto",
-      "weight": 5
+      "from": "iran_war",
+      "to": "geopolitics_other",
+      "weight": 7
     },
     {
-      "from": "ai_other",
-      "to": "ai_infra",
-      "weight": 8
-    },
-    {
-      "from": "ai_other",
-      "to": "fed",
-      "weight": 11
-    },
-    {
-      "from": "ai_other",
-      "to": "tech_other",
-      "weight": 4
-    },
-    {
-      "from": "ai_other",
-      "to": "macro_other",
-      "weight": 8
-    },
-    {
-      "from": "ai_other",
-      "to": "renewables",
-      "weight": 4
-    },
-    {
-      "from": "ukraine_russia",
+      "from": "iran_war",
       "to": "rates_other",
-      "weight": 5
-    },
-    {
-      "from": "ukraine_russia",
-      "to": "inflation",
-      "weight": 5
-    },
-    {
-      "from": "ukraine_russia",
-      "to": "ai_models",
-      "weight": 7
-    },
-    {
-      "from": "ukraine_russia",
-      "to": "ai_chips",
-      "weight": 8
-    },
-    {
-      "from": "ukraine_russia",
-      "to": "crypto",
-      "weight": 7
-    },
-    {
-      "from": "ukraine_russia",
-      "to": "ai_infra",
-      "weight": 6
-    },
-    {
-      "from": "ukraine_russia",
-      "to": "fed",
-      "weight": 4
-    },
-    {
-      "from": "ukraine_russia",
-      "to": "macro_other",
-      "weight": 4
-    },
-    {
-      "from": "rates_other",
-      "to": "sustainability_other",
-      "weight": 12
-    },
-    {
-      "from": "rates_other",
-      "to": "inflation",
-      "weight": 5
-    },
-    {
-      "from": "rates_other",
-      "to": "ai_chips",
-      "weight": 6
-    },
-    {
-      "from": "rates_other",
-      "to": "crypto",
-      "weight": 5
-    },
-    {
-      "from": "rates_other",
-      "to": "ai_infra",
-      "weight": 6
-    },
-    {
-      "from": "rates_other",
-      "to": "fed",
-      "weight": 7
-    },
-    {
-      "from": "sustainability_other",
-      "to": "ai_models",
-      "weight": 5
-    },
-    {
-      "from": "sustainability_other",
-      "to": "ai_chips",
-      "weight": 8
-    },
-    {
-      "from": "sustainability_other",
-      "to": "crypto",
-      "weight": 8
-    },
-    {
-      "from": "sustainability_other",
-      "to": "ai_infra",
       "weight": 10
     },
     {
-      "from": "sustainability_other",
-      "to": "fed",
-      "weight": 4
-    },
-    {
-      "from": "sustainability_other",
-      "to": "macro_other",
-      "weight": 5
-    },
-    {
-      "from": "sustainability_other",
-      "to": "renewables",
-      "weight": 4
-    },
-    {
-      "from": "inflation",
-      "to": "ai_chips",
-      "weight": 5
-    },
-    {
-      "from": "inflation",
+      "from": "iran_war",
       "to": "ai_infra",
+      "weight": 4
+    },
+    {
+      "from": "iran_war",
+      "to": "elections",
       "weight": 5
     },
     {
-      "from": "inflation",
+      "from": "iran_war",
       "to": "fed",
-      "weight": 6
+      "weight": 7
     },
     {
-      "from": "inflation",
-      "to": "tech_other",
+      "from": "iran_war",
+      "to": "climate",
       "weight": 5
     },
     {
-      "from": "inflation",
-      "to": "macro_other",
-      "weight": 5
+      "from": "iran_war",
+      "to": "carbon",
+      "weight": 4
+    },
+    {
+      "from": "iran_war",
+      "to": "treasuries",
+      "weight": 4
+    },
+    {
+      "from": "ai_models",
+      "to": "ai_other",
+      "weight": 14
     },
     {
       "from": "ai_models",
       "to": "ai_chips",
+      "weight": 15
+    },
+    {
+      "from": "ai_models",
+      "to": "crypto",
+      "weight": 4
+    },
+    {
+      "from": "ai_models",
+      "to": "ukraine_russia",
+      "weight": 6
+    },
+    {
+      "from": "ai_models",
+      "to": "geopolitics_other",
+      "weight": 4
+    },
+    {
+      "from": "ai_models",
+      "to": "rates_other",
       "weight": 11
     },
     {
       "from": "ai_models",
-      "to": "crypto",
+      "to": "ai_infra",
+      "weight": 6
+    },
+    {
+      "from": "ai_models",
+      "to": "fed",
       "weight": 4
     },
     {
       "from": "ai_models",
-      "to": "ai_infra",
-      "weight": 5
-    },
-    {
-      "from": "ai_models",
-      "to": "macro_other",
-      "weight": 5
-    },
-    {
-      "from": "ai_chips",
-      "to": "crypto",
-      "weight": 7
-    },
-    {
-      "from": "ai_chips",
-      "to": "ai_infra",
-      "weight": 9
-    },
-    {
-      "from": "ai_chips",
-      "to": "fed",
-      "weight": 5
-    },
-    {
-      "from": "ai_chips",
       "to": "tech_other",
-      "weight": 7
-    },
-    {
-      "from": "ai_chips",
-      "to": "macro_other",
-      "weight": 6
-    },
-    {
-      "from": "ai_chips",
-      "to": "tariffs",
-      "weight": 7
-    },
-    {
-      "from": "crypto",
-      "to": "fed",
-      "weight": 6
-    },
-    {
-      "from": "crypto",
-      "to": "tech_other",
-      "weight": 5
-    },
-    {
-      "from": "crypto",
-      "to": "macro_other",
-      "weight": 6
-    },
-    {
-      "from": "crypto",
-      "to": "tariffs",
       "weight": 4
     },
     {
-      "from": "crypto",
+      "from": "ai_other",
+      "to": "ai_chips",
+      "weight": 13
+    },
+    {
+      "from": "ai_other",
+      "to": "sustainability_other",
+      "weight": 5
+    },
+    {
+      "from": "ai_other",
+      "to": "ev_transport",
+      "weight": 5
+    },
+    {
+      "from": "ai_other",
       "to": "geopolitics_other",
       "weight": 5
     },
     {
-      "from": "ai_infra",
-      "to": "fed",
-      "weight": 6
+      "from": "ai_other",
+      "to": "rates_other",
+      "weight": 12
     },
     {
-      "from": "ai_infra",
+      "from": "ai_other",
+      "to": "ai_infra",
+      "weight": 8
+    },
+    {
+      "from": "ai_other",
       "to": "elections",
       "weight": 4
+    },
+    {
+      "from": "ai_other",
+      "to": "climate",
+      "weight": 4
+    },
+    {
+      "from": "ai_chips",
+      "to": "inflation",
+      "weight": 7
+    },
+    {
+      "from": "ai_chips",
+      "to": "sustainability_other",
+      "weight": 7
+    },
+    {
+      "from": "ai_chips",
+      "to": "crypto",
+      "weight": 8
+    },
+    {
+      "from": "ai_chips",
+      "to": "ev_transport",
+      "weight": 12
+    },
+    {
+      "from": "ai_chips",
+      "to": "ukraine_russia",
+      "weight": 6
+    },
+    {
+      "from": "ai_chips",
+      "to": "geopolitics_other",
+      "weight": 6
+    },
+    {
+      "from": "ai_chips",
+      "to": "rates_other",
+      "weight": 10
+    },
+    {
+      "from": "ai_chips",
+      "to": "ai_infra",
+      "weight": 12
+    },
+    {
+      "from": "ai_chips",
+      "to": "tech_other",
+      "weight": 8
+    },
+    {
+      "from": "ai_chips",
+      "to": "tariffs",
+      "weight": 4
+    },
+    {
+      "from": "inflation",
+      "to": "ev_transport",
+      "weight": 5
+    },
+    {
+      "from": "inflation",
+      "to": "ukraine_russia",
+      "weight": 4
+    },
+    {
+      "from": "inflation",
+      "to": "tariffs",
+      "weight": 4
+    },
+    {
+      "from": "sustainability_other",
+      "to": "ev_transport",
+      "weight": 4
+    },
+    {
+      "from": "sustainability_other",
+      "to": "rates_other",
+      "weight": 4
+    },
+    {
+      "from": "crypto",
+      "to": "ev_transport",
+      "weight": 5
+    },
+    {
+      "from": "crypto",
+      "to": "rates_other",
+      "weight": 4
+    },
+    {
+      "from": "ev_transport",
+      "to": "rates_other",
+      "weight": 5
+    },
+    {
+      "from": "rates_other",
+      "to": "ai_infra",
+      "weight": 5
     }
   ],
   "markets": [
@@ -2427,7 +2261,7 @@
     {
       "ticker": "^IXIC",
       "name": "Nasdaq",
-      "price": 26281.6074,
+      "price": 26281.6094,
       "prev_close": 26206.8906,
       "change_pct": 0.285,
       "unit": "price",
@@ -2445,36 +2279,36 @@
     {
       "ticker": "^STOXX",
       "name": "STOXX 600",
-      "price": 640.87,
-      "prev_close": 635.91,
-      "change_pct": 0.78,
+      "price": 641.1,
+      "prev_close": 640.87,
+      "change_pct": 0.036,
       "unit": "price",
       "group": "equities"
     },
     {
       "ticker": "^N225",
       "name": "Nikkei 225",
-      "price": 67743.8516,
-      "prev_close": 66819.0469,
-      "change_pct": 1.384,
+      "price": 68557.7266,
+      "prev_close": 67743.8516,
+      "change_pct": 1.201,
       "unit": "price",
       "group": "equities"
     },
     {
       "ticker": "^HSI",
       "name": "Hang Seng",
-      "price": 24030.1797,
-      "prev_close": 24199.4609,
-      "change_pct": -0.7,
+      "price": 24175.1191,
+      "prev_close": 24030.1797,
+      "change_pct": 0.603,
       "unit": "price",
       "group": "equities"
     },
     {
       "ticker": "^STI",
       "name": "Straits Times",
-      "price": 5433.8799,
-      "prev_close": 5369.5698,
-      "change_pct": 1.198,
+      "price": 5469.29,
+      "prev_close": 5433.8799,
+      "change_pct": 0.652,
       "unit": "price",
       "group": "equities"
     },
@@ -2490,36 +2324,36 @@
     {
       "ticker": "GC=F",
       "name": "Gold",
-      "price": 4128.8999,
+      "price": 4104.1001,
       "prev_close": 4130.6001,
-      "change_pct": -0.041,
+      "change_pct": -0.642,
       "unit": "price",
       "group": "commod"
     },
     {
       "ticker": "BZ=F",
       "name": "Brent",
-      "price": 76.0,
+      "price": 76.01,
       "prev_close": 76.3,
-      "change_pct": -0.393,
+      "change_pct": -0.38,
       "unit": "price",
       "group": "commod"
     },
     {
       "ticker": "CL=F",
       "name": "WTI",
-      "price": 71.51,
+      "price": 71.41,
       "prev_close": 72.08,
-      "change_pct": -0.791,
+      "change_pct": -0.93,
       "unit": "price",
       "group": "commod"
     },
     {
       "ticker": "DX-Y.NYB",
       "name": "DXY",
-      "price": 100.965,
+      "price": 100.97,
       "prev_close": 100.94,
-      "change_pct": 0.025,
+      "change_pct": 0.03,
       "unit": "price",
       "group": "fx"
     },
@@ -2535,38 +2369,38 @@
     {
       "ticker": "BTC-USD",
       "name": "Bitcoin",
-      "price": 64085.6211,
-      "prev_close": 63193.1484,
-      "change_pct": 1.412,
+      "price": 63856.7617,
+      "prev_close": 64127.1406,
+      "change_pct": -0.422,
       "unit": "price",
       "group": "crypto"
     }
   ],
   "stats": {
-    "total_stories": 108,
-    "total_bubbles": 26,
-    "total_links": 84,
+    "total_stories": 104,
+    "total_bubbles": 23,
+    "total_links": 69,
     "by_theme": {
-      "ai": 25,
       "geopolitics": 25,
-      "tech": 25,
-      "rates": 14,
-      "sustainability": 9,
-      "macro": 10
+      "tech": 24,
+      "ai": 25,
+      "sustainability": 12,
+      "macro": 7,
+      "rates": 11
     },
     "by_region": {
-      "us": 91,
-      "eu": 9,
-      "asia": 8
+      "us": 75,
+      "asia": 21,
+      "eu": 8
     },
     "by_publisher": {
+      "FT": 17,
       "Bloomberg": 40,
-      "CNBC": 26,
-      "FT": 19,
-      "BBC": 3,
-      "SCMP": 7,
-      "Yahoo Finance": 7,
-      "Nikkei Asia": 6
+      "CNBC": 19,
+      "SCMP": 5,
+      "Yahoo Finance": 9,
+      "Nikkei Asia": 12,
+      "BBC": 2
     },
     "feeds_active": 21,
     "feeds_total": 21
