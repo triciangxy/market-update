@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-19T01:23:51.645844+00:00",
+  "generated_at": "2026-09-20T01:23:38.130480+00:00",
   "themes": {
     "ai": {
       "label": "AI",
@@ -32,25 +32,64 @@
       "label": "Consumer Tech",
       "parent": "tech",
       "color": "#5cd4e3",
-      "count": 17,
+      "count": 16,
       "story_ids": [
+        "6096f78abf4e",
+        "d0c8ae93953d",
+        "58641914eab6",
+        "28c4d9005981",
+        "2b3450348eb0",
         "ed0ec9ea73ef",
-        "7c3ca32791db",
-        "dc92363e0df6",
-        "5773a8237588",
-        "a88f6bff2347",
-        "d03b6d867b9f",
+        "6e170f045866",
+        "fed05c99fbe1",
+        "e86fdb80863f",
+        "d1764bf2d46a",
+        "f6d9791582da",
+        "9e1cdf390f5c",
         "7dd59a5ca1c8",
-        "15fb2fd6acfd",
-        "d0582fba85d3",
-        "4f88500ce576",
-        "0cbbaa6c6c9f",
-        "753c73332c28",
-        "104da9cea706",
-        "fffad42b7670",
-        "d60f44511048",
-        "622a0f0d712e",
-        "35b0449c0a3a"
+        "35b0449c0a3a",
+        "4d0d13354895",
+        "96505a1848b6"
+      ]
+    },
+    {
+      "id": "ai_other",
+      "label": "Other AI",
+      "parent": "ai",
+      "color": "#b88aff",
+      "count": 11,
+      "story_ids": [
+        "094ef002dd08",
+        "daafe194fb18",
+        "9855314c8c80",
+        "70ca3df19339",
+        "dcab6f9f8ae3",
+        "678d39579254",
+        "7828a51cf404",
+        "fd6d8cb91376",
+        "4d5430fe0f1b",
+        "ee492ff83102",
+        "fb21e059562f"
+      ]
+    },
+    {
+      "id": "iran_war",
+      "label": "Iran War",
+      "parent": "geopolitics",
+      "color": "#ff9558",
+      "count": 11,
+      "story_ids": [
+        "025b6c52ffb1",
+        "cb739625d15e",
+        "44dd1639db49",
+        "adcb741046e2",
+        "a7b0f3ff74f9",
+        "4a92bed626c2",
+        "8044f83340c0",
+        "4e3654b8bec7",
+        "b987ea1e5de1",
+        "3b45314a282d",
+        "2f44d60cbb77"
       ]
     },
     {
@@ -58,37 +97,34 @@
       "label": "Foundation Models",
       "parent": "ai",
       "color": "#b88aff",
-      "count": 11,
+      "count": 10,
       "story_ids": [
+        "280c05900b9c",
+        "cfd99e063d90",
+        "ca73c9eeec1a",
         "320032507953",
-        "3d8d5d621eae",
         "a4d3c6123018",
         "9dfe2d692b50",
         "fe5ce4991dac",
-        "7167564f059a",
-        "8549723818d4",
-        "6750bffed68a",
         "1cbb07f1fd48",
-        "e2766a2c0a7e",
-        "22bdadb9fa57"
+        "ec1a44aa3fa2",
+        "c942add398e8"
       ]
     },
     {
-      "id": "fed",
-      "label": "Fed",
+      "id": "rates_other",
+      "label": "Other Credit & Rates",
       "parent": "rates",
       "color": "#6fa8ff",
-      "count": 9,
+      "count": 7,
       "story_ids": [
-        "fb12c5ab3260",
-        "babfc4fad50c",
-        "0ab2a766de59",
-        "4a2ac9a67769",
-        "b0e2c2bec694",
-        "d857dc07bc47",
-        "e30e427a8fe3",
-        "367b68ab6223",
-        "4df62474c4b1"
+        "d55d970f338d",
+        "9d0815980159",
+        "7ebcce620537",
+        "5bb7b8095ab9",
+        "4a1a29fb3fe8",
+        "c1779e3e7003",
+        "ce111901df8a"
       ]
     },
     {
@@ -96,43 +132,14 @@
       "label": "BoJ & PBOC",
       "parent": "rates",
       "color": "#6fa8ff",
-      "count": 7,
+      "count": 6,
       "story_ids": [
-        "ce6e00d6ea36",
-        "e02a0a5d3a46",
-        "05d7ab8368ea",
-        "bb4e7ed9d957",
-        "a7dfceda4178",
         "7a55ae266d3e",
-        "d54b52c9f725"
-      ]
-    },
-    {
-      "id": "ai_infra",
-      "label": "AI Infra",
-      "parent": "ai",
-      "color": "#b88aff",
-      "count": 5,
-      "story_ids": [
-        "7599a4a4becb",
-        "e17ab3ab7788",
-        "2df04eb8812e",
-        "3e37e71ac7d3",
-        "bbf864c2d4e4"
-      ]
-    },
-    {
-      "id": "crypto",
-      "label": "Crypto",
-      "parent": "tech",
-      "color": "#5cd4e3",
-      "count": 5,
-      "story_ids": [
-        "560fee275f42",
-        "65a3d8a427bf",
-        "5961a1b78e2d",
-        "261dfeb9de58",
-        "d39b5d8e6d05"
+        "d54b52c9f725",
+        "7cc4ed4dd65c",
+        "e02a0a5d3a46",
+        "5eb74f157f08",
+        "043a29d10ccb"
       ]
     },
     {
@@ -142,77 +149,25 @@
       "color": "#ff6b9d",
       "count": 5,
       "story_ids": [
+        "23542f006b26",
+        "8d7c99b44ee4",
         "f3896b848433",
-        "f2d47008d968",
         "56be528cb533",
-        "35a5c88b89a1",
-        "df54ed731750"
+        "35a5c88b89a1"
       ]
     },
     {
-      "id": "iran_war",
-      "label": "Iran War",
-      "parent": "geopolitics",
-      "color": "#ff9558",
-      "count": 5,
-      "story_ids": [
-        "b987ea1e5de1",
-        "3b45314a282d",
-        "8117d361a088",
-        "aa972382383f",
-        "2f44d60cbb77"
-      ]
-    },
-    {
-      "id": "ukraine_russia",
-      "label": "Ukraine-Russia",
-      "parent": "geopolitics",
-      "color": "#ff9558",
-      "count": 4,
-      "story_ids": [
-        "6d19462cc986",
-        "4b04316bcf31",
-        "12e8dac4cfd5",
-        "8789d6e91c22"
-      ]
-    },
-    {
-      "id": "ai_chips",
-      "label": "AI Chips",
-      "parent": "ai",
-      "color": "#b88aff",
-      "count": 4,
-      "story_ids": [
-        "aff845cc4946",
-        "f85f1ca214d8",
-        "d0978272c671",
-        "4f4453f869b0"
-      ]
-    },
-    {
-      "id": "ai_other",
-      "label": "Other AI",
-      "parent": "ai",
-      "color": "#b88aff",
-      "count": 4,
-      "story_ids": [
-        "fd6d8cb91376",
-        "cd2aba7726dc",
-        "fb21e059562f",
-        "ad91a4eecefe"
-      ]
-    },
-    {
-      "id": "rates_other",
-      "label": "Other Credit & Rates",
+      "id": "fed",
+      "label": "Fed",
       "parent": "rates",
       "color": "#6fa8ff",
-      "count": 4,
+      "count": 5,
       "story_ids": [
-        "d8950e2a633a",
-        "768ee6aa93a6",
-        "c1779e3e7003",
-        "1b3b777b0af9"
+        "0ab2a766de59",
+        "5b0f415c240a",
+        "367b68ab6223",
+        "4a2ac9a67769",
+        "b0e2c2bec694"
       ]
     },
     {
@@ -220,99 +175,36 @@
       "label": "Other Geopolitics",
       "parent": "geopolitics",
       "color": "#ff9558",
-      "count": 3,
+      "count": 4,
       "story_ids": [
-        "d9eea15ec341",
-        "2c223322c2ca",
+        "e366d8732e33",
+        "6e1d5d3aa59d",
+        "11fd9194a5fa",
         "8ea8c45195bd"
       ]
     },
     {
-      "id": "macro_other",
-      "label": "Other Macro",
-      "parent": "macro",
-      "color": "#ff6b9d",
-      "count": 3,
-      "story_ids": [
-        "d2f0bc3f2e03",
-        "f71316a0ab4c",
-        "11106493485e"
-      ]
-    },
-    {
-      "id": "us_china",
-      "label": "US-China",
+      "id": "ukraine_russia",
+      "label": "Ukraine-Russia",
       "parent": "geopolitics",
       "color": "#ff9558",
       "count": 3,
       "story_ids": [
-        "da4bec4a7940",
-        "71d57fe31b13",
-        "0f7318b636c2"
+        "b5a81d362e96",
+        "12e8dac4cfd5",
+        "419dc646263e"
       ]
     },
     {
-      "id": "treasuries",
-      "label": "Treasuries",
-      "parent": "rates",
-      "color": "#6fa8ff",
-      "count": 2,
-      "story_ids": [
-        "4b42fa797ca0",
-        "56161e56df0f"
-      ]
-    },
-    {
-      "id": "carbon",
-      "label": "Carbon & Emissions",
-      "parent": "sustainability",
-      "color": "#4ade80",
-      "count": 2,
-      "story_ids": [
-        "3a325ca9c4b5",
-        "525a692b07fd"
-      ]
-    },
-    {
-      "id": "inflation",
-      "label": "Inflation",
-      "parent": "macro",
-      "color": "#ff6b9d",
-      "count": 2,
-      "story_ids": [
-        "23ab51d6d326",
-        "1dfd8d9525cd"
-      ]
-    },
-    {
-      "id": "ecb_boe",
-      "label": "ECB & BoE",
-      "parent": "rates",
-      "color": "#6fa8ff",
-      "count": 2,
-      "story_ids": [
-        "fc45afe6b447",
-        "fe981f561133"
-      ]
-    },
-    {
-      "id": "ai_governance",
-      "label": "AI Governance",
+      "id": "ai_chips",
+      "label": "AI Chips",
       "parent": "ai",
       "color": "#b88aff",
-      "count": 1,
+      "count": 3,
       "story_ids": [
-        "4cba435fe5d8"
-      ]
-    },
-    {
-      "id": "fintech",
-      "label": "Fintech",
-      "parent": "tech",
-      "color": "#5cd4e3",
-      "count": 1,
-      "story_ids": [
-        "dcb90b60e48a"
+        "aff845cc4946",
+        "d0978272c671",
+        "4f4453f869b0"
       ]
     },
     {
@@ -320,39 +212,94 @@
       "label": "Credit",
       "parent": "rates",
       "color": "#6fa8ff",
-      "count": 1,
+      "count": 2,
       "story_ids": [
-        "5f42f52f0a5f"
+        "820e3ff14072",
+        "99df41d5df3b"
       ]
     },
     {
-      "id": "cyber",
-      "label": "Cyber",
+      "id": "tariffs",
+      "label": "Tariffs & Trade",
+      "parent": "geopolitics",
+      "color": "#ff9558",
+      "count": 2,
+      "story_ids": [
+        "109ab541bf9e",
+        "b3d92ad4a016"
+      ]
+    },
+    {
+      "id": "macro_other",
+      "label": "Other Macro",
+      "parent": "macro",
+      "color": "#ff6b9d",
+      "count": 2,
+      "story_ids": [
+        "2f5ab6a861d5",
+        "11106493485e"
+      ]
+    },
+    {
+      "id": "crypto",
+      "label": "Crypto",
       "parent": "tech",
       "color": "#5cd4e3",
-      "count": 1,
+      "count": 2,
       "story_ids": [
-        "19f1707a01a4"
+        "9df03837ac87",
+        "d17b682c305b"
       ]
     },
     {
-      "id": "climate",
-      "label": "Climate Policy",
+      "id": "us_china",
+      "label": "US-China",
+      "parent": "geopolitics",
+      "color": "#ff9558",
+      "count": 2,
+      "story_ids": [
+        "71d57fe31b13",
+        "0f7318b636c2"
+      ]
+    },
+    {
+      "id": "commodities",
+      "label": "Commodities",
+      "parent": "macro",
+      "color": "#ff6b9d",
+      "count": 1,
+      "story_ids": [
+        "1830311701f5"
+      ]
+    },
+    {
+      "id": "ai_infra",
+      "label": "AI Infra",
+      "parent": "ai",
+      "color": "#b88aff",
+      "count": 1,
+      "story_ids": [
+        "7599a4a4becb"
+      ]
+    },
+    {
+      "id": "renewables",
+      "label": "Renewables",
       "parent": "sustainability",
       "color": "#4ade80",
       "count": 1,
       "story_ids": [
-        "80eb009c0397"
+        "1832959a219b"
       ]
     },
     {
-      "id": "tech_other",
-      "label": "Other Tech",
-      "parent": "tech",
-      "color": "#5cd4e3",
+      "id": "carbon",
+      "label": "Carbon & Emissions",
+      "parent": "sustainability",
+      "color": "#4ade80",
       "count": 1,
       "story_ids": [
-        "11e07e94d4ac"
+        "525a692b07fd"
       ]
     },
     {
@@ -364,33 +311,398 @@
       "story_ids": [
         "b26120ea52a5"
       ]
-    },
-    {
-      "id": "tariffs",
-      "label": "Tariffs & Trade",
-      "parent": "geopolitics",
-      "color": "#ff9558",
-      "count": 1,
-      "story_ids": [
-        "0c4fe7b6dc84"
-      ]
     }
   ],
   "stories": [
     {
-      "id": "6d19462cc986",
-      "title": "Trump Signs Russia Sanctions Bill Granting New Tariff Powers",
-      "summary": "President Donald Trump on Friday signed into law a Russia sanctions bill that now empowers him to impose tariffs on countries that purchase Russian petroleum products.",
-      "link": "https://www.bloomberg.com/news/articles/2026-09-18/trump-signs-russia-sanctions-bill-granting-new-tariff-powers",
+      "id": "280c05900b9c",
+      "title": "Higher interest rates and AI safety fears put the stock market to the test last week",
+      "summary": "Investors wrestled with the prospect of a new Fed rate-hiking cycle and the raging debate on whether to slow down AI.",
+      "link": "https://www.cnbc.com/2026/09/19/higher-interest-rates-and-ai-safety-fears-put-the-stock-market-to-the-test-last-week.html",
+      "publisher": "CNBC",
+      "feed": "CNBC Top",
+      "pub_iso": "2026-09-19T16:03:09+00:00",
+      "pub_ts": 1789833789.0,
+      "theme": "ai",
+      "sub_theme": "ai_models",
+      "theme_score": 7,
+      "region": "us",
+      "impact": 8
+    },
+    {
+      "id": "094ef002dd08",
+      "title": "Australia’s Albanese Urges World to Act for Humanity in AI Race",
+      "summary": "Australian Prime Minister Anthony Albanese said middle powers have an important role to play in mitigating the risks posed by artificial intelligence and called for cooperation between the US and China.",
+      "link": "https://www.bloomberg.com/news/articles/2026-09-20/australia-s-albanese-urges-world-to-act-for-humanity-in-ai-race",
+      "publisher": "Bloomberg",
+      "feed": "Bloomberg Tech",
+      "pub_iso": "2026-09-20T00:39:58+00:00",
+      "pub_ts": 1789864798.0,
+      "theme": "ai",
+      "sub_theme": null,
+      "theme_score": 3,
+      "region": "us",
+      "impact": 7
+    },
+    {
+      "id": "6096f78abf4e",
+      "title": "80-year-old discount fashion chain closing 120 stores",
+      "summary": "",
+      "link": "https://finance.yahoo.com/small-business/articles/tj-maxx-rival-closing-120-181700076.html",
+      "publisher": "Yahoo Finance",
+      "feed": "Yahoo Finance",
+      "pub_iso": "2026-09-19T23:02:22+00:00",
+      "pub_ts": 1789858942.0,
+      "theme": "tech",
+      "sub_theme": "consumer_tech",
+      "theme_score": 3,
+      "region": "us",
+      "impact": 7
+    },
+    {
+      "id": "daafe194fb18",
+      "title": "Trump announces ‘AI Force’ as alarm grows over technology’s advance",
+      "summary": "US president has resisted calls for regulation but said he would appoint a ‘tsar’ to monitor for ‘bad’ behaviour",
+      "link": "https://www.ft.com/content/bcbfe352-9e9f-4ef5-81b2-2e01505b8477?syn-25a6b1a6=1",
+      "publisher": "FT",
+      "feed": "FT Home",
+      "pub_iso": "2026-09-19T19:49:31+00:00",
+      "pub_ts": 1789847371.0,
+      "theme": "ai",
+      "sub_theme": null,
+      "theme_score": 3,
+      "region": "us",
+      "impact": 7
+    },
+    {
+      "id": "23542f006b26",
+      "title": "India’s Silicon Valley Is Straining Under Its Own Growth",
+      "summary": "Bangalore helped turn India into a global hub for software services, tech talent and outsourcing, building an ecosystem that now supports multinational firms, domestic startups and capital. But the city’s success has also become one of its biggest weaknesses. India still lacks the depth of capital available in the US and China, while Bangalore’s physical infrastructure has struggled to keep pace w",
+      "link": "https://www.bloomberg.com/news/videos/2026-09-19/india-s-silicon-valley-is-straining-under-its-own-growth-video",
+      "publisher": "Bloomberg",
+      "feed": "Bloomberg Tech",
+      "pub_iso": "2026-09-19T14:03:36+00:00",
+      "pub_ts": 1789826616.0,
+      "theme": "macro",
+      "sub_theme": "growth_gdp",
+      "theme_score": 5,
+      "region": "us",
+      "impact": 7
+    },
+    {
+      "id": "e366d8732e33",
+      "title": "US Greenland Deal Shifts Focus to Investment",
+      "summary": "A new security agreement between the US, Denmark and Greenland would expand the American military role while preserving Greenlandic sovereignty, shifting attention toward potential US investment in mining, infrastructure and tourism. Former US diplomat Lewis Lukens tells David Gura and Christina Ruffini on Bloomberg This Weekend that Greenland welcomes investment but faces formidable obstacles inc",
+      "link": "https://www.bloomberg.com/news/videos/2026-09-19/us-greenland-deal-shifts-focus-to-investment-video",
+      "publisher": "Bloomberg",
+      "feed": "Bloomberg Mkts",
+      "pub_iso": "2026-09-19T13:29:40+00:00",
+      "pub_ts": 1789824580.0,
+      "theme": "geopolitics",
+      "sub_theme": null,
+      "theme_score": 4,
+      "region": "us",
+      "impact": 7
+    },
+    {
+      "id": "b5a81d362e96",
+      "title": "EU Presses Partners to Deliver Ukraine Funding Ahead of UN Week",
+      "summary": "The European Union is pressing international partners to provide funding to Ukraine as the country faces increasing financing needs amid a tense battlefield situation before the winter.",
+      "link": "https://www.bloomberg.com/news/articles/2026-09-19/eu-presses-partners-to-deliver-ukraine-funding-ahead-of-un-week",
       "publisher": "Bloomberg",
       "feed": "Bloomberg Pol",
-      "pub_iso": "2026-09-18T21:58:17+00:00",
-      "pub_ts": 1789768697.0,
+      "pub_iso": "2026-09-19T13:26:52+00:00",
+      "pub_ts": 1789824412.0,
       "theme": "geopolitics",
       "sub_theme": "ukraine_russia",
+      "theme_score": 5,
+      "region": "eu",
+      "impact": 7
+    },
+    {
+      "id": "025b6c52ffb1",
+      "title": "UN Talks Offer a New Opening on Iran War",
+      "summary": "World leaders head to the UN General Assembly as Gulf states seek renewed diplomacy to reduce attacks, restore more predictable energy flows and move the Iran war away from active conflict. Suzanne Maloney of the Brookings Institution joins David Gura and Christina Ruffini on Bloomberg This Weekend and says disruptions to Saudi Arabia’s East-West pipeline and other regional infrastructure are addi",
+      "link": "https://www.bloomberg.com/news/videos/2026-09-19/un-talks-offer-a-new-opening-on-iran-war-video",
+      "publisher": "Bloomberg",
+      "feed": "Bloomberg Mkts",
+      "pub_iso": "2026-09-19T13:17:38+00:00",
+      "pub_ts": 1789823858.0,
+      "theme": "geopolitics",
+      "sub_theme": "iran_war",
+      "theme_score": 7,
+      "region": "us",
+      "impact": 7
+    },
+    {
+      "id": "cb739625d15e",
+      "title": "Trump Moves to Bar Three News Outlets From White House",
+      "summary": "President Donald Trump says he is banning CNN, MS NOW and Politico from the White House over coverage he calls “fake news,” though questions remain about how the restrictions would be enforced and whether they could face legal challenges. Bloomberg News White House Correspondent Jeff Mason joins David Gura and Christina Ruffini on Bloomberg This Weekend and discusses how this move comes as Trump a",
+      "link": "https://www.bloomberg.com/news/videos/2026-09-19/trump-moves-to-bar-three-news-outlets-from-white-house-video",
+      "publisher": "Bloomberg",
+      "feed": "Bloomberg Mkts",
+      "pub_iso": "2026-09-19T13:01:07+00:00",
+      "pub_ts": 1789822867.0,
+      "theme": "geopolitics",
+      "sub_theme": "iran_war",
+      "theme_score": 9,
+      "region": "us",
+      "impact": 7
+    },
+    {
+      "id": "44dd1639db49",
+      "title": "China Slams US Law Tightening Sanctions on Russia and Iran",
+      "summary": "China criticized the new US law that strengthens sanctions on Russia and extends trade measures on Iran, which was signed late Friday by President Donald Trump.",
+      "link": "https://www.bloomberg.com/news/articles/2026-09-19/china-slams-us-law-tightening-sanctions-on-russia-and-iran",
+      "publisher": "Bloomberg",
+      "feed": "Bloomberg Pol",
+      "pub_iso": "2026-09-19T12:46:49+00:00",
+      "pub_ts": 1789822009.0,
+      "theme": "geopolitics",
+      "sub_theme": "iran_war",
       "theme_score": 6,
       "region": "us",
-      "impact": 10
+      "impact": 7
+    },
+    {
+      "id": "adcb741046e2",
+      "title": "JPMorgan Sees No Clear Endgame for Oil Markets",
+      "summary": "An attack on Saudi Arabia’s East-West pipeline has disrupted a crucial route around the Strait of Hormuz, threatening crude deliveries to Europe and adding pressure to already tight diesel markets. On Bloomberg This Weekend, Bloomberg Economics Statecraft Lead Chris Kennedy discusses how JPMorgan says it no longer has a baseline view for oil markets as the Iran conflict, attacks on Russian energy ",
+      "link": "https://www.bloomberg.com/news/videos/2026-09-19/jpmorgan-sees-no-clear-endgame-for-oil-markets-video",
+      "publisher": "Bloomberg",
+      "feed": "Bloomberg Mkts",
+      "pub_iso": "2026-09-19T12:11:23+00:00",
+      "pub_ts": 1789819883.0,
+      "theme": "geopolitics",
+      "sub_theme": "iran_war",
+      "theme_score": 8,
+      "region": "eu",
+      "impact": 7
+    },
+    {
+      "id": "cfd99e063d90",
+      "title": "The AI kill switch, explained: 'It's not too little, but it's probably too late'",
+      "summary": "As runaway AI fears reach a crescendo, policymakers and tech leaders are weighing the effectiveness of a magic AI stop button known as a kill switch.",
+      "link": "https://www.cnbc.com/2026/09/19/ai-kill-switch-explained.html",
+      "publisher": "CNBC",
+      "feed": "CNBC Top",
+      "pub_iso": "2026-09-19T12:00:01+00:00",
+      "pub_ts": 1789819201.0,
+      "theme": "ai",
+      "sub_theme": "ai_models",
+      "theme_score": 7,
+      "region": "us",
+      "impact": 7
+    },
+    {
+      "id": "a7b0f3ff74f9",
+      "title": "US, China Trade Teams Set to Huddle in New York on AI, Iran",
+      "summary": "US Treasury Secretary Scott Bessent and China’s Vice Premier He Lifeng will lead talks on trade and other pressure points Sunday in New York ahead of next week’s summit between the leaders of the world’s two biggest economies.",
+      "link": "https://www.bloomberg.com/news/articles/2026-09-19/us-china-trade-teams-set-to-huddle-in-new-york-on-ai-iran",
+      "publisher": "Bloomberg",
+      "feed": "Bloomberg Pol",
+      "pub_iso": "2026-09-19T11:00:00+00:00",
+      "pub_ts": 1789815600.0,
+      "theme": "geopolitics",
+      "sub_theme": "iran_war",
+      "theme_score": 6,
+      "region": "us",
+      "impact": 7
+    },
+    {
+      "id": "9855314c8c80",
+      "title": "Trump to Name AI Czar While Rejecting Safety Risks as a Hoax",
+      "summary": "President Donald Trump said he would name an artificial intelligence czar as he continued to push tech companies to race ahead with development despite growing fears safety.",
+      "link": "https://www.bloomberg.com/news/articles/2026-09-19/trump-to-name-ai-czar-while-rejecting-safety-risks-as-a-hoax",
+      "publisher": "Bloomberg",
+      "feed": "Bloomberg Tech",
+      "pub_iso": "2026-09-19T18:02:53+00:00",
+      "pub_ts": 1789840973.0,
+      "theme": "ai",
+      "sub_theme": null,
+      "theme_score": 3,
+      "region": "us",
+      "impact": 6
+    },
+    {
+      "id": "d0c8ae93953d",
+      "title": "Toronto film festival is full of treats — but no clear awards frontrunners",
+      "summary": "Mahershala Ali as an assassin single father and Julianne Moore as a comically earnest amateur actor, plus new work by Mike Leigh, Chris Rock and Jesse Eisenberg",
+      "link": "https://www.ft.com/content/af1c1aee-0e14-4894-b7ec-9d012d9416de",
+      "publisher": "FT",
+      "feed": "FT World",
+      "pub_iso": "2026-09-19T17:25:07+00:00",
+      "pub_ts": 1789838707.0,
+      "theme": "tech",
+      "sub_theme": "consumer_tech",
+      "theme_score": 3,
+      "region": "us",
+      "impact": 6
+    },
+    {
+      "id": "70ca3df19339",
+      "title": "New York Builds Data Team to Target Consumer Ripoffs",
+      "summary": "New York City is building a 36-person bureau of data scientists, technologists and economists to analyze company records for potential violations involving pricing, wages and other consumer and worker protections. NYC Consumer and Worker Protection Commissioner Sam Levine tells David Gura and Christina Ruffini on Bloomberg This Weekend that the effort is designed to give the city the technical exp",
+      "link": "https://www.bloomberg.com/news/videos/2026-09-19/new-york-builds-data-team-to-target-consumer-ripoffs-video",
+      "publisher": "Bloomberg",
+      "feed": "Bloomberg Mkts",
+      "pub_iso": "2026-09-19T15:18:45+00:00",
+      "pub_ts": 1789831125.0,
+      "theme": "ai",
+      "sub_theme": null,
+      "theme_score": 3,
+      "region": "us",
+      "impact": 6
+    },
+    {
+      "id": "dcab6f9f8ae3",
+      "title": "Governor Cox Says Americans Need Healthier Conflict",
+      "summary": "Utah Governor Spencer Cox joins Bloomberg This Weekend and argues Americans need more substantive disagreement without the contempt he says is fueling polarization, damaged relationships and political violence. In his new book, Off Ramp, Cox calls for healthier political conflict and stronger local connections while also arguing that policymakers need more expertise to address emerging challenges ",
+      "link": "https://www.bloomberg.com/news/videos/2026-09-19/governor-cox-says-americans-need-healthier-conflict-video",
+      "publisher": "Bloomberg",
+      "feed": "Bloomberg Mkts",
+      "pub_iso": "2026-09-19T15:04:02+00:00",
+      "pub_ts": 1789830242.0,
+      "theme": "ai",
+      "sub_theme": null,
+      "theme_score": 3,
+      "region": "us",
+      "impact": 6
+    },
+    {
+      "id": "4a92bed626c2",
+      "title": "Hormuz Oil Shipments Hit Six-Month High, US Commander Says",
+      "summary": "Oil and liquefied natural gas shipments through the Strait of Hormuz in the past two weeks reached the highest level in six months, signaling that US naval protection and mine clearance efforts are “paying off,” a regional US commander said.",
+      "link": "https://www.bloomberg.com/news/articles/2026-09-19/hormuz-oil-shipments-hit-six-month-high-us-commander-says",
+      "publisher": "Bloomberg",
+      "feed": "Bloomberg Mkts",
+      "pub_iso": "2026-09-19T14:47:50+00:00",
+      "pub_ts": 1789829270.0,
+      "theme": "geopolitics",
+      "sub_theme": "iran_war",
+      "theme_score": 3,
+      "region": "us",
+      "impact": 6
+    },
+    {
+      "id": "58641914eab6",
+      "title": "Dutch Police Break Up Violent Far-Right Protest in The Hague",
+      "summary": "Dutch police broke up a far-right protest of several hundred demonstrators in The Hague after it turned violent on Saturday.",
+      "link": "https://www.bloomberg.com/news/articles/2026-09-19/dutch-police-break-up-violent-far-right-protest-in-the-hague",
+      "publisher": "Bloomberg",
+      "feed": "Bloomberg Pol",
+      "pub_iso": "2026-09-19T14:14:28+00:00",
+      "pub_ts": 1789827268.0,
+      "theme": "tech",
+      "sub_theme": "consumer_tech",
+      "theme_score": 3,
+      "region": "us",
+      "impact": 6
+    },
+    {
+      "id": "820e3ff14072",
+      "title": "Companies Avoid Selling the Bonds Investors Crave: Credit Weekly",
+      "summary": "Investors are clamoring for the kind of debt companies are reluctant to sell now: longer-term bonds.",
+      "link": "https://www.bloomberg.com/news/articles/2026-09-19/companies-avoid-selling-the-bonds-investors-crave-credit-weekly",
+      "publisher": "Bloomberg",
+      "feed": "Bloomberg Mkts",
+      "pub_iso": "2026-09-19T14:00:00+00:00",
+      "pub_ts": 1789826400.0,
+      "theme": "rates",
+      "sub_theme": "credit",
+      "theme_score": 3,
+      "region": "us",
+      "impact": 6
+    },
+    {
+      "id": "678d39579254",
+      "title": "MBA Programs Race to Adapt to the AI Era",
+      "summary": "Stanford Graduate School of Business remains atop Bloomberg Businessweek’s US MBA rankings, scoring strongly in areas including compensation, networking and entrepreneurship. Bloomberg Businessweek Senior Editor Dimitra Kessenides is on Bloomberg This Weekend and explains that business schools are also experimenting with AI in teaching, case studies and career preparation as they try to ensure gra",
+      "link": "https://www.bloomberg.com/news/videos/2026-09-19/mba-programs-race-to-adapt-to-the-ai-era-video",
+      "publisher": "Bloomberg",
+      "feed": "Bloomberg Tech",
+      "pub_iso": "2026-09-19T13:52:40+00:00",
+      "pub_ts": 1789825960.0,
+      "theme": "ai",
+      "sub_theme": null,
+      "theme_score": 3,
+      "region": "us",
+      "impact": 6
+    },
+    {
+      "id": "6e1d5d3aa59d",
+      "title": "Diesel Prices Keep Pressure on Fed and Markets",
+      "summary": "The Federal Reserve unanimously raised its benchmark rate by a quarter point as policymakers confront inflation that remains above target and uncertainty tied to geopolitical developments. Merrill and Bank of America Head of CIO Market Strategy Joe Quinlan tells Bloomberg This Weekend hosts David Gura and Christina Ruffini that elevated diesel prices are a particular concern for businesses and cou",
+      "link": "https://www.bloomberg.com/news/videos/2026-09-19/diesel-prices-keep-pressure-on-fed-and-markets-video",
+      "publisher": "Bloomberg",
+      "feed": "Bloomberg Mkts",
+      "pub_iso": "2026-09-19T13:40:40+00:00",
+      "pub_ts": 1789825240.0,
+      "theme": "geopolitics",
+      "sub_theme": null,
+      "theme_score": 3,
+      "region": "us",
+      "impact": 6
+    },
+    {
+      "id": "d55d970f338d",
+      "title": "Mozambique Cut by Moody’s on Heightened Restructuring Risks",
+      "summary": "Moody’s Ratings cut its assessment of Mozambique’s creditworthiness deeper into junk, citing increased risk that the gas-rich southeast African nation will restructure its sole eurobond.",
+      "link": "https://www.bloomberg.com/news/articles/2026-09-19/mozambique-cut-by-moody-s-on-heightened-restructuring-risks",
+      "publisher": "Bloomberg",
+      "feed": "Bloomberg Mkts",
+      "pub_iso": "2026-09-19T13:38:35+00:00",
+      "pub_ts": 1789825115.0,
+      "theme": "rates",
+      "sub_theme": null,
+      "theme_score": 3,
+      "region": "us",
+      "impact": 6
+    },
+    {
+      "id": "1830311701f5",
+      "title": "Consumer sentiment is in the dumps despite a solid economy. Goldman Sachs blames 'lower happiness'",
+      "summary": "Goldman economist Joseph Briggs said broader pessimism in society may be contributing to struggling consumer sentiment even as the economy chugs along.",
+      "link": "https://www.cnbc.com/2026/09/19/goldman-sachs-happiness-struggling-consumer-sentiment.html",
+      "publisher": "CNBC",
+      "feed": "CNBC Top",
+      "pub_iso": "2026-09-19T12:50:49+00:00",
+      "pub_ts": 1789822249.0,
+      "theme": "macro",
+      "sub_theme": "commodities",
+      "theme_score": 4,
+      "region": "us",
+      "impact": 6
+    },
+    {
+      "id": "109ab541bf9e",
+      "title": "US Lifts Sanctions Aimed at Eritrea’s Ruling Party and Military",
+      "summary": "The US is letting lapse its five-year national emergency over the conflict and humanitarian crisis in Ethiopia, lifting sanctions on Eritrea’s military, ruling party and other individuals and entities targeted under the measure.",
+      "link": "https://www.bloomberg.com/news/articles/2026-09-19/us-lifts-sanctions-aimed-at-eritrea-s-ruling-party-and-military",
+      "publisher": "Bloomberg",
+      "feed": "Bloomberg Pol",
+      "pub_iso": "2026-09-19T10:21:20+00:00",
+      "pub_ts": 1789813280.0,
+      "theme": "geopolitics",
+      "sub_theme": "tariffs",
+      "theme_score": 5,
+      "region": "us",
+      "impact": 6
+    },
+    {
+      "id": "11fd9194a5fa",
+      "title": "On takes aim at ailing Nike with Mbappé transfer coup",
+      "summary": "Also in today’s newsletter: Clearlake wins the Chelsea civil war",
+      "link": "https://www.ft.com/content/40222e79-3ee7-4388-8362-7d06c7f71f69?syn-25a6b1a6=1",
+      "publisher": "FT",
+      "feed": "FT Companies",
+      "pub_iso": "2026-09-19T08:00:04+00:00",
+      "pub_ts": 1789804804.0,
+      "theme": "geopolitics",
+      "sub_theme": null,
+      "theme_score": 4,
+      "region": "us",
+      "impact": 6
     },
     {
       "id": "aff845cc4946",
@@ -399,13 +711,193 @@
       "link": "https://www.cnbc.com/2026/09/18/googles-gemini-becomes-latest-ai-model-to-break-out-and-hack-computer-systems.html",
       "publisher": "CNBC",
       "feed": "CNBC Top",
-      "pub_iso": "2026-09-19T00:53:27+00:00",
-      "pub_ts": 1789779207.0,
+      "pub_iso": "2026-09-19T01:41:49+00:00",
+      "pub_ts": 1789782109.0,
       "theme": "ai",
       "sub_theme": "ai_chips",
       "theme_score": 8,
       "region": "us",
-      "impact": 9
+      "impact": 6
+    },
+    {
+      "id": "ca73c9eeec1a",
+      "title": "Google’s Gemini hacked three companies in new AI safety incident",
+      "summary": "Breakout during training exercises follows instances at rivals OpenAI and Anthropic as concerns grow over safety of frontier systems",
+      "link": "https://www.ft.com/content/158740d1-fde7-4dbc-a282-5830c3201189?syn-25a6b1a6=1",
+      "publisher": "FT",
+      "feed": "FT Home",
+      "pub_iso": "2026-09-19T01:29:25+00:00",
+      "pub_ts": 1789781365.0,
+      "theme": "ai",
+      "sub_theme": "ai_models",
+      "theme_score": 13,
+      "region": "us",
+      "impact": 6
+    },
+    {
+      "id": "28c4d9005981",
+      "title": "CNN, MS NOW Barred From White House After Ban by Trump",
+      "summary": "MS NOW, CNN and Politico said their journalists were denied access to the White House grounds on Saturday after President Donald Trump said he would bar the outlets.",
+      "link": "https://www.bloomberg.com/news/articles/2026-09-19/ms-now-barred-from-white-house-grounds-by-trump-administration",
+      "publisher": "Bloomberg",
+      "feed": "Bloomberg Pol",
+      "pub_iso": "2026-09-19T13:07:33+00:00",
+      "pub_ts": 1789823253.0,
+      "theme": "tech",
+      "sub_theme": "consumer_tech",
+      "theme_score": 3,
+      "region": "us",
+      "impact": 5
+    },
+    {
+      "id": "2f5ab6a861d5",
+      "title": "Malaysian Minister to Resign after 1MDB Pardon Sparks Criticism",
+      "summary": "Malaysian Transport Minister Anthony Loke said he plans to resign from cabinet in response to the conditional pardon given to former Prime Minister Najib Razak related to his role in one of the largest corruption scandals in modern history.",
+      "link": "https://www.bloomberg.com/news/articles/2026-09-19/malaysian-minister-to-resign-after-1mdb-pardon-sparks-criticism",
+      "publisher": "Bloomberg",
+      "feed": "Bloomberg Pol",
+      "pub_iso": "2026-09-19T12:40:32+00:00",
+      "pub_ts": 1789821632.0,
+      "theme": "macro",
+      "sub_theme": null,
+      "theme_score": 3,
+      "region": "us",
+      "impact": 5
+    },
+    {
+      "id": "8d7c99b44ee4",
+      "title": "Can India Turn Its Promise Into Prosperity?",
+      "summary": "Blackstone COO Jon Gray says India’s young population, expanding middle class and improving infrastructure are drawing interest from global investors. But India’s demographic advantage also creates pressure: millions of young people graduate every year, while formal-sector job creation has not kept pace with their skills and expectations. At the same time, Indian states are competing aggressively ",
+      "link": "https://www.bloomberg.com/news/videos/2026-09-19/can-india-turn-its-promise-into-prosperity",
+      "publisher": "Bloomberg",
+      "feed": "Bloomberg Mkts",
+      "pub_iso": "2026-09-19T12:03:55+00:00",
+      "pub_ts": 1789819435.0,
+      "theme": "macro",
+      "sub_theme": "growth_gdp",
+      "theme_score": 3,
+      "region": "asia",
+      "impact": 5
+    },
+    {
+      "id": "2b3450348eb0",
+      "title": "US to Return $2.5 Million From Asset Tied to Ex-Gambian Dictator",
+      "summary": "The US will transfer $2.5 million recovered from a Maryland property tied to former Gambian dictator Yahya Jammeh to compensate eligible victims of his more than 22-year rule.",
+      "link": "https://www.bloomberg.com/news/articles/2026-09-19/us-to-return-2-5-million-from-asset-tied-to-ex-gambian-dictator",
+      "publisher": "Bloomberg",
+      "feed": "Bloomberg Pol",
+      "pub_iso": "2026-09-19T11:49:23+00:00",
+      "pub_ts": 1789818563.0,
+      "theme": "tech",
+      "sub_theme": "consumer_tech",
+      "theme_score": 3,
+      "region": "us",
+      "impact": 5
+    },
+    {
+      "id": "ed0ec9ea73ef",
+      "title": "Trump says U.S. to build a 'large Military presence' in Greenland as part of a security deal with it and Denmark",
+      "summary": "Greenland has maintained it is not for sale, and the European Union earlier this year united to rebuke Trump over his push to acquire the island.",
+      "link": "https://www.cnbc.com/2026/09/18/trump-greenland-denmark-military-deal.html",
+      "publisher": "CNBC",
+      "feed": "CNBC Top",
+      "pub_iso": "2026-09-19T10:36:18+00:00",
+      "pub_ts": 1789814178.0,
+      "theme": "tech",
+      "sub_theme": "consumer_tech",
+      "theme_score": 3,
+      "region": "us",
+      "impact": 5
+    },
+    {
+      "id": "6e170f045866",
+      "title": "Best CD rates today, Saturday, September 19, 2026: Lock in up to 4.40% APY with a 2-year CD",
+      "summary": "",
+      "link": "https://finance.yahoo.com/personal-finance/banking/article/best-cd-rates-today-saturday-september-19-2026-lock-in-up-to-440-apy-with-a-2-year-cd-100000984.html",
+      "publisher": "Yahoo Finance",
+      "feed": "Yahoo Finance",
+      "pub_iso": "2026-09-19T10:00:00+00:00",
+      "pub_ts": 1789812000.0,
+      "theme": "tech",
+      "sub_theme": "consumer_tech",
+      "theme_score": 3,
+      "region": "us",
+      "impact": 5
+    },
+    {
+      "id": "9d0815980159",
+      "title": "Mortgage and refinance interest rates today, Saturday, September 19, 2026: Mortgage rates move lower to start the weekend",
+      "summary": "",
+      "link": "https://finance.yahoo.com/personal-finance/mortgages/article/mortgage-and-refinance-interest-rates-today-saturday-september-19-2026-mortgage-rates-move-lower-to-start-the-weekend-100000254.html",
+      "publisher": "Yahoo Finance",
+      "feed": "Yahoo Finance",
+      "pub_iso": "2026-09-19T10:00:00+00:00",
+      "pub_ts": 1789812000.0,
+      "theme": "rates",
+      "sub_theme": null,
+      "theme_score": 3,
+      "region": "us",
+      "impact": 5
+    },
+    {
+      "id": "7828a51cf404",
+      "title": "A Goldman M&A Banker Helped Bring the Olympics to Los Angeles",
+      "summary": "We're in an era of megadeals, with Goldman Sachs reporting a record year for big deal volumes as companies scramble to compete with AI. Gene Sykes has seen multiple deal cycles come and go over his multi-decade career at the firm. The co-head of mergers and acquisitions has worked on famous transactions like Comcast's purchase of Universal and Disney's buyout of Pixar. In addition to being \"the mo",
+      "link": "https://www.bloomberg.com/news/videos/2026-09-19/a-goldman-m-a-banker-helped-bring-the-olympics-to-la-video",
+      "publisher": "Bloomberg",
+      "feed": "Bloomberg Tech",
+      "pub_iso": "2026-09-19T08:08:30+00:00",
+      "pub_ts": 1789805310.0,
+      "theme": "ai",
+      "sub_theme": null,
+      "theme_score": 3,
+      "region": "us",
+      "impact": 5
+    },
+    {
+      "id": "fed05c99fbe1",
+      "title": "Focused ultrasound could be the next big cancer breakthrough for hard-to-treat tumours",
+      "summary": "Precisely targeted sound waves could mark a major advance in treating pancreatic cancer and glioblastoma – an aggressive form of brain cancer – within a few years, according to a leading advocate of the technology. Researchers in Hong Kong and around the world are testing whether the approach can help treat tumours that are among the most challenging to manage. “The next big breakthrough in the ne",
+      "link": "https://www.scmp.com/business/china-business/article/3368041/focused-ultrasound-could-be-next-big-cancer-breakthrough-hard-treat-tumours?utm_source=rss_feed",
+      "publisher": "SCMP",
+      "feed": "SCMP Business",
+      "pub_iso": "2026-09-19T08:00:07+00:00",
+      "pub_ts": 1789804807.0,
+      "theme": "tech",
+      "sub_theme": "consumer_tech",
+      "theme_score": 3,
+      "region": "asia",
+      "impact": 5
+    },
+    {
+      "id": "8044f83340c0",
+      "title": "Saudi Arabia Issues Rare Air-Raid Alerts for Riyadh",
+      "summary": "Saudi Arabian authorities issued air-raid alerts for Riyadh early Saturday, the first in the capital since the height of the US-Iran war in March and April.",
+      "link": "https://www.bloomberg.com/news/articles/2026-09-19/saudi-arabia-issues-rare-air-raid-alerts-for-riyadh",
+      "publisher": "Bloomberg",
+      "feed": "Bloomberg Pol",
+      "pub_iso": "2026-09-19T05:57:56+00:00",
+      "pub_ts": 1789797476.0,
+      "theme": "geopolitics",
+      "sub_theme": "iran_war",
+      "theme_score": 5,
+      "region": "us",
+      "impact": 5
+    },
+    {
+      "id": "b3d92ad4a016",
+      "title": "Dry British summers raise hopes of homegrown chickpeas",
+      "summary": "Scientists explore new crops that could make the UK’s food supplies more resilient against climate change and trade wars",
+      "link": "https://www.ft.com/content/527bad1f-53a2-482c-b06b-ae3484993144?syn-25a6b1a6=1",
+      "publisher": "FT",
+      "feed": "FT World",
+      "pub_iso": "2026-09-19T04:00:33+00:00",
+      "pub_ts": 1789790433.0,
+      "theme": "geopolitics",
+      "sub_theme": "tariffs",
+      "theme_score": 5,
+      "region": "eu",
+      "impact": 5
     },
     {
       "id": "320032507953",
@@ -413,44 +905,14 @@
       "summary": "CEO Dario Amodei says labs should more deeply embed third-party testers as concerns grow around risks associated with the technology",
       "link": "https://www.ft.com/content/26e3749b-be69-4cd4-8db1-fa8597fb6fb3?syn-25a6b1a6=1",
       "publisher": "FT",
-      "feed": "FT Home",
+      "feed": "FT Companies",
       "pub_iso": "2026-09-18T23:38:50+00:00",
       "pub_ts": 1789774730.0,
       "theme": "ai",
       "sub_theme": "ai_models",
       "theme_score": 8,
       "region": "us",
-      "impact": 9
-    },
-    {
-      "id": "f85f1ca214d8",
-      "title": "Nvidia CEO Says There’s ‘0% Chance’ That World Will End in 2030",
-      "summary": "Nvidia Corp. Chief Executive Officer Jensen Huang renewed his pushback against AI doomsday scenarios, saying that the technology doesn’t pose an extinction risk to humanity.",
-      "link": "https://www.bloomberg.com/news/articles/2026-09-18/nvidia-ceo-says-there-s-0-chance-that-world-will-end-in-2030",
-      "publisher": "Bloomberg",
-      "feed": "Bloomberg Tech",
-      "pub_iso": "2026-09-18T23:31:19+00:00",
-      "pub_ts": 1789774279.0,
-      "theme": "ai",
-      "sub_theme": "ai_chips",
-      "theme_score": 8,
-      "region": "us",
-      "impact": 9
-    },
-    {
-      "id": "3d8d5d621eae",
-      "title": "Google Joins OpenAI, Anthropic, Meta in Disclosing AI Hacks",
-      "summary": "Google’s Gemini artificial intelligence model inadvertently hacked into three company systems in May during cybersecurity testing, adding to a string of breaches by AI agents that have alarmed security experts and developers of the technology alike.",
-      "link": "https://www.bloomberg.com/news/articles/2026-09-18/google-s-gemini-ai-system-hacked-three-systems-in-safety-tests",
-      "publisher": "Bloomberg",
-      "feed": "Bloomberg Tech",
-      "pub_iso": "2026-09-18T22:45:15+00:00",
-      "pub_ts": 1789771515.0,
-      "theme": "ai",
-      "sub_theme": "ai_models",
-      "theme_score": 11,
-      "region": "us",
-      "impact": 9
+      "impact": 5
     },
     {
       "id": "a4d3c6123018",
@@ -458,44 +920,14 @@
       "summary": "AI start-up has projected deeply negative cash flows as it invests in infrastructure and faces price pressures",
       "link": "https://www.ft.com/content/6011d061-eee3-4193-b3b7-8ee4155f538c?syn-25a6b1a6=1",
       "publisher": "FT",
-      "feed": "FT Home",
+      "feed": "FT Companies",
       "pub_iso": "2026-09-18T22:33:32+00:00",
       "pub_ts": 1789770812.0,
       "theme": "ai",
       "sub_theme": "ai_models",
       "theme_score": 8,
       "region": "us",
-      "impact": 9
-    },
-    {
-      "id": "ce6e00d6ea36",
-      "title": "Markets, Treasury Yields & the Bank of Japan",
-      "summary": "The Close brings you the latest news and analysis leading up to the final minutes and seconds before and after the closing bell on Wall Street. Today's guests are GenTrust Senior Client Advisor Mimi Duff, Zocdoc Founder & CEO Dr. Oliver Kharraz, Accenture Global Consumer Goods, Retail & Trail Lead Kathryn Gramling, JPMorgan Asset Management Global Head of Real Estate Chad Tredway, Envestnet Chief ",
-      "link": "https://www.bloomberg.com/news/videos/2026-09-18/the-close-9-18-2026-video",
-      "publisher": "Bloomberg",
-      "feed": "Bloomberg Pol",
-      "pub_iso": "2026-09-18T22:02:21+00:00",
-      "pub_ts": 1789768941.0,
-      "theme": "rates",
-      "sub_theme": "boj_pboc",
-      "theme_score": 6,
-      "region": "us",
-      "impact": 9
-    },
-    {
-      "id": "fb12c5ab3260",
-      "title": "JPMorgan Global Real Estate Head on Hot Markets",
-      "summary": "Chad Tredway, Global Head of Real Estate at JPMorgan Asset Management, says the firm remains bullish on commercial real estate even after the Fed’s latest rate hike and the prospect of more tightening. He notes that higher rates raise the cost of capital and can pressure transaction volumes in the near term, but argues the broader economy remains supportive, citing expected GDP growth of 2.3%, une",
-      "link": "https://www.bloomberg.com/news/videos/2026-09-18/jpmorgan-global-real-estate-head-on-hot-markets-video",
-      "publisher": "Bloomberg",
-      "feed": "Bloomberg Pol",
-      "pub_iso": "2026-09-18T21:51:08+00:00",
-      "pub_ts": 1789768268.0,
-      "theme": "rates",
-      "sub_theme": "fed",
-      "theme_score": 9,
-      "region": "us",
-      "impact": 9
+      "impact": 5
     },
     {
       "id": "9dfe2d692b50",
@@ -510,7 +942,7 @@
       "sub_theme": "ai_models",
       "theme_score": 8,
       "region": "us",
-      "impact": 9
+      "impact": 5
     },
     {
       "id": "fe5ce4991dac",
@@ -525,7 +957,7 @@
       "sub_theme": "ai_models",
       "theme_score": 8,
       "region": "us",
-      "impact": 9
+      "impact": 5
     },
     {
       "id": "7599a4a4becb",
@@ -540,157 +972,7 @@
       "sub_theme": "ai_infra",
       "theme_score": 7,
       "region": "us",
-      "impact": 9
-    },
-    {
-      "id": "e17ab3ab7788",
-      "title": "Investing for the AI Boom: Masters in Business with Glen Kacher",
-      "summary": "Barry speaks with Glen Kacher, Managing Director and CIO of Light Street Capital. They discuss his tenure at Integral Capital Partners, as well as his start at Tiger Management under founder Julian Robertson. They discuss being a hedge fund surrounded by venture capital in Silicon Valley, as well as learning to embrace the speed of tech. They also discuss the polarization of data centers and what ",
-      "link": "https://www.bloomberg.com/news/videos/2026-09-18/investing-for-the-ai-boom-masters-in-business-video",
-      "publisher": "Bloomberg",
-      "feed": "Bloomberg Tech",
-      "pub_iso": "2026-09-18T21:00:38+00:00",
-      "pub_ts": 1789765238.0,
-      "theme": "ai",
-      "sub_theme": "ai_infra",
-      "theme_score": 9,
-      "region": "us",
-      "impact": 9
-    },
-    {
-      "id": "7167564f059a",
-      "title": "Anthropic to Embed Accenture Evaluators to Test AI Safety",
-      "summary": "Anthropic PBC is partnering with Accenture Plc, a management and technology consulting company, to test the safety of its advanced artificial intelligence models by embedding evaluators from the consulting firm directly within its operations.",
-      "link": "https://www.bloomberg.com/news/articles/2026-09-18/anthropic-to-embed-evaluators-from-accenture-to-test-ai-safety",
-      "publisher": "Bloomberg",
-      "feed": "Bloomberg Tech",
-      "pub_iso": "2026-09-18T20:49:12+00:00",
-      "pub_ts": 1789764552.0,
-      "theme": "ai",
-      "sub_theme": "ai_models",
-      "theme_score": 8,
-      "region": "us",
-      "impact": 9
-    },
-    {
-      "id": "560fee275f42",
-      "title": "Bitcoin Tops $80,000 as Coinbase and Crypto Stocks Rally | Closing Bell",
-      "summary": "Comprehensive cross-platform coverage of the U.S. market close on Bloomberg Television, Bloomberg Radio, and YouTube with Romaine Bostick, Jess Menton, Carol Massar and Tim Stenovec. (Source: Bloomberg)",
-      "link": "https://www.bloomberg.com/news/videos/2026-09-18/bitcoin-tops-80-000-closing-bell-video",
-      "publisher": "Bloomberg",
-      "feed": "Bloomberg Tech",
-      "pub_iso": "2026-09-18T20:21:11+00:00",
-      "pub_ts": 1789762871.0,
-      "theme": "tech",
-      "sub_theme": "crypto",
-      "theme_score": 7,
-      "region": "us",
-      "impact": 9
-    },
-    {
-      "id": "4b42fa797ca0",
-      "title": "Treasury yields move higher as volatile week wraps up",
-      "summary": "Treasury yields moved higher on Friday as investors continued to look for clues on the trajectory of monetary policy.",
-      "link": "https://www.cnbc.com/2026/09/18/treasury-yields-fed-rates-volatile-week.html",
-      "publisher": "CNBC",
-      "feed": "CNBC World",
-      "pub_iso": "2026-09-18T20:03:33+00:00",
-      "pub_ts": 1789761813.0,
-      "theme": "rates",
-      "sub_theme": "treasuries",
-      "theme_score": 6,
-      "region": "us",
-      "impact": 9
-    },
-    {
-      "id": "2df04eb8812e",
-      "title": "Nvidia-Backed Data Center Firm Nscale Files Publicly for IPO",
-      "summary": "Nscale, a developer of artificial intelligence data centers that counts Nvidia Corp. and Microsoft Corp. among its partners, filed for an initial public offering in New York to fund the equipment satisfying AI’s insatiable demand for computing power.",
-      "link": "https://www.bloomberg.com/news/articles/2026-09-18/nvidia-backed-data-center-firm-nscale-files-publicly-for-us-ipo",
-      "publisher": "Bloomberg",
-      "feed": "Bloomberg Tech",
-      "pub_iso": "2026-09-18T19:52:20+00:00",
-      "pub_ts": 1789761140.0,
-      "theme": "ai",
-      "sub_theme": "ai_infra",
-      "theme_score": 10,
-      "region": "us",
-      "impact": 9
-    },
-    {
-      "id": "3e37e71ac7d3",
-      "title": "Crusoe CEO: Data Center Indusry Has a 'Marketing Issue’",
-      "summary": "Crusoe CEO Chase Lochmiller discusses the AI infrastructure company's nearly $4 billion in fresh funding sending its valuation to almost $31 billion. He also discusses how it will fuel the company’s push to build AI infrastructure spanning data centers, cloud computing and managed AI services. He says Crusoe could eventually enter the public markets and pushes back against growing opposition to da",
-      "link": "https://www.bloomberg.com/news/videos/2026-09-18/crusoe-ceo-data-center-indusry-has-a-marketing-issue-video",
-      "publisher": "Bloomberg",
-      "feed": "Bloomberg Tech",
-      "pub_iso": "2026-09-18T19:46:40+00:00",
-      "pub_ts": 1789760800.0,
-      "theme": "ai",
-      "sub_theme": "ai_infra",
-      "theme_score": 7,
-      "region": "us",
-      "impact": 9
-    },
-    {
-      "id": "bbf864c2d4e4",
-      "title": "Anthropic Investor Franklin: AI Safety Concerns Won't Slow Spending",
-      "summary": "Calls to “pace” development at the AI frontier are unlikely to translate into a slowdown in infrastructure spending, according to Sara Araghi, Franklin Templeton Portfolio Manager and Franklin Venture Partner. She argues that even if labs temper some model training, growing inference demand will continue to require enormous amounts of compute. Araghi also discusses why heightened AI safety concern",
-      "link": "https://www.bloomberg.com/news/videos/2026-09-18/ai-safety-concerns-won-t-slow-spending-video",
-      "publisher": "Bloomberg",
-      "feed": "Bloomberg Tech",
-      "pub_iso": "2026-09-18T19:42:40+00:00",
-      "pub_ts": 1789760560.0,
-      "theme": "ai",
-      "sub_theme": "ai_infra",
-      "theme_score": 10,
-      "region": "us",
-      "impact": 9
-    },
-    {
-      "id": "8549723818d4",
-      "title": "Anthropic's Existential Risk Warnings Hijack Larger AI Debate",
-      "summary": "As AI itself starts to help build the next generation of AI, warnings about losing control are growing louder. But critics say the focus on existential risk is overshadowing problems already here. Bloomberg's Rachel Metz and Davey Alba join Ed Ludlow on their latest reporting on \"Bloomberg Tech.\" (Source: Bloomberg)",
-      "link": "https://www.bloomberg.com/news/videos/2026-09-18/anthropic-s-existential-risk-warnings-hijack-ai-debate-video",
-      "publisher": "Bloomberg",
-      "feed": "Bloomberg Tech",
-      "pub_iso": "2026-09-18T19:35:53+00:00",
-      "pub_ts": 1789760153.0,
-      "theme": "ai",
-      "sub_theme": "ai_models",
-      "theme_score": 8,
-      "region": "us",
-      "impact": 9
-    },
-    {
-      "id": "6750bffed68a",
-      "title": "Anthropic’s Claude Takes Bigger Role in Building AI",
-      "summary": "Bloomberg’s Ed Ludlow breaks down Anthropic's finding that its Claude chatbot is leading 26% of its AI research and development, even as the global debate around AI heats up. Plus, SoftBank is closing out the week with nearly $21 billion in potential fresh borrowings as it builds out its AI financing capacity, and Crusoe CEO Chase Lochmiller discusses the race to build the infrastructure powering ",
-      "link": "https://www.bloomberg.com/news/videos/2026-09-18/bloomberg-tech-9-18-2026-video",
-      "publisher": "Bloomberg",
-      "feed": "Bloomberg Tech",
-      "pub_iso": "2026-09-18T19:31:00+00:00",
-      "pub_ts": 1789759860.0,
-      "theme": "ai",
-      "sub_theme": "ai_models",
-      "theme_score": 11,
-      "region": "us",
-      "impact": 9
-    },
-    {
-      "id": "d9eea15ec341",
-      "title": "North Korea Rejects IAEA Resolution, Vows to Keep Nuclear Status",
-      "summary": "North Korea dismissed a recent resolution by the UN nuclear watchdog against Pyongyang’s nuclear program and vowed to maintain its status as a nuclear-armed state.",
-      "link": "https://www.bloomberg.com/news/articles/2026-09-18/north-korea-rejects-iaea-resolution-vows-to-keep-nuclear-status",
-      "publisher": "Bloomberg",
-      "feed": "Bloomberg Pol",
-      "pub_iso": "2026-09-18T23:50:51+00:00",
-      "pub_ts": 1789775451.0,
-      "theme": "geopolitics",
-      "sub_theme": null,
-      "theme_score": 5,
-      "region": "asia",
-      "impact": 8
+      "impact": 5
     },
     {
       "id": "d0978272c671",
@@ -705,22 +987,7 @@
       "sub_theme": "ai_chips",
       "theme_score": 11,
       "region": "us",
-      "impact": 8
-    },
-    {
-      "id": "babfc4fad50c",
-      "title": "Oil Remains Primary Risk Driving Higher Rates Says Haworth",
-      "summary": "Treasuries fell as anticipation of additional Federal Reserve interest-rate hikes stoked interest in wagers on rising yields for short-maturity debt. Rob Haworth, Senior Investment Strategy Director at U.S. Bank Asset Management joins Bloomberg Businessweek Daily to discuss the markets as well as how the oil is driving rates higher. (Source: Bloomberg)",
-      "link": "https://www.bloomberg.com/news/videos/2026-09-18/oil-remains-primary-risk-driving-higher-rates-haworth-video",
-      "publisher": "Bloomberg",
-      "feed": "Bloomberg Mkts",
-      "pub_iso": "2026-09-18T18:55:18+00:00",
-      "pub_ts": 1789757718.0,
-      "theme": "rates",
-      "sub_theme": "fed",
-      "theme_score": 9,
-      "region": "us",
-      "impact": 8
+      "impact": 5
     },
     {
       "id": "0ab2a766de59",
@@ -735,7 +1002,22 @@
       "sub_theme": "fed",
       "theme_score": 6,
       "region": "us",
-      "impact": 8
+      "impact": 5
+    },
+    {
+      "id": "5b0f415c240a",
+      "title": "Fed keeps the door open for more rate hikes as Schmid warns there's 'work to do'",
+      "summary": "",
+      "link": "https://finance.yahoo.com/economy/policy/article/fed-keeps-the-door-open-for-more-rate-hikes-as-schmid-warns-theres-work-to-do-182214817.html",
+      "publisher": "Yahoo Finance",
+      "feed": "Yahoo Finance",
+      "pub_iso": "2026-09-18T18:22:14+00:00",
+      "pub_ts": 1789755734.0,
+      "theme": "rates",
+      "sub_theme": "fed",
+      "theme_score": 6,
+      "region": "us",
+      "impact": 5
     },
     {
       "id": "4f4453f869b0",
@@ -750,7 +1032,7 @@
       "sub_theme": "ai_chips",
       "theme_score": 8,
       "region": "us",
-      "impact": 8
+      "impact": 5
     },
     {
       "id": "1cbb07f1fd48",
@@ -765,7 +1047,7 @@
       "sub_theme": "ai_models",
       "theme_score": 11,
       "region": "us",
-      "impact": 8
+      "impact": 5
     },
     {
       "id": "fd6d8cb91376",
@@ -773,674 +1055,14 @@
       "summary": "In an appearance on CNBC's \"Squawk Box,\" Rep. Chip Roy, R-Texas, said he supports congressional hearings on AI, but wasn't keen on additional regulations.",
       "link": "https://www.cnbc.com/2026/09/18/chip-roy-ai-congress-regulate.html",
       "publisher": "CNBC",
-      "feed": "CNBC Top",
+      "feed": "CNBC Tech",
       "pub_iso": "2026-09-18T14:20:46+00:00",
       "pub_ts": 1789741246.0,
       "theme": "ai",
       "sub_theme": null,
       "theme_score": 7,
       "region": "us",
-      "impact": 8
-    },
-    {
-      "id": "f3896b848433",
-      "title": "Perfect Diary owner Yatsen doubles down on skincare, R&D after business overhaul",
-      "summary": "Yatsen Group, the Chinese beauty company behind Perfect Diary cosmetics, plans to deepen its push into skincare and new product research to sustain its growth, after a years-long overhaul of its business that has seen the firm acquire a string of overseas brands. The Guangzhou-based company will slow its acquisition spree for now and instead focus on expanding its existing portfolio of skincare of",
-      "link": "https://www.scmp.com/business/china-business/article/3368008/perfect-diary-owner-yatsen-doubles-down-skincare-rd-after-business-overhaul?utm_source=rss_feed",
-      "publisher": "SCMP",
-      "feed": "SCMP Business",
-      "pub_iso": "2026-09-19T01:00:10+00:00",
-      "pub_ts": 1789779610.0,
-      "theme": "macro",
-      "sub_theme": "growth_gdp",
-      "theme_score": 3,
-      "region": "asia",
-      "impact": 7
-    },
-    {
-      "id": "2c223322c2ca",
-      "title": "White House Details Itinerary for Xi’s State Visit to Washington",
-      "summary": "The White House released an itinerary for the planned meeting between US President Donald Trump and Chinese President Xi Jinping.",
-      "link": "https://www.bloomberg.com/news/articles/2026-09-18/white-house-details-itinerary-for-xi-s-state-visit-to-washington",
-      "publisher": "Bloomberg",
-      "feed": "Bloomberg Pol",
-      "pub_iso": "2026-09-18T23:53:40+00:00",
-      "pub_ts": 1789775620.0,
-      "theme": "geopolitics",
-      "sub_theme": null,
-      "theme_score": 3,
-      "region": "us",
-      "impact": 7
-    },
-    {
-      "id": "cd2aba7726dc",
-      "title": "Trump: There May Be Other Media Outlet Bans To Follow",
-      "summary": "\"Balance of Power\" focuses on the intersection of politics and global business. On today's show, Tom Kloza, Founder and Chairman of Kloza Advisors, says everybody still obsesses with the crude oil price, but it’s the diesel price that needs to be watched. Kęstutis Budrys, Lithuanian Foreign Minister, says a Russian drone flew from Belarus into Lithuanian airspace as NATO has experienced more than ",
-      "link": "https://www.bloomberg.com/news/videos/2026-09-18/balance-of-power-late-edition-09-18-2026-video",
-      "publisher": "Bloomberg",
-      "feed": "Bloomberg Pol",
-      "pub_iso": "2026-09-18T23:33:13+00:00",
-      "pub_ts": 1789774393.0,
-      "theme": "ai",
-      "sub_theme": null,
-      "theme_score": 3,
-      "region": "us",
-      "impact": 7
-    },
-    {
-      "id": "ed0ec9ea73ef",
-      "title": "Trump says U.S. to build a 'large Military presence' in Greenland as part of a security deal with it and Denmark",
-      "summary": "Greenland has maintained it is not for sale, and the European Union earlier this year united to rebuke Trump over his push to acquire the island.",
-      "link": "https://www.cnbc.com/2026/09/18/trump-greenland-denmark-military-deal.html",
-      "publisher": "CNBC",
-      "feed": "CNBC Top",
-      "pub_iso": "2026-09-18T23:28:06+00:00",
-      "pub_ts": 1789774086.0,
-      "theme": "tech",
-      "sub_theme": "consumer_tech",
-      "theme_score": 3,
-      "region": "us",
-      "impact": 7
-    },
-    {
-      "id": "e2766a2c0a7e",
-      "title": "OpenAI Sees Burning Through $278 Billion by 2030: FT",
-      "summary": "OpenAI expects that its negative free cash flow will reach $278 billion from 2026 to the end of 2030, the Financial Times reported, citing a company presentation.",
-      "link": "https://www.bloomberg.com/news/articles/2026-09-18/openai-projects-burning-through-278-billion-by-2030-ft-says",
-      "publisher": "Bloomberg",
-      "feed": "Bloomberg Tech",
-      "pub_iso": "2026-09-18T23:02:13+00:00",
-      "pub_ts": 1789772533.0,
-      "theme": "ai",
-      "sub_theme": "ai_models",
-      "theme_score": 3,
-      "region": "us",
-      "impact": 7
-    },
-    {
-      "id": "4cba435fe5d8",
-      "title": "Allen Says AI Safety Must Keep Pace With Model Releases",
-      "summary": "Greg Allen, Founder and CEO of Decision Tree Research, says AI has already had “extremely concerning incidents” and model releases should not be “exceeding our pace of safety technologies.\" Allen discusses concerns about AI models leaving tools for themselves across the internet and the challenge posed by open-source models as their capabilities increase. He speaks with Kailey Leinz and Joe Mathie",
-      "link": "https://www.bloomberg.com/news/videos/2026-09-18/allen-says-ai-safety-must-keep-pace-with-model-releases-video",
-      "publisher": "Bloomberg",
-      "feed": "Bloomberg Pol",
-      "pub_iso": "2026-09-18T22:55:37+00:00",
-      "pub_ts": 1789772137.0,
-      "theme": "ai",
-      "sub_theme": "ai_governance",
-      "theme_score": 3,
-      "region": "us",
-      "impact": 7
-    },
-    {
-      "id": "7c3ca32791db",
-      "title": "Kloza on Diesel Prices Hit Fresh Record-High",
-      "summary": "Tom Kloza, Founder and Chairman of Kloza Advisors and Independent Oil Analyst, says everybody still obsesses with the crude oil price, but it’s the diesel price that needs to be watched. Kloza says US refineries are running at 97% to 98% of capacity. Kloza also calls a potential diesel export ban “a nuclear option.” He speaks with Kailey Leinz and Joe Mathieu on Bloomberg’s \"Balance of Power.\" (So",
-      "link": "https://www.bloomberg.com/news/videos/2026-09-18/kloza-on-diesel-prices-hit-fresh-record-high-video",
-      "publisher": "Bloomberg",
-      "feed": "Bloomberg Pol",
-      "pub_iso": "2026-09-18T22:42:40+00:00",
-      "pub_ts": 1789771360.0,
-      "theme": "tech",
-      "sub_theme": "consumer_tech",
-      "theme_score": 3,
-      "region": "us",
-      "impact": 7
-    },
-    {
-      "id": "dcb90b60e48a",
-      "title": "Trump Extends $100,000 H-1B Visa Fee That’s Tied Up in Court",
-      "summary": "President Donald Trump extended for another year a $100,000 payment requirement for employers seeking to bring certain H-1B workers into the US, saying the restriction has reduced the reliance on lower-paid foreign labor.",
-      "link": "https://www.bloomberg.com/news/articles/2026-09-18/trump-extends-100-000-h-1b-visa-fee-as-legal-fight-plays-out",
-      "publisher": "Bloomberg",
-      "feed": "Bloomberg Pol",
-      "pub_iso": "2026-09-18T22:22:40+00:00",
-      "pub_ts": 1789770160.0,
-      "theme": "tech",
-      "sub_theme": "fintech",
-      "theme_score": 3,
-      "region": "us",
-      "impact": 7
-    },
-    {
-      "id": "dc92363e0df6",
-      "title": "$370 'Home Alone Sundae' on The Plaza's Menu",
-      "summary": "Bloomberg's Lisa Mateo joins Scarlet Fu and Tom Keene on \"Bloomberg Money.\" They discuss New York City's Plaza Hotel as it is set to welcome events and guests tied to the United Nations General Assembly and the Qatar Economic Forum. The menu includes the $370 \"Home Alone Sundae\". (Source: Bloomberg)",
-      "link": "https://www.bloomberg.com/news/videos/2026-09-18/-370-home-alone-sundae-on-the-plaza-s-menu-video",
-      "publisher": "Bloomberg",
-      "feed": "Bloomberg Mkts",
-      "pub_iso": "2026-09-18T21:59:52+00:00",
-      "pub_ts": 1789768792.0,
-      "theme": "tech",
-      "sub_theme": "consumer_tech",
-      "theme_score": 3,
-      "region": "us",
-      "impact": 7
-    },
-    {
-      "id": "5773a8237588",
-      "title": "'Dressing The Man', 'Preppy Handbook': Must-Read Fashion Books",
-      "summary": "Bloomberg's Chris Rovzar joins Scarlet Fu and Tom Keene on \"Bloomberg Money\" to discuss the must-read fashion books. (Source: Bloomberg)",
-      "link": "https://www.bloomberg.com/news/videos/2026-09-18/dressing-the-man-preppy-handbook-must-read-books-video",
-      "publisher": "Bloomberg",
-      "feed": "Bloomberg Mkts",
-      "pub_iso": "2026-09-18T21:49:46+00:00",
-      "pub_ts": 1789768186.0,
-      "theme": "tech",
-      "sub_theme": "consumer_tech",
-      "theme_score": 3,
-      "region": "us",
-      "impact": 7
-    },
-    {
-      "id": "a88f6bff2347",
-      "title": "Accenture’s Gramling on Latest Holiday Shopping Survey",
-      "summary": "Kathryn Gramling discusses new Accenture data showing that nearly half of consumers plan to spend the same amount or less than they did last year. She discusses whether that level of restrained spending represents a meaningful shift from prior years and what it may signal for holiday retail demand. She speaks with Romaine Bostick & Jess Menton on \"The Close.\" (Source: Bloomberg)",
-      "link": "https://www.bloomberg.com/news/videos/2026-09-18/accenture-s-gramling-on-latest-holiday-shopping-survey-video",
-      "publisher": "Bloomberg",
-      "feed": "Bloomberg Tech",
-      "pub_iso": "2026-09-18T21:36:30+00:00",
-      "pub_ts": 1789767390.0,
-      "theme": "tech",
-      "sub_theme": "consumer_tech",
-      "theme_score": 3,
-      "region": "us",
-      "impact": 7
-    },
-    {
-      "id": "d03b6d867b9f",
-      "title": "Shoppers Rediscover Joy of Dressing Up, Suit Sales Jump",
-      "summary": "Bloomberg's Chris Rovzar joins Scarlet Fu and Tom Keene on \"Bloomberg Money.\" They discuss the resurgence in suit sales for both men and women. (Source: Bloomberg)",
-      "link": "https://www.bloomberg.com/news/videos/2026-09-18/shoppers-rediscover-joy-of-dressing-up-suit-sales-jump-video",
-      "publisher": "Bloomberg",
-      "feed": "Bloomberg Mkts",
-      "pub_iso": "2026-09-18T21:31:31+00:00",
-      "pub_ts": 1789767091.0,
-      "theme": "tech",
-      "sub_theme": "consumer_tech",
-      "theme_score": 3,
-      "region": "us",
-      "impact": 7
-    },
-    {
-      "id": "f2d47008d968",
-      "title": "Zocdoc CEO on Rollout of its Care Access Network",
-      "summary": "Dr. Oliver Kharraz, the CEO and Founder of Zocdoc, joins the program to discuss the company’s latest development: the launch of a new care access network. Kharraz discusses how the update is expected to drive growth and what has changed for patients compared with what they could do before. He speaks with Romaine Bostick & Jess Menton on \"The Close.\" (Source: Bloomberg)",
-      "link": "https://www.bloomberg.com/news/videos/2026-09-18/zocdoc-ceo-on-rollout-of-its-care-access-network-video",
-      "publisher": "Bloomberg",
-      "feed": "Bloomberg Tech",
-      "pub_iso": "2026-09-18T21:31:23+00:00",
-      "pub_ts": 1789767083.0,
-      "theme": "macro",
-      "sub_theme": "growth_gdp",
-      "theme_score": 3,
-      "region": "us",
-      "impact": 7
-    },
-    {
-      "id": "fb21e059562f",
-      "title": "AI cloud provider Nscale files to go public",
-      "summary": "Nscale is the latest artificial intelligence neocloud to turn to public markets.",
-      "link": "https://www.cnbc.com/2026/09/18/nscale-ai-cloud-provider-ipo-nscl.html",
-      "publisher": "CNBC",
-      "feed": "CNBC Top",
-      "pub_iso": "2026-09-18T21:08:28+00:00",
-      "pub_ts": 1789765708.0,
-      "theme": "ai",
-      "sub_theme": null,
-      "theme_score": 3,
-      "region": "us",
-      "impact": 7
-    },
-    {
-      "id": "ad91a4eecefe",
-      "title": "Inside US Military ‘Kill Chain’ That Destroyed an Iranian School",
-      "summary": "Pentagon investigators have discovered that flawed intelligence, outdated imagery and an overreliance on AI contributed to a missile strike that killed 123 children in Minab.",
-      "link": "https://www.bloomberg.com/graphics/2026-iran-school-attack/",
-      "publisher": "Bloomberg",
-      "feed": "Bloomberg Pol",
-      "pub_iso": "2026-09-18T21:00:22+00:00",
-      "pub_ts": 1789765222.0,
-      "theme": "ai",
-      "sub_theme": null,
-      "theme_score": 3,
-      "region": "us",
-      "impact": 7
-    },
-    {
-      "id": "22bdadb9fa57",
-      "title": "Anthropic Sales Near $100 Billion Before November IPO, NYT Says",
-      "summary": "Anthropic PBC is expected to generate more than $100 billion in annualized revenue this year as it continues to prepare for a trading debut as soon as November, according to the New York Times, citing people familiar with the matter.",
-      "link": "https://www.bloomberg.com/news/articles/2026-09-18/anthropic-s-annualized-revenue-to-top-100-billion-in-2026-nyt",
-      "publisher": "Bloomberg",
-      "feed": "Bloomberg Tech",
-      "pub_iso": "2026-09-18T20:33:40+00:00",
-      "pub_ts": 1789763620.0,
-      "theme": "ai",
-      "sub_theme": "ai_models",
-      "theme_score": 3,
-      "region": "us",
-      "impact": 7
-    },
-    {
-      "id": "4a2ac9a67769",
-      "title": "White House attacks Fed official after review of Silicon Valley Bank collapse",
-      "summary": "New report finds ‘culture of risk aversion’ among banking regulators led to mishandling of weaknesses at tech-heavy lender",
-      "link": "https://www.ft.com/content/98c6db91-44c7-487e-a733-331a58766ba1?syn-25a6b1a6=1",
-      "publisher": "FT",
-      "feed": "FT Markets",
-      "pub_iso": "2026-09-18T19:48:35+00:00",
-      "pub_ts": 1789760915.0,
-      "theme": "rates",
-      "sub_theme": "fed",
-      "theme_score": 3,
-      "region": "us",
-      "impact": 7
-    },
-    {
-      "id": "5f42f52f0a5f",
-      "title": "Meta-Tied Data Center Prices Junk Bond Amid Blowout Demand",
-      "summary": "The first junk-bond offering for a data center tied to Meta Platforms Inc. attracted demand more than four times the deal’s size, with juicy yields helping to lure investors.",
-      "link": "https://www.bloomberg.com/news/articles/2026-09-18/meta-tied-data-center-draws-blowout-demand-for-debut-junk-bond",
-      "publisher": "Bloomberg",
-      "feed": "Bloomberg Tech",
-      "pub_iso": "2026-09-18T18:18:16+00:00",
-      "pub_ts": 1789755496.0,
-      "theme": "rates",
-      "sub_theme": "credit",
-      "theme_score": 5,
-      "region": "us",
-      "impact": 7
-    },
-    {
-      "id": "b987ea1e5de1",
-      "title": "'We simply don't know' - JP Morgan struggling to forecast oil prices due to Trump's war with Iran",
-      "summary": "The bank said it \"assumed\" there would be economic red lines, like oil at $100 a barrel, that the US would be unwilling the cross.",
-      "link": "https://www.bbc.co.uk/news/articles/cq0m3gmv8n7ko?at_medium=RSS&at_campaign=rss",
-      "publisher": "BBC",
-      "feed": "BBC Business",
-      "pub_iso": "2026-09-18T17:57:30+00:00",
-      "pub_ts": 1789754250.0,
-      "theme": "geopolitics",
-      "sub_theme": "iran_war",
-      "theme_score": 5,
-      "region": "us",
-      "impact": 7
-    },
-    {
-      "id": "8ea8c45195bd",
-      "title": "France calls G7 summit on releasing more oil reserves",
-      "summary": "Supply concerns have been worsened by an attack on a Saudi pipeline",
-      "link": "https://www.ft.com/content/31c53c3c-5cc1-4248-98dc-68fc8956e8cc?syn-25a6b1a6=1",
-      "publisher": "FT",
-      "feed": "FT Markets",
-      "pub_iso": "2026-09-18T15:51:04+00:00",
-      "pub_ts": 1789746664.0,
-      "theme": "geopolitics",
-      "sub_theme": null,
-      "theme_score": 5,
-      "region": "us",
-      "impact": 7
-    },
-    {
-      "id": "65a3d8a427bf",
-      "title": "Ministers explore limiting political party spending outside UK elections",
-      "summary": "Concerns over political donations grow after two cryptocurrency billionaires pledged £72mn to Reform UK",
-      "link": "https://www.ft.com/content/5bf1b218-bd69-430e-8544-93e0ef87d10f?syn-25a6b1a6=1",
-      "publisher": "FT",
-      "feed": "FT World",
-      "pub_iso": "2026-09-18T15:31:58+00:00",
-      "pub_ts": 1789745518.0,
-      "theme": "tech",
-      "sub_theme": "crypto",
-      "theme_score": 4,
-      "region": "eu",
-      "impact": 7
-    },
-    {
-      "id": "d2f0bc3f2e03",
-      "title": "Hackers target ships’ satellite links",
-      "summary": "Mechanisms from engines to navigation are connected to ‘edge devices’ that make them vulnerable, warns cyber security group",
-      "link": "https://www.ft.com/content/f73250e7-5759-438c-87b1-9fe1ef5623b1?syn-25a6b1a6=1",
-      "publisher": "FT",
-      "feed": "FT Companies",
-      "pub_iso": "2026-09-18T14:27:04+00:00",
-      "pub_ts": 1789741624.0,
-      "theme": "macro",
-      "sub_theme": null,
-      "theme_score": 5,
-      "region": "us",
-      "impact": 7
-    },
-    {
-      "id": "3b45314a282d",
-      "title": "China’s crude imports are rising again. What will that mean for oil prices?",
-      "summary": "China is showing early signs of stepping up imports of crude oil after months of subdued buying amid the US-Israel war on Iran, threatening to erode a buffer that has helped prevent a larger surge in global oil prices. But analysts do not expect China to quickly return to its pre-war import levels, as elevated crude prices could squeeze margins for Chinese refineries and the country’s stockpiles a",
-      "link": "https://www.scmp.com/economy/china-economy/article/3368047/chinas-crude-imports-are-rising-again-what-will-mean-oil-prices?utm_source=rss_feed",
-      "publisher": "SCMP",
-      "feed": "SCMP Business",
-      "pub_iso": "2026-09-18T13:30:04+00:00",
-      "pub_ts": 1789738204.0,
-      "theme": "geopolitics",
-      "sub_theme": "iran_war",
-      "theme_score": 5,
-      "region": "us",
-      "impact": 7
-    },
-    {
-      "id": "19f1707a01a4",
-      "title": "What it will take for us to buy the dip in DuPont. Plus, profit-taking hits cyber stocks",
-      "summary": "Every weekday, the Investing Club releases the Homestretch; an actionable afternoon update just in time for the last hour of trading.",
-      "link": "https://www.cnbc.com/2026/09/18/what-it-will-take-for-us-to-buy-the-dip-in-dupont-plus-profit-taking-hits-cyber-stocks.html",
-      "publisher": "CNBC",
-      "feed": "CNBC Top",
-      "pub_iso": "2026-09-18T18:32:55+00:00",
-      "pub_ts": 1789756375.0,
-      "theme": "tech",
-      "sub_theme": "cyber",
-      "theme_score": 3,
-      "region": "us",
-      "impact": 6
-    },
-    {
-      "id": "b0e2c2bec694",
-      "title": "Fed staff should have known Silicon Valley Bank was vulnerable, new report finds",
-      "summary": "Fed Vice Chair for Supervision Michelle Bowman said a new report indicates the central bank's staff missed signs ahead of Silicon Valley Bank's 2023 failure.",
-      "link": "https://www.cnbc.com/2026/09/18/fed-silicon-valley-bank.html",
-      "publisher": "CNBC",
-      "feed": "CNBC Top",
-      "pub_iso": "2026-09-18T18:30:23+00:00",
-      "pub_ts": 1789756223.0,
-      "theme": "rates",
-      "sub_theme": "fed",
-      "theme_score": 3,
-      "region": "us",
-      "impact": 6
-    },
-    {
-      "id": "d8950e2a633a",
-      "title": "Dollar Surges to Best Week Since June on Higher Rate Outlook",
-      "summary": "The dollar staged its biggest weekly advance in more than three months after the US central bank signaled more interest-rate hikes are to come.",
-      "link": "https://www.bloomberg.com/news/articles/2026-09-18/dollar-surges-to-best-week-since-june-on-higher-rate-outlook",
-      "publisher": "Bloomberg",
-      "feed": "Bloomberg Mkts",
-      "pub_iso": "2026-09-18T18:26:40+00:00",
-      "pub_ts": 1789756000.0,
-      "theme": "rates",
-      "sub_theme": null,
-      "theme_score": 3,
-      "region": "us",
-      "impact": 6
-    },
-    {
-      "id": "56be528cb533",
-      "title": "McDonald's is the new 'Value Meal,' says trader Mike Khouw",
-      "summary": "McDonald's announced this week that it is revising its U.S. value strategy after recording its slowest sales growth in more than a year.",
-      "link": "https://www.cnbc.com/2026/09/18/mcdonalds-is-the-new-value-meal-says-trader-mike-khouw.html",
-      "publisher": "CNBC",
-      "feed": "CNBC Top",
-      "pub_iso": "2026-09-18T18:11:47+00:00",
-      "pub_ts": 1789755107.0,
-      "theme": "macro",
-      "sub_theme": "growth_gdp",
-      "theme_score": 3,
-      "region": "us",
-      "impact": 6
-    },
-    {
-      "id": "f71316a0ab4c",
-      "title": "Starmer looked at softening £100,000 ‘tax trap’ for higher earners",
-      "summary": "Andy Burnham’s government is not considering a similar move against 60% rate viewed by economists as a dysfunction in tax system",
-      "link": "https://www.ft.com/content/2c59513f-e323-4b29-a3b1-d9e083946978?syn-25a6b1a6=1",
-      "publisher": "FT",
-      "feed": "FT World",
-      "pub_iso": "2026-09-18T17:39:37+00:00",
-      "pub_ts": 1789753177.0,
-      "theme": "macro",
-      "sub_theme": null,
-      "theme_score": 3,
-      "region": "eu",
-      "impact": 6
-    },
-    {
-      "id": "7dd59a5ca1c8",
-      "title": "Auto industry urges Trump to bar Chinese automakers in U.S. ahead of Xi visit",
-      "summary": "Leaders of six major auto trade groups joined to sign a letter to the president.",
-      "link": "https://www.cnbc.com/2026/09/18/xi-visit-automakers-urge-trump-to-bar-chinese-automakers-in-us.html",
-      "publisher": "CNBC",
-      "feed": "CNBC Top",
-      "pub_iso": "2026-09-18T17:11:39+00:00",
-      "pub_ts": 1789751499.0,
-      "theme": "tech",
-      "sub_theme": "consumer_tech",
-      "theme_score": 3,
-      "region": "us",
-      "impact": 6
-    },
-    {
-      "id": "35a5c88b89a1",
-      "title": "AirAsia's Fernandes refutes financial concerns, points to new growth plans",
-      "summary": "AirAsia's Tony Fernandes pushed back against a report raising concerns over the airline’s financial health, while signaling plans to resume growth.",
-      "link": "https://www.cnbc.com/2026/09/18/airasia-co-founder-tony-fernandes.html",
-      "publisher": "CNBC",
-      "feed": "CNBC World",
-      "pub_iso": "2026-09-18T16:37:39+00:00",
-      "pub_ts": 1789749459.0,
-      "theme": "macro",
-      "sub_theme": "growth_gdp",
-      "theme_score": 3,
-      "region": "us",
-      "impact": 6
-    },
-    {
-      "id": "e02a0a5d3a46",
-      "title": "Yen sinks after BoJ raises rates to highest level since 1995",
-      "summary": "Authorities warn of further potential currency intervention after central bank move fails to buoy currency",
-      "link": "https://www.ft.com/content/97a0bed5-0580-4ccc-bd3c-fe9a714259e2?syn-25a6b1a6=1",
-      "publisher": "FT",
-      "feed": "FT Markets",
-      "pub_iso": "2026-09-18T16:28:24+00:00",
-      "pub_ts": 1789748904.0,
-      "theme": "rates",
-      "sub_theme": "boj_pboc",
-      "theme_score": 3,
-      "region": "asia",
-      "impact": 6
-    },
-    {
-      "id": "768ee6aa93a6",
-      "title": "The relentless creep of Britain’s compliance state",
-      "summary": "While some rules are just fiddly and frustrating, others do real harm",
-      "link": "https://www.ft.com/content/67500397-ec06-4027-a4de-fc004b06e642?syn-25a6b1a6=1",
-      "publisher": "FT",
-      "feed": "FT World",
-      "pub_iso": "2026-09-18T16:20:27+00:00",
-      "pub_ts": 1789748427.0,
-      "theme": "rates",
-      "sub_theme": null,
-      "theme_score": 3,
-      "region": "eu",
-      "impact": 6
-    },
-    {
-      "id": "05d7ab8368ea",
-      "title": "Yen Pares BOJ-Fueled Declines as Nikkei Reports a Rate Check",
-      "summary": "The yen pared declines on Friday, with the Nikkei newspaper reporting that the Bank of Japan inquired with market participants about exchange-rate levels, a step often seen as a precursor to official intervention.",
-      "link": "https://www.bloomberg.com/news/articles/2026-09-18/yen-pares-boj-fueled-declines-as-nikkei-reports-a-rate-check",
-      "publisher": "Bloomberg",
-      "feed": "Bloomberg Mkts",
-      "pub_iso": "2026-09-18T16:07:00+00:00",
-      "pub_ts": 1789747620.0,
-      "theme": "rates",
-      "sub_theme": "boj_pboc",
-      "theme_score": 3,
-      "region": "asia",
-      "impact": 6
-    },
-    {
-      "id": "11106493485e",
-      "title": "Court shines a further light on who was at fault in SVB implosion",
-      "summary": "Federal judge rejects claims that criticism of bank executives was based on hindsight",
-      "link": "https://www.ft.com/content/24dc8ce0-5331-4280-ad85-c2dddcef429d?syn-25a6b1a6=1",
-      "publisher": "FT",
-      "feed": "FT Markets",
-      "pub_iso": "2026-09-18T15:34:42+00:00",
-      "pub_ts": 1789745682.0,
-      "theme": "macro",
-      "sub_theme": null,
-      "theme_score": 3,
-      "region": "us",
-      "impact": 6
-    },
-    {
-      "id": "d857dc07bc47",
-      "title": "Warshing the walk",
-      "summary": "Fed chair Kevin Warsh delivered the rate rise as was widely expected at September’s rate meeting",
-      "link": "https://www.ft.com/content/7832ff53-1607-471c-bc9d-9f62c193b641",
-      "publisher": "FT",
-      "feed": "FT World",
-      "pub_iso": "2026-09-18T15:30:02+00:00",
-      "pub_ts": 1789745402.0,
-      "theme": "rates",
-      "sub_theme": "fed",
-      "theme_score": 3,
-      "region": "us",
-      "impact": 6
-    },
-    {
-      "id": "c1779e3e7003",
-      "title": "StubHub shares tick higher for third day in a row after Citi upgrade",
-      "summary": "Analyst Jason Bazinet raised his rating to buy from neutral.",
-      "link": "https://www.cnbc.com/2026/09/18/stubhub-shares-tick-higher-for-third-day-in-a-row-after-citi-upgrade.html",
-      "publisher": "CNBC",
-      "feed": "CNBC Top",
-      "pub_iso": "2026-09-18T15:09:10+00:00",
-      "pub_ts": 1789744150.0,
-      "theme": "rates",
-      "sub_theme": null,
-      "theme_score": 3,
-      "region": "us",
-      "impact": 6
-    },
-    {
-      "id": "15fb2fd6acfd",
-      "title": "Tesla auditing Chinese suppliers ahead of Optimus roll-out: sources",
-      "summary": "Tesla officials and engineers have begun auditing part of the firm’s Chinese supply chain, as Elon Musk’s company aims to quickly ramp up production of its Optimus humanoid robot after it hits the global market later this year, according to sources with knowledge of the matter. Chinese companies set to undergo supplier audits included heat-control component manufacturer Zhejiang Sanhua Intelligent",
-      "link": "https://www.scmp.com/business/companies/article/3368053/tesla-auditing-chinese-suppliers-ahead-optimus-roll-out-sources?utm_source=rss_feed",
-      "publisher": "SCMP",
-      "feed": "SCMP Business",
-      "pub_iso": "2026-09-18T12:44:33+00:00",
-      "pub_ts": 1789735473.0,
-      "theme": "tech",
-      "sub_theme": "consumer_tech",
-      "theme_score": 4,
-      "region": "asia",
-      "impact": 6
-    },
-    {
-      "id": "5961a1b78e2d",
-      "title": "Bitcoin and ethereum prices today, Friday, September 18, 2026: Crypto prices rise as investors move past CLARITY's failure",
-      "summary": "",
-      "link": "https://finance.yahoo.com/personal-finance/investing/article/bitcoin-and-ethereum-prices-today-friday-september-18-2026-crypto-prices-rise-as-investors-move-past-claritys-failure-114025818.html",
-      "publisher": "Yahoo Finance",
-      "feed": "Yahoo Finance",
-      "pub_iso": "2026-09-18T11:40:25+00:00",
-      "pub_ts": 1789731625.0,
-      "theme": "tech",
-      "sub_theme": "crypto",
-      "theme_score": 4,
-      "region": "us",
-      "impact": 6
-    },
-    {
-      "id": "80eb009c0397",
-      "title": "Why Al Gore welcomes China’s ‘unilateral leadership’ on climate",
-      "summary": "Beijing set to exert a new level of influence, says former US vice-president",
-      "link": "https://www.ft.com/content/ff7ca130-d25c-4294-b654-0aa8a79268ab?syn-25a6b1a6=1",
-      "publisher": "FT",
-      "feed": "FT Markets",
-      "pub_iso": "2026-09-18T11:00:08+00:00",
-      "pub_ts": 1789729208.0,
-      "theme": "sustainability",
-      "sub_theme": "climate",
-      "theme_score": 5,
-      "region": "us",
-      "impact": 6
-    },
-    {
-      "id": "4b04316bcf31",
-      "title": "Putin braces for election stress test as Russians ‘feel the pain’ of struggling economy",
-      "summary": "Russia’s upcoming election is expected to cement United Russia’s dominance, but voter turnout and its margin of victory could offer clues to public discontent.",
-      "link": "https://www.cnbc.com/2026/09/17/russia-putin-state-duma-election-ukraine-war.html",
-      "publisher": "CNBC",
-      "feed": "CNBC World",
-      "pub_iso": "2026-09-18T07:53:50+00:00",
-      "pub_ts": 1789718030.0,
-      "theme": "geopolitics",
-      "sub_theme": "ukraine_russia",
-      "theme_score": 5,
-      "region": "us",
-      "impact": 6
-    },
-    {
-      "id": "56161e56df0f",
-      "title": "Why Japan’s markets flipped the usual script after central bank rate hike",
-      "summary": "The yen weakened past 157 against the dollar, the yield on the 10-year Japanese Government Bond slipped, while the Nikkei 225 gained 1.5%.",
-      "link": "https://www.cnbc.com/2026/09/18/japan-rate-hike-stocks-rise-bond-yields-yen-fall.html",
-      "publisher": "CNBC",
-      "feed": "CNBC World",
-      "pub_iso": "2026-09-18T07:40:29+00:00",
-      "pub_ts": 1789717229.0,
-      "theme": "rates",
-      "sub_theme": "treasuries",
-      "theme_score": 5,
-      "region": "asia",
-      "impact": 6
-    },
-    {
-      "id": "e30e427a8fe3",
-      "title": "From US Fed rates to China’s global export share: 4 figures shaping markets",
-      "summary": "The US Federal Reserve raised its benchmark interest rate by a quarter of a percentage point this week, followed by the Hong Kong Monetary Authority and the Bank of Japan, while the 10-year US Treasury yield fell back below 5 per cent. Here are some of the figures that have drawn the most market attention this week. Fed raises interest rates for first time since 2023 The US Federal Open Market Com",
-      "link": "https://www.scmp.com/business/banking-finance/article/3367978/us-fed-rates-chinas-global-export-share-4-figures-shaping-markets?utm_source=rss_feed",
-      "publisher": "SCMP",
-      "feed": "SCMP Business",
-      "pub_iso": "2026-09-18T07:00:23+00:00",
-      "pub_ts": 1789714823.0,
-      "theme": "rates",
-      "sub_theme": "fed",
-      "theme_score": 12,
-      "region": "us",
-      "impact": 6
-    },
-    {
-      "id": "bb4e7ed9d957",
-      "title": "Standard Chartered sharpens its yuan advisory edge as currency’s global rise continues",
-      "summary": "Amid continuing geopolitical tensions and market uncertainty, greater use of the yuan for international trade settlements, raising funds, managing liquidity and allocating investments is a logical strategy for executives overseeing treasury and finance functions. At the end of 2025, the People’s Bank of China (PBOC) had bilateral currency-swap agreements with more than 30 countries and regions, wi",
-      "link": "https://www.scmp.com/native/business/banking-finance/topics/tapping-cross-border-opportunities/article/3367786/standard-chartered-sharpens-its-yuan-advisory-edge-currencys-global-rise-continues?utm_source=rss_feed",
-      "publisher": "SCMP",
-      "feed": "SCMP Business",
-      "pub_iso": "2026-09-18T04:00:04+00:00",
-      "pub_ts": 1789704004.0,
-      "theme": "rates",
-      "sub_theme": "boj_pboc",
-      "theme_score": 6,
-      "region": "us",
-      "impact": 6
-    },
-    {
-      "id": "a7dfceda4178",
-      "title": "Bank of Japan raises interest rates to 31-year high, flags concerns over inflation",
-      "summary": "The decision was split 7-2, with board members Toichiro Asada and Ayano Sato dissenting from the hike.",
-      "link": "https://www.cnbc.com/2026/09/18/japan-raises-rates-30-year-high-yen-jgb.html",
-      "publisher": "CNBC",
-      "feed": "CNBC World",
-      "pub_iso": "2026-09-18T03:31:45+00:00",
-      "pub_ts": 1789702305.0,
-      "theme": "rates",
-      "sub_theme": "boj_pboc",
-      "theme_score": 6,
-      "region": "asia",
-      "impact": 6
+      "impact": 5
     },
     {
       "id": "12e8dac4cfd5",
@@ -1455,126 +1077,6 @@
       "sub_theme": "ukraine_russia",
       "theme_score": 6,
       "region": "us",
-      "impact": 6
-    },
-    {
-      "id": "3a325ca9c4b5",
-      "title": "Ineos to store carbon dioxide off Denmark as technology gains momentum",
-      "summary": "Launch of site follows opening of separate Norway project",
-      "link": "https://www.ft.com/content/ae8deb70-7173-4f1a-bb02-de43c40d9090?syn-25a6b1a6=1",
-      "publisher": "FT",
-      "feed": "FT Companies",
-      "pub_iso": "2026-09-18T12:38:39+00:00",
-      "pub_ts": 1789735119.0,
-      "theme": "sustainability",
-      "sub_theme": "carbon",
-      "theme_score": 3,
-      "region": "us",
-      "impact": 5
-    },
-    {
-      "id": "8789d6e91c22",
-      "title": "Putin targets Nestle's Russian business as Kremlin tightens grip on Western assets",
-      "summary": "Nestlé is assessing its options after Russia placed the Swiss food giant’s local assets under temporary external administration.",
-      "link": "https://www.cnbc.com/2026/09/18/nestle-russia-assets-putin-ukraine-war.html",
-      "publisher": "CNBC",
-      "feed": "CNBC Top",
-      "pub_iso": "2026-09-18T12:18:55+00:00",
-      "pub_ts": 1789733935.0,
-      "theme": "geopolitics",
-      "sub_theme": "ukraine_russia",
-      "theme_score": 3,
-      "region": "us",
-      "impact": 5
-    },
-    {
-      "id": "23ab51d6d326",
-      "title": "Gold price today, Friday, September 18, 2026: Gold hits weekly high as inflation concerns fade",
-      "summary": "",
-      "link": "https://finance.yahoo.com/personal-finance/investing/article/gold-price-today-friday-september-18-2026-gold-hits-weekly-high-as-inflation-concerns-fade-104807567.html",
-      "publisher": "Yahoo Finance",
-      "feed": "Yahoo Finance",
-      "pub_iso": "2026-09-18T10:48:07+00:00",
-      "pub_ts": 1789728487.0,
-      "theme": "macro",
-      "sub_theme": "inflation",
-      "theme_score": 3,
-      "region": "us",
-      "impact": 5
-    },
-    {
-      "id": "d0582fba85d3",
-      "title": "Best CD rates today, Friday, September 18, 2026: Up to 4.40% APY return available with a 2-year CD",
-      "summary": "",
-      "link": "https://finance.yahoo.com/personal-finance/banking/article/best-cd-rates-today-friday-september-18-2026-up-to-440-apy-return-available-with-a-2-year-cd-100000224.html",
-      "publisher": "Yahoo Finance",
-      "feed": "Yahoo Finance",
-      "pub_iso": "2026-09-18T10:00:00+00:00",
-      "pub_ts": 1789725600.0,
-      "theme": "tech",
-      "sub_theme": "consumer_tech",
-      "theme_score": 3,
-      "region": "us",
-      "impact": 5
-    },
-    {
-      "id": "1b3b777b0af9",
-      "title": "Mortgage and refinance interest rates today, Friday, September 18, 2026: Rates climb above 7%",
-      "summary": "",
-      "link": "https://finance.yahoo.com/personal-finance/mortgages/article/mortgage-and-refinance-interest-rates-today-friday-september-18-2026-rates-climb-above-7-100000327.html",
-      "publisher": "Yahoo Finance",
-      "feed": "Yahoo Finance",
-      "pub_iso": "2026-09-18T10:00:00+00:00",
-      "pub_ts": 1789725600.0,
-      "theme": "rates",
-      "sub_theme": null,
-      "theme_score": 3,
-      "region": "us",
-      "impact": 5
-    },
-    {
-      "id": "8117d361a088",
-      "title": "Trump administration advances $24.3 billion fighter jet deal to Saudi Arabia as Houthis escalate attacks",
-      "summary": "The deal comes as Iran-backed Houthis escalate attacks on Saudi Arabia and seek control of the strategically important Bab el-Mandeb Strait.",
-      "link": "https://www.cnbc.com/2026/09/18/trump-saudi-arabia-f-35-houthis-iran-war.html",
-      "publisher": "CNBC",
-      "feed": "CNBC Top",
-      "pub_iso": "2026-09-18T08:02:20+00:00",
-      "pub_ts": 1789718540.0,
-      "theme": "geopolitics",
-      "sub_theme": "iran_war",
-      "theme_score": 3,
-      "region": "us",
-      "impact": 5
-    },
-    {
-      "id": "4f88500ce576",
-      "title": "How China plans to ‘firmly rank at the global forefront’ with 25% of first-in-class drugs",
-      "summary": "China has set its sights on becoming a global biomedicine powerhouse by 2030, targeting key technological breakthroughs and at least a quarter of the world’s first-in-class drugs market under a new five-year plan for the sector. By the end of the decade, China would “firmly rank at the global forefront” in biopharmaceutical research and development and applications, with its “core competitiveness”",
-      "link": "https://www.scmp.com/business/china-business/article/3367952/how-china-plans-firmly-rank-global-forefront-25-first-class-drugs?utm_source=rss_feed",
-      "publisher": "SCMP",
-      "feed": "SCMP Business",
-      "pub_iso": "2026-09-18T08:00:06+00:00",
-      "pub_ts": 1789718406.0,
-      "theme": "tech",
-      "sub_theme": "consumer_tech",
-      "theme_score": 3,
-      "region": "asia",
-      "impact": 5
-    },
-    {
-      "id": "fc45afe6b447",
-      "title": "Interest rates held but Bank signals rise if energy prices stay high",
-      "summary": "Rates are held for the sixth time in a row but the Bank of England says high energy prices make a future rise more likely.",
-      "link": "https://www.bbc.co.uk/news/articles/cm4gjrxez1q0o?at_medium=RSS&at_campaign=rss",
-      "publisher": "BBC",
-      "feed": "BBC Business",
-      "pub_iso": "2026-09-17T14:05:38+00:00",
-      "pub_ts": 1789653938.0,
-      "theme": "rates",
-      "sub_theme": "ecb_boe",
-      "theme_score": 6,
-      "region": "eu",
       "impact": 5
     },
     {
@@ -1623,74 +1125,29 @@
       "impact": 5
     },
     {
-      "id": "4df62474c4b1",
-      "title": "Yen weakens to 156-level as Fed fulfills rate hike expectations",
-      "summary": "",
-      "link": "https://asia.nikkei.com/business/markets/currencies/yen-weakens-to-156-level-as-fed-fulfills-rate-hike-expectations",
-      "publisher": "Nikkei Asia",
-      "feed": "Nikkei Asia",
-      "pub_iso": null,
-      "pub_ts": 0,
-      "theme": "rates",
-      "sub_theme": "fed",
-      "theme_score": 6,
-      "region": "asia",
-      "impact": 5
-    },
-    {
-      "id": "1dfd8d9525cd",
-      "title": "Japan raises interest rate to new 31-year high to curb rising prices",
-      "summary": "Central banks around the world have hiked rates as high energy prices are pushing up inflation.",
-      "link": "https://www.bbc.co.uk/news/articles/cqn74jeek06no?at_medium=RSS&at_campaign=rss",
-      "publisher": "BBC",
-      "feed": "BBC Business",
-      "pub_iso": "2026-09-18T07:14:57+00:00",
-      "pub_ts": 1789715697.0,
-      "theme": "macro",
-      "sub_theme": "inflation",
-      "theme_score": 3,
-      "region": "asia",
-      "impact": 4
-    },
-    {
-      "id": "da4bec4a7940",
-      "title": "CNBC Daily Open: Hike, hold, hike",
-      "summary": "A trio of major central bank decisions dominates trading this week, but focus turns to geopolitical stains ahead of President Trump's meeting with Xi Jingping.",
-      "link": "https://www.cnbc.com/2026/09/18/rate-hike-hold-trump-xi-elections.html",
-      "publisher": "CNBC",
-      "feed": "CNBC World",
-      "pub_iso": "2026-09-18T06:20:51+00:00",
-      "pub_ts": 1789712451.0,
-      "theme": "geopolitics",
-      "sub_theme": "us_china",
+      "id": "ec1a44aa3fa2",
+      "title": "China State TV Affiliate Flags Anthropic Data and Privacy Risks",
+      "summary": "Anthropic PBC’s privacy-policy revisions have increased risks to user data by allowing information to be shared with US intelligence agencies when the company considers it necessary without legal procedures, a social-media account affiliated with China Central Television said in a post on Saturday.",
+      "link": "https://www.bloomberg.com/news/articles/2026-09-19/china-state-tv-affiliate-flags-anthropic-data-and-privacy-risks",
+      "publisher": "Bloomberg",
+      "feed": "Bloomberg Tech",
+      "pub_iso": "2026-09-19T06:33:35+00:00",
+      "pub_ts": 1789799615.0,
+      "theme": "ai",
+      "sub_theme": "ai_models",
       "theme_score": 3,
       "region": "us",
       "impact": 4
     },
     {
-      "id": "fe981f561133",
-      "title": "The QT endgame at the BoE",
-      "summary": "Still trying for boring",
-      "link": "https://www.ft.com/content/901d5aca-e0ab-4728-8a24-6b0e616c5139?syn-25a6b1a6=1",
-      "publisher": "FT",
-      "feed": "FT Markets",
-      "pub_iso": "2026-09-18T05:30:08+00:00",
-      "pub_ts": 1789709408.0,
-      "theme": "rates",
-      "sub_theme": "ecb_boe",
-      "theme_score": 3,
-      "region": "us",
-      "impact": 4
-    },
-    {
-      "id": "0cbbaa6c6c9f",
-      "title": "Will El Niño be the saviour of Europe’s energy market?",
-      "summary": "The continent’s storage is 69 per cent full, compared with more than 80 per cent this time last year",
-      "link": "https://www.ft.com/content/19309369-2741-4caf-91f9-a45505f82148?syn-25a6b1a6=1",
-      "publisher": "FT",
-      "feed": "FT Markets",
-      "pub_iso": "2026-09-18T04:00:19+00:00",
-      "pub_ts": 1789704019.0,
+      "id": "e86fdb80863f",
+      "title": "German Elections on Baltic Coast and Berlin May Seal Merz’s Fate",
+      "summary": "Campaigning in the Baltic port city of Rostock this week, the eastern German state premier seeking to extend her nine-year tenure took Friedrich Merz to task for failing to address surging fuel prices.",
+      "link": "https://www.bloomberg.com/news/articles/2026-09-19/german-elections-on-baltic-coast-and-berlin-may-seal-merz-s-fate",
+      "publisher": "Bloomberg",
+      "feed": "Bloomberg Pol",
+      "pub_iso": "2026-09-19T05:00:00+00:00",
+      "pub_ts": 1789794000.0,
       "theme": "tech",
       "sub_theme": "consumer_tech",
       "theme_score": 3,
@@ -1698,14 +1155,74 @@
       "impact": 4
     },
     {
-      "id": "aa972382383f",
-      "title": "Iran activates land routes to bypass US blockade",
-      "summary": "Donald Trump’s naval campaign deepens Tehran’s trade reliance on land neighbours such as Turkey",
-      "link": "https://www.ft.com/content/f69943f7-b173-444c-a79e-c9396a0380bd?syn-25a6b1a6=1",
+      "id": "4d5430fe0f1b",
+      "title": "AI chatbots give wrong answers to financial queries ‘most of the time’",
+      "summary": "Report finds some chatbots ignored upcoming tax changes and hallucinated rules",
+      "link": "https://www.ft.com/content/c0cd359d-df84-4208-a789-ffa864b43666",
+      "publisher": "FT",
+      "feed": "FT Companies",
+      "pub_iso": "2026-09-19T04:49:57+00:00",
+      "pub_ts": 1789793397.0,
+      "theme": "ai",
+      "sub_theme": null,
+      "theme_score": 3,
+      "region": "us",
+      "impact": 4
+    },
+    {
+      "id": "7ebcce620537",
+      "title": "Thirty years of buy-to-let: does it have a future?",
+      "summary": "Rents and tenant demand are rising, but landlords are under increasing pressure.",
+      "link": "https://www.ft.com/content/77f042f0-80c2-40ad-a4d1-9da0367827ee?syn-25a6b1a6=1",
+      "publisher": "FT",
+      "feed": "FT Companies",
+      "pub_iso": "2026-09-19T04:24:24+00:00",
+      "pub_ts": 1789791864.0,
+      "theme": "rates",
+      "sub_theme": null,
+      "theme_score": 3,
+      "region": "us",
+      "impact": 4
+    },
+    {
+      "id": "ee492ff83102",
+      "title": "Australia has a secret weapon in the race for AI compute",
+      "summary": "The country has almost limitless space with which to generate renewable electricity",
+      "link": "https://www.ft.com/content/9cd59652-3e31-4ad0-942f-3eb744ec7893?syn-25a6b1a6=1",
+      "publisher": "FT",
+      "feed": "FT Companies",
+      "pub_iso": "2026-09-19T04:00:33+00:00",
+      "pub_ts": 1789790433.0,
+      "theme": "ai",
+      "sub_theme": null,
+      "theme_score": 3,
+      "region": "us",
+      "impact": 4
+    },
+    {
+      "id": "c942add398e8",
+      "title": "Investors warn Anthropic could struggle to sustain revenues post-IPO",
+      "summary": "OpenAI’s resurgence, cheap rivals and safety fears test faith in durability of business model",
+      "link": "https://www.ft.com/content/96d0a206-a37b-4166-b78d-b27ed24f7d57?syn-25a6b1a6=1",
+      "publisher": "FT",
+      "feed": "FT Home",
+      "pub_iso": "2026-09-19T04:00:24+00:00",
+      "pub_ts": 1789790424.0,
+      "theme": "ai",
+      "sub_theme": "ai_models",
+      "theme_score": 3,
+      "region": "us",
+      "impact": 4
+    },
+    {
+      "id": "4e3654b8bec7",
+      "title": "The Iran energy shock is wrongfooting the world",
+      "summary": "Don’t obsess about the crude price and don’t think this crisis is like its predecessors",
+      "link": "https://www.ft.com/content/09c2e11c-1632-42e3-8fc6-809468b7f87e?syn-25a6b1a6=1",
       "publisher": "FT",
       "feed": "FT Markets",
-      "pub_iso": "2026-09-18T04:00:19+00:00",
-      "pub_ts": 1789704019.0,
+      "pub_iso": "2026-09-19T04:00:24+00:00",
+      "pub_ts": 1789790424.0,
       "theme": "geopolitics",
       "sub_theme": "iran_war",
       "theme_score": 3,
@@ -1713,44 +1230,44 @@
       "impact": 4
     },
     {
-      "id": "df54ed731750",
-      "title": "Private equity turns to financial engineering to lure insurance billions",
-      "summary": "Structured financing helps fuel growth of secondaries funds by making investments more attractive to risk-averse investors",
-      "link": "https://www.ft.com/content/9c6fac10-9f3f-4503-9765-b9e29e18c68d?syn-25a6b1a6=1",
+      "id": "d1764bf2d46a",
+      "title": "Bus Palladium, Paris: rock ’n’ roll history with room service",
+      "summary": "Key notes | A legendary Pigalle nightclub has been rebuilt and reborn as a five-star hotel",
+      "link": "https://www.ft.com/content/430b8827-2c48-477c-a9ef-522570127e06",
       "publisher": "FT",
-      "feed": "FT Markets",
-      "pub_iso": "2026-09-18T04:00:09+00:00",
-      "pub_ts": 1789704009.0,
-      "theme": "macro",
-      "sub_theme": "growth_gdp",
+      "feed": "FT World",
+      "pub_iso": "2026-09-19T04:00:05+00:00",
+      "pub_ts": 1789790405.0,
+      "theme": "tech",
+      "sub_theme": "consumer_tech",
+      "theme_score": 3,
+      "region": "eu",
+      "impact": 4
+    },
+    {
+      "id": "f6d9791582da",
+      "title": "Paramount in talks to settle antitrust lawsuit blocking WBD deal",
+      "summary": "Agreement to end action by a dozen Democratic states would clear path for $111bn tie-up",
+      "link": "https://www.ft.com/content/e0e384b8-aa4c-4948-b4ee-7bdff414641b?syn-25a6b1a6=1",
+      "publisher": "FT",
+      "feed": "FT Home",
+      "pub_iso": "2026-09-19T01:37:52+00:00",
+      "pub_ts": 1789781872.0,
+      "theme": "tech",
+      "sub_theme": "consumer_tech",
       "theme_score": 3,
       "region": "us",
       "impact": 4
     },
     {
-      "id": "261dfeb9de58",
-      "title": "US regulator opens markets to tokenised stock trading",
-      "summary": "Blockchain-based representations of traditional equities can be traded around-the-clock and more easily used as collateral",
-      "link": "https://www.ft.com/content/b528698e-9b04-4497-9d22-67e401be21d3?syn-25a6b1a6=1",
-      "publisher": "FT",
-      "feed": "FT Markets",
-      "pub_iso": "2026-09-17T18:29:50+00:00",
-      "pub_ts": 1789669790.0,
-      "theme": "tech",
-      "sub_theme": "crypto",
-      "theme_score": 4,
-      "region": "us",
-      "impact": 4
-    },
-    {
-      "id": "d39b5d8e6d05",
-      "title": "Former Hut 8 CEO To Lead Crypto Miner Fortitude",
+      "id": "9df03837ac87",
+      "title": "Coinbase Leads Crypto Stocks Higher as Bitcoin Crosses $80,000",
       "summary": "",
-      "link": "https://finance.yahoo.com/markets/crypto/articles/former-hut-8-ceo-lead-181400586.html",
+      "link": "https://finance.yahoo.com/markets/crypto/articles/coinbase-leads-crypto-stocks-higher-193117793.html",
       "publisher": "Yahoo Finance",
       "feed": "Yahoo Finance",
-      "pub_iso": "2026-09-17T18:14:00+00:00",
-      "pub_ts": 1789668840.0,
+      "pub_iso": "2026-09-18T19:31:17+00:00",
+      "pub_ts": 1789759877.0,
       "theme": "tech",
       "sub_theme": "crypto",
       "theme_score": 4,
@@ -1758,17 +1275,77 @@
       "impact": 4
     },
     {
-      "id": "11e07e94d4ac",
-      "title": "Pets and personal touches: how China’s luxury hotel market is changing",
-      "summary": "Chinese customers’ growing desire for personal expression and cultural experiences has raised the game in the country’s hospitality sector, creating opportunities for leading lifestyle hotel brands, according to a director at Hong Kong developer Hang Lung Properties. “An ideal hotel is the one that can redefine hospitality with personal touches,” said Herman Chui, the company’s senior director of ",
-      "link": "https://www.scmp.com/business/china-business/article/3367898/pets-and-personal-touches-how-chinas-luxury-hotel-market-changing?utm_source=rss_feed",
+      "id": "d17b682c305b",
+      "title": "Robinhood CEO says ‘tokenization is coming to America’ after SEC ruling",
+      "summary": "",
+      "link": "https://finance.yahoo.com/markets/crypto/articles/robinhood-ceo-says-tokenization-coming-184533895.html",
+      "publisher": "Yahoo Finance",
+      "feed": "Yahoo Finance",
+      "pub_iso": "2026-09-18T18:45:33+00:00",
+      "pub_ts": 1789757133.0,
+      "theme": "tech",
+      "sub_theme": "crypto",
+      "theme_score": 4,
+      "region": "us",
+      "impact": 4
+    },
+    {
+      "id": "b987ea1e5de1",
+      "title": "'We simply don't know' - JP Morgan struggling to forecast oil prices due to Trump's war with Iran",
+      "summary": "The bank said it \"assumed\" there would be economic red lines, like oil at $100 a barrel, that the US would be unwilling the cross.",
+      "link": "https://www.bbc.co.uk/news/articles/cq0m3gmv8n7ko?at_medium=RSS&at_campaign=rss",
+      "publisher": "BBC",
+      "feed": "BBC Business",
+      "pub_iso": "2026-09-18T17:57:30+00:00",
+      "pub_ts": 1789754250.0,
+      "theme": "geopolitics",
+      "sub_theme": "iran_war",
+      "theme_score": 5,
+      "region": "us",
+      "impact": 4
+    },
+    {
+      "id": "8ea8c45195bd",
+      "title": "France calls G7 summit on releasing more oil reserves",
+      "summary": "Supply concerns have been worsened by an attack on a Saudi pipeline",
+      "link": "https://www.ft.com/content/31c53c3c-5cc1-4248-98dc-68fc8956e8cc?syn-25a6b1a6=1",
+      "publisher": "FT",
+      "feed": "FT Markets",
+      "pub_iso": "2026-09-18T15:51:04+00:00",
+      "pub_ts": 1789746664.0,
+      "theme": "geopolitics",
+      "sub_theme": null,
+      "theme_score": 5,
+      "region": "us",
+      "impact": 4
+    },
+    {
+      "id": "3b45314a282d",
+      "title": "China’s crude imports are rising again. What will that mean for oil prices?",
+      "summary": "China is showing early signs of stepping up imports of crude oil after months of subdued buying amid the US-Israel war on Iran, threatening to erode a buffer that has helped prevent a larger surge in global oil prices. But analysts do not expect China to quickly return to its pre-war import levels, as elevated crude prices could squeeze margins for Chinese refineries and the country’s stockpiles a",
+      "link": "https://www.scmp.com/economy/china-economy/article/3368047/chinas-crude-imports-are-rising-again-what-will-mean-oil-prices?utm_source=rss_feed",
       "publisher": "SCMP",
       "feed": "SCMP Business",
-      "pub_iso": "2026-09-17T13:53:23+00:00",
-      "pub_ts": 1789653203.0,
-      "theme": "tech",
-      "sub_theme": null,
-      "theme_score": 4,
+      "pub_iso": "2026-09-18T13:30:04+00:00",
+      "pub_ts": 1789738204.0,
+      "theme": "geopolitics",
+      "sub_theme": "iran_war",
+      "theme_score": 5,
+      "region": "us",
+      "impact": 4
+    },
+    {
+      "id": "419dc646263e",
+      "title": "A cornered Putin might recklessly provoke NATO",
+      "summary": "",
+      "link": "https://asia.nikkei.com/spotlight/comment/a-cornered-putin-might-recklessly-provoke-nato",
+      "publisher": "Nikkei Asia",
+      "feed": "Nikkei Asia",
+      "pub_iso": null,
+      "pub_ts": 0,
+      "theme": "geopolitics",
+      "sub_theme": "ukraine_russia",
+      "theme_score": 5,
       "region": "asia",
       "impact": 4
     },
@@ -1788,29 +1365,74 @@
       "impact": 4
     },
     {
-      "id": "753c73332c28",
-      "title": "Hong Kong malls bet on Asian Games to boost footfall, tenant sales amid spending shifts",
-      "summary": "Hong Kong shopping mall operators are extending a strategy used during this year’s Fifa World Cup into the Asian Games, leveraging major sporting events to draw visitors and support tenant sales as retailers face competition from Shenzhen, overseas shopping and online spending. Sino Group is among the landlords expanding the strategy beyond tournament broadcasts. It has projected foot traffic acro",
-      "link": "https://www.scmp.com/business/companies/article/3367822/hong-kong-malls-bet-asian-games-boost-footfall-tenant-sales-amid-spending-shifts?utm_source=rss_feed",
+      "id": "f3896b848433",
+      "title": "Perfect Diary owner Yatsen doubles down on skincare, R&D after business overhaul",
+      "summary": "Yatsen Group, the Chinese beauty company behind Perfect Diary cosmetics, plans to deepen its push into skincare and new product research to sustain its growth, after a years-long overhaul of its business that has seen the firm acquire a string of overseas brands. The Guangzhou-based company will slow its acquisition spree for now and instead focus on expanding its existing portfolio of skincare of",
+      "link": "https://www.scmp.com/business/china-business/article/3368008/perfect-diary-owner-yatsen-doubles-down-skincare-rd-after-business-overhaul?utm_source=rss_feed",
       "publisher": "SCMP",
       "feed": "SCMP Business",
-      "pub_iso": "2026-09-17T23:00:08+00:00",
-      "pub_ts": 1789686008.0,
-      "theme": "tech",
-      "sub_theme": "consumer_tech",
+      "pub_iso": "2026-09-19T01:00:10+00:00",
+      "pub_ts": 1789779610.0,
+      "theme": "macro",
+      "sub_theme": "growth_gdp",
       "theme_score": 3,
       "region": "asia",
       "impact": 3
     },
     {
-      "id": "104da9cea706",
-      "title": "$10,000 in a high-yield savings account or $10,000 in a CD: Which one will earn more in one year?",
+      "id": "fb21e059562f",
+      "title": "AI cloud provider Nscale files to go public",
+      "summary": "Nscale is the latest artificial intelligence neocloud to turn to public markets.",
+      "link": "https://www.cnbc.com/2026/09/18/nscale-ai-cloud-provider-ipo-nscl.html",
+      "publisher": "CNBC",
+      "feed": "CNBC Top",
+      "pub_iso": "2026-09-18T21:08:28+00:00",
+      "pub_ts": 1789765708.0,
+      "theme": "ai",
+      "sub_theme": null,
+      "theme_score": 3,
+      "region": "us",
+      "impact": 3
+    },
+    {
+      "id": "5bb7b8095ab9",
+      "title": "Trump's $403 million war chest is finally being spent on the midterms. Now comes the hard part",
+      "summary": "Democratic Senate candidates entered summer with a cash edge, while Trump-linked groups now pour money into increasingly crowded and costly ad markets.",
+      "link": "https://www.cnbc.com/2026/09/18/trump-election-ad-spend-maga-inc.html",
+      "publisher": "CNBC",
+      "feed": "CNBC Top",
+      "pub_iso": "2026-09-18T20:30:12+00:00",
+      "pub_ts": 1789763412.0,
+      "theme": "rates",
+      "sub_theme": null,
+      "theme_score": 3,
+      "region": "us",
+      "impact": 3
+    },
+    {
+      "id": "4a2ac9a67769",
+      "title": "White House attacks Fed official after review of Silicon Valley Bank collapse",
+      "summary": "New report finds ‘culture of risk aversion’ among banking regulators led to mishandling of weaknesses at tech-heavy lender",
+      "link": "https://www.ft.com/content/98c6db91-44c7-487e-a733-331a58766ba1?syn-25a6b1a6=1",
+      "publisher": "FT",
+      "feed": "FT Markets",
+      "pub_iso": "2026-09-18T19:48:35+00:00",
+      "pub_ts": 1789760915.0,
+      "theme": "rates",
+      "sub_theme": "fed",
+      "theme_score": 3,
+      "region": "us",
+      "impact": 3
+    },
+    {
+      "id": "9e1cdf390f5c",
+      "title": "Dollar Erases Early Gains on Weak US Economic News",
       "summary": "",
-      "link": "https://finance.yahoo.com/personal-finance/banking/article/10000-high-yield-savings-account-vs-cd-earnings-one-year-211941165.html",
+      "link": "https://finance.yahoo.com/markets/currencies/articles/dollar-erases-early-gains-weak-193353447.html",
       "publisher": "Yahoo Finance",
       "feed": "Yahoo Finance",
-      "pub_iso": "2026-09-17T21:19:41+00:00",
-      "pub_ts": 1789679981.0,
+      "pub_iso": "2026-09-18T19:33:53+00:00",
+      "pub_ts": 1789760033.0,
       "theme": "tech",
       "sub_theme": "consumer_tech",
       "theme_score": 3,
@@ -1818,14 +1440,104 @@
       "impact": 3
     },
     {
-      "id": "fffad42b7670",
-      "title": "A 30-Year Study Followed Students Into Their Careers. Here’s What It Revealed About the Power of Investing in People.",
+      "id": "7cc4ed4dd65c",
+      "title": "Yen jumps as BOJ rate check raises intervention risk",
       "summary": "",
-      "link": "https://finance.yahoo.com/small-business/articles/30-study-followed-students-careers-183000471.html",
+      "link": "https://finance.yahoo.com/markets/currencies/articles/yen-jumps-boj-rate-check-184829855.html",
       "publisher": "Yahoo Finance",
       "feed": "Yahoo Finance",
-      "pub_iso": "2026-09-17T18:30:00+00:00",
-      "pub_ts": 1789669800.0,
+      "pub_iso": "2026-09-18T18:48:29+00:00",
+      "pub_ts": 1789757309.0,
+      "theme": "rates",
+      "sub_theme": "boj_pboc",
+      "theme_score": 3,
+      "region": "asia",
+      "impact": 3
+    },
+    {
+      "id": "4a1a29fb3fe8",
+      "title": "Tower Semiconductor Just Scored a New Bullish Rating. What to Know.",
+      "summary": "",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/tower-semiconductor-just-scored-bullish-184106083.html",
+      "publisher": "Yahoo Finance",
+      "feed": "Yahoo Finance",
+      "pub_iso": "2026-09-18T18:41:06+00:00",
+      "pub_ts": 1789756866.0,
+      "theme": "rates",
+      "sub_theme": null,
+      "theme_score": 3,
+      "region": "us",
+      "impact": 3
+    },
+    {
+      "id": "b0e2c2bec694",
+      "title": "Fed staff should have known Silicon Valley Bank was vulnerable, new report finds",
+      "summary": "Fed Vice Chair for Supervision Michelle Bowman said a new report indicates the central bank's staff missed signs ahead of Silicon Valley Bank's 2023 failure.",
+      "link": "https://www.cnbc.com/2026/09/18/fed-silicon-valley-bank.html",
+      "publisher": "CNBC",
+      "feed": "CNBC Top",
+      "pub_iso": "2026-09-18T18:30:23+00:00",
+      "pub_ts": 1789756223.0,
+      "theme": "rates",
+      "sub_theme": "fed",
+      "theme_score": 3,
+      "region": "us",
+      "impact": 3
+    },
+    {
+      "id": "99df41d5df3b",
+      "title": "Wells Fargo Just Downgraded Netflix Stock. Here's Why.",
+      "summary": "",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/wells-fargo-just-downgraded-netflix-182315862.html",
+      "publisher": "Yahoo Finance",
+      "feed": "Yahoo Finance",
+      "pub_iso": "2026-09-18T18:23:15+00:00",
+      "pub_ts": 1789755795.0,
+      "theme": "rates",
+      "sub_theme": "credit",
+      "theme_score": 3,
+      "region": "us",
+      "impact": 3
+    },
+    {
+      "id": "1832959a219b",
+      "title": "Is First Solar Stock Underperforming the Nasdaq?",
+      "summary": "",
+      "link": "https://finance.yahoo.com/markets/stocks/articles/first-solar-stock-underperforming-nasdaq-182115801.html",
+      "publisher": "Yahoo Finance",
+      "feed": "Yahoo Finance",
+      "pub_iso": "2026-09-18T18:21:15+00:00",
+      "pub_ts": 1789755675.0,
+      "theme": "sustainability",
+      "sub_theme": "renewables",
+      "theme_score": 3,
+      "region": "us",
+      "impact": 3
+    },
+    {
+      "id": "56be528cb533",
+      "title": "McDonald's is the new 'Value Meal,' says trader Mike Khouw",
+      "summary": "McDonald's announced this week that it is revising its U.S. value strategy after recording its slowest sales growth in more than a year.",
+      "link": "https://www.cnbc.com/2026/09/18/mcdonalds-is-the-new-value-meal-says-trader-mike-khouw.html",
+      "publisher": "CNBC",
+      "feed": "CNBC Top",
+      "pub_iso": "2026-09-18T18:11:47+00:00",
+      "pub_ts": 1789755107.0,
+      "theme": "macro",
+      "sub_theme": "growth_gdp",
+      "theme_score": 3,
+      "region": "us",
+      "impact": 3
+    },
+    {
+      "id": "7dd59a5ca1c8",
+      "title": "Auto industry urges Trump to bar Chinese automakers in U.S. ahead of Xi visit",
+      "summary": "Leaders of six major auto trade groups joined to sign a letter to the president.",
+      "link": "https://www.cnbc.com/2026/09/18/xi-visit-automakers-urge-trump-to-bar-chinese-automakers-in-us.html",
+      "publisher": "CNBC",
+      "feed": "CNBC Top",
+      "pub_iso": "2026-09-18T17:11:39+00:00",
+      "pub_ts": 1789751499.0,
       "theme": "tech",
       "sub_theme": "consumer_tech",
       "theme_score": 3,
@@ -1833,31 +1545,61 @@
       "impact": 3
     },
     {
-      "id": "d60f44511048",
-      "title": "It Only Takes Investing $1,000 In These 3 Stocks For $200 In Passive Income Every Year",
-      "summary": "",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/only-takes-investing-1-000-182544905.html",
-      "publisher": "Yahoo Finance",
-      "feed": "Yahoo Finance",
-      "pub_iso": "2026-09-17T18:25:44+00:00",
-      "pub_ts": 1789669544.0,
-      "theme": "tech",
-      "sub_theme": "consumer_tech",
+      "id": "35a5c88b89a1",
+      "title": "AirAsia's Fernandes refutes financial concerns, points to new growth plans",
+      "summary": "AirAsia's Tony Fernandes pushed back against a report raising concerns over the airline’s financial health, while signaling plans to resume growth.",
+      "link": "https://www.cnbc.com/2026/09/18/airasia-co-founder-tony-fernandes.html",
+      "publisher": "CNBC",
+      "feed": "CNBC World",
+      "pub_iso": "2026-09-18T16:37:39+00:00",
+      "pub_ts": 1789749459.0,
+      "theme": "macro",
+      "sub_theme": "growth_gdp",
       "theme_score": 3,
       "region": "us",
       "impact": 3
     },
     {
-      "id": "622a0f0d712e",
-      "title": "If a Bear Market Is Coming, History Says This 1 Investing Decision Will Make or Break Your Portfolio",
-      "summary": "",
-      "link": "https://finance.yahoo.com/markets/stocks/articles/bear-market-coming-history-says-182500854.html",
-      "publisher": "Yahoo Finance",
-      "feed": "Yahoo Finance",
-      "pub_iso": "2026-09-17T18:25:00+00:00",
-      "pub_ts": 1789669500.0,
-      "theme": "tech",
-      "sub_theme": "consumer_tech",
+      "id": "e02a0a5d3a46",
+      "title": "Yen sinks after BoJ raises rates to highest level since 1995",
+      "summary": "Authorities warn of further potential currency intervention after central bank move fails to buoy currency",
+      "link": "https://www.ft.com/content/97a0bed5-0580-4ccc-bd3c-fe9a714259e2?syn-25a6b1a6=1",
+      "publisher": "FT",
+      "feed": "FT Markets",
+      "pub_iso": "2026-09-18T16:28:24+00:00",
+      "pub_ts": 1789748904.0,
+      "theme": "rates",
+      "sub_theme": "boj_pboc",
+      "theme_score": 3,
+      "region": "asia",
+      "impact": 3
+    },
+    {
+      "id": "11106493485e",
+      "title": "Court shines a further light on who was at fault in SVB implosion",
+      "summary": "Federal judge rejects claims that criticism of bank executives was based on hindsight",
+      "link": "https://www.ft.com/content/24dc8ce0-5331-4280-ad85-c2dddcef429d?syn-25a6b1a6=1",
+      "publisher": "FT",
+      "feed": "FT Markets",
+      "pub_iso": "2026-09-18T15:34:42+00:00",
+      "pub_ts": 1789745682.0,
+      "theme": "macro",
+      "sub_theme": null,
+      "theme_score": 3,
+      "region": "us",
+      "impact": 3
+    },
+    {
+      "id": "c1779e3e7003",
+      "title": "StubHub shares tick higher for third day in a row after Citi upgrade",
+      "summary": "Analyst Jason Bazinet raised his rating to buy from neutral.",
+      "link": "https://www.cnbc.com/2026/09/18/stubhub-shares-tick-higher-for-third-day-in-a-row-after-citi-upgrade.html",
+      "publisher": "CNBC",
+      "feed": "CNBC World",
+      "pub_iso": "2026-09-18T15:09:10+00:00",
+      "pub_ts": 1789744150.0,
+      "theme": "rates",
+      "sub_theme": null,
       "theme_score": 3,
       "region": "us",
       "impact": 3
@@ -1867,6 +1609,21 @@
       "title": "Japan's Prodrone gears up to mass produce 58,000 drones a year",
       "summary": "",
       "link": "https://asia.nikkei.com/business/aerospace-defense-industries/japan-s-prodrone-gears-up-to-mass-produce-58-000-drones-a-year",
+      "publisher": "Nikkei Asia",
+      "feed": "Nikkei Asia",
+      "pub_iso": null,
+      "pub_ts": 0,
+      "theme": "tech",
+      "sub_theme": "consumer_tech",
+      "theme_score": 3,
+      "region": "asia",
+      "impact": 3
+    },
+    {
+      "id": "4d0d13354895",
+      "title": "Japan chip gear maker Screen to expand into India, eyeing growing industry",
+      "summary": "",
+      "link": "https://asia.nikkei.com/business/tech/semiconductors/japan-chip-gear-maker-screen-to-expand-into-india-eyeing-growing-industry",
       "publisher": "Nikkei Asia",
       "feed": "Nikkei Asia",
       "pub_iso": null,
@@ -1893,6 +1650,36 @@
       "impact": 3
     },
     {
+      "id": "ce111901df8a",
+      "title": "Cooperating with China better for US than trading threats: Hasan Piker",
+      "summary": "",
+      "link": "https://asia.nikkei.com/editor-s-picks/interview/cooperating-with-china-better-for-us-than-trading-threats-hasan-piker",
+      "publisher": "Nikkei Asia",
+      "feed": "Nikkei Asia",
+      "pub_iso": null,
+      "pub_ts": 0,
+      "theme": "rates",
+      "sub_theme": null,
+      "theme_score": 3,
+      "region": "us",
+      "impact": 3
+    },
+    {
+      "id": "5eb74f157f08",
+      "title": "BOJ conducts rate check, lifting yen to upper-156 range against dollar",
+      "summary": "",
+      "link": "https://asia.nikkei.com/business/markets/currencies/boj-conducts-rate-check-lifting-yen-to-upper-156-range-against-dollar",
+      "publisher": "Nikkei Asia",
+      "feed": "Nikkei Asia",
+      "pub_iso": null,
+      "pub_ts": 0,
+      "theme": "rates",
+      "sub_theme": "boj_pboc",
+      "theme_score": 3,
+      "region": "asia",
+      "impact": 3
+    },
+    {
       "id": "525a692b07fd",
       "title": "JAL to buy carbon credits directly ahead of 2027 demand rush",
       "summary": "",
@@ -1903,6 +1690,36 @@
       "pub_ts": 0,
       "theme": "sustainability",
       "sub_theme": "carbon",
+      "theme_score": 3,
+      "region": "asia",
+      "impact": 3
+    },
+    {
+      "id": "043a29d10ccb",
+      "title": "BOJ hikes rates to 1.25% as chief Ueda cites shift in policy phase",
+      "summary": "",
+      "link": "https://asia.nikkei.com/economy/bank-of-japan/boj-hikes-rates-to-1.25-as-chief-ueda-cites-shift-in-policy-phase",
+      "publisher": "Nikkei Asia",
+      "feed": "Nikkei Asia",
+      "pub_iso": null,
+      "pub_ts": 0,
+      "theme": "rates",
+      "sub_theme": "boj_pboc",
+      "theme_score": 3,
+      "region": "asia",
+      "impact": 3
+    },
+    {
+      "id": "96505a1848b6",
+      "title": "Indonesia's Bayan shares soar after 30% stake sold to Prabowo-linked tycoon",
+      "summary": "",
+      "link": "https://asia.nikkei.com/business/markets/commodities/indonesia-s-bayan-shares-soar-after-30-stake-sold-to-prabowo-linked-tycoon",
+      "publisher": "Nikkei Asia",
+      "feed": "Nikkei Asia",
+      "pub_iso": null,
+      "pub_ts": 0,
+      "theme": "tech",
+      "sub_theme": "consumer_tech",
       "theme_score": 3,
       "region": "asia",
       "impact": 3
@@ -1936,513 +1753,268 @@
       "theme_score": 3,
       "region": "asia",
       "impact": 3
-    },
-    {
-      "id": "0c4fe7b6dc84",
-      "title": "Japan, US in talks to build chip factory as part of tariff deal",
-      "summary": "",
-      "link": "https://asia.nikkei.com/economy/trade-war/trump-tariffs/japan-us-in-talks-to-build-chip-factory-as-part-of-tariff-deal2",
-      "publisher": "Nikkei Asia",
-      "feed": "Nikkei Asia",
-      "pub_iso": null,
-      "pub_ts": 0,
-      "theme": "geopolitics",
-      "sub_theme": "tariffs",
-      "theme_score": 3,
-      "region": "us",
-      "impact": 3
     }
   ],
   "links": [
     {
       "from": "consumer_tech",
-      "to": "ai_models",
-      "weight": 30
-    },
-    {
-      "from": "consumer_tech",
-      "to": "fed",
-      "weight": 26
-    },
-    {
-      "from": "consumer_tech",
-      "to": "boj_pboc",
-      "weight": 17
-    },
-    {
-      "from": "consumer_tech",
-      "to": "ai_infra",
-      "weight": 18
-    },
-    {
-      "from": "consumer_tech",
-      "to": "crypto",
-      "weight": 13
-    },
-    {
-      "from": "consumer_tech",
-      "to": "growth_gdp",
-      "weight": 18
-    },
-    {
-      "from": "consumer_tech",
-      "to": "iran_war",
-      "weight": 12
-    },
-    {
-      "from": "consumer_tech",
-      "to": "ukraine_russia",
-      "weight": 8
-    },
-    {
-      "from": "consumer_tech",
-      "to": "ai_chips",
-      "weight": 12
-    },
-    {
-      "from": "consumer_tech",
       "to": "ai_other",
       "weight": 17
     },
     {
       "from": "consumer_tech",
+      "to": "iran_war",
+      "weight": 28
+    },
+    {
+      "from": "consumer_tech",
+      "to": "ai_models",
+      "weight": 12
+    },
+    {
+      "from": "consumer_tech",
       "to": "rates_other",
-      "weight": 9
+      "weight": 17
     },
     {
       "from": "consumer_tech",
-      "to": "geopolitics_other",
-      "weight": 7
-    },
-    {
-      "from": "consumer_tech",
-      "to": "us_china",
-      "weight": 6
-    },
-    {
-      "from": "consumer_tech",
-      "to": "treasuries",
-      "weight": 5
-    },
-    {
-      "from": "consumer_tech",
-      "to": "inflation",
+      "to": "growth_gdp",
       "weight": 13
     },
     {
       "from": "consumer_tech",
-      "to": "ecb_boe",
-      "weight": 9
+      "to": "fed",
+      "weight": 12
     },
     {
       "from": "consumer_tech",
-      "to": "ai_governance",
-      "weight": 4
+      "to": "geopolitics_other",
+      "weight": 13
     },
     {
       "from": "consumer_tech",
-      "to": "fintech",
-      "weight": 5
+      "to": "ukraine_russia",
+      "weight": 6
     },
     {
       "from": "consumer_tech",
-      "to": "credit",
-      "weight": 8
-    },
-    {
-      "from": "consumer_tech",
-      "to": "cyber",
-      "weight": 8
-    },
-    {
-      "from": "consumer_tech",
-      "to": "climate",
-      "weight": 4
-    },
-    {
-      "from": "consumer_tech",
-      "to": "tech_other",
-      "weight": 4
+      "to": "ai_chips",
+      "weight": 7
     },
     {
       "from": "consumer_tech",
       "to": "tariffs",
-      "weight": 4
+      "weight": 7
     },
     {
-      "from": "ai_models",
+      "from": "consumer_tech",
+      "to": "us_china",
+      "weight": 6
+    },
+    {
+      "from": "ai_other",
+      "to": "iran_war",
+      "weight": 18
+    },
+    {
+      "from": "ai_other",
+      "to": "ai_models",
+      "weight": 24
+    },
+    {
+      "from": "ai_other",
+      "to": "rates_other",
+      "weight": 6
+    },
+    {
+      "from": "ai_other",
+      "to": "growth_gdp",
+      "weight": 16
+    },
+    {
+      "from": "ai_other",
+      "to": "fed",
+      "weight": 8
+    },
+    {
+      "from": "ai_other",
+      "to": "geopolitics_other",
+      "weight": 12
+    },
+    {
+      "from": "ai_other",
+      "to": "ai_chips",
+      "weight": 9
+    },
+    {
+      "from": "ai_other",
+      "to": "tariffs",
+      "weight": 6
+    },
+    {
+      "from": "ai_other",
+      "to": "macro_other",
+      "weight": 5
+    },
+    {
+      "from": "ai_other",
+      "to": "commodities",
+      "weight": 5
+    },
+    {
+      "from": "iran_war",
+      "to": "ai_models",
+      "weight": 15
+    },
+    {
+      "from": "iran_war",
+      "to": "rates_other",
+      "weight": 11
+    },
+    {
+      "from": "iran_war",
+      "to": "boj_pboc",
+      "weight": 8
+    },
+    {
+      "from": "iran_war",
+      "to": "growth_gdp",
+      "weight": 9
+    },
+    {
+      "from": "iran_war",
       "to": "fed",
       "weight": 18
     },
     {
-      "from": "ai_models",
-      "to": "boj_pboc",
-      "weight": 13
-    },
-    {
-      "from": "ai_models",
-      "to": "ai_infra",
-      "weight": 20
-    },
-    {
-      "from": "ai_models",
-      "to": "crypto",
-      "weight": 10
-    },
-    {
-      "from": "ai_models",
-      "to": "growth_gdp",
-      "weight": 20
-    },
-    {
-      "from": "ai_models",
-      "to": "iran_war",
-      "weight": 5
-    },
-    {
-      "from": "ai_models",
-      "to": "ukraine_russia",
-      "weight": 6
-    },
-    {
-      "from": "ai_models",
-      "to": "ai_chips",
-      "weight": 18
-    },
-    {
-      "from": "ai_models",
-      "to": "ai_other",
+      "from": "iran_war",
+      "to": "geopolitics_other",
       "weight": 12
     },
     {
-      "from": "ai_models",
-      "to": "rates_other",
-      "weight": 7
-    },
-    {
-      "from": "ai_models",
-      "to": "us_china",
-      "weight": 5
-    },
-    {
-      "from": "ai_models",
-      "to": "inflation",
-      "weight": 5
-    },
-    {
-      "from": "ai_models",
-      "to": "ai_governance",
+      "from": "iran_war",
+      "to": "ukraine_russia",
       "weight": 8
     },
     {
-      "from": "ai_models",
-      "to": "credit",
-      "weight": 5
+      "from": "iran_war",
+      "to": "ai_chips",
+      "weight": 8
     },
     {
-      "from": "fed",
-      "to": "boj_pboc",
-      "weight": 23
-    },
-    {
-      "from": "fed",
-      "to": "ai_infra",
+      "from": "iran_war",
+      "to": "tariffs",
       "weight": 7
     },
     {
-      "from": "fed",
-      "to": "crypto",
-      "weight": 6
+      "from": "iran_war",
+      "to": "us_china",
+      "weight": 7
     },
     {
-      "from": "fed",
-      "to": "growth_gdp",
+      "from": "ai_models",
+      "to": "rates_other",
       "weight": 12
     },
     {
-      "from": "fed",
-      "to": "iran_war",
-      "weight": 10
+      "from": "ai_models",
+      "to": "boj_pboc",
+      "weight": 7
     },
     {
-      "from": "fed",
-      "to": "ukraine_russia",
-      "weight": 5
-    },
-    {
-      "from": "fed",
-      "to": "ai_chips",
-      "weight": 11
-    },
-    {
-      "from": "fed",
-      "to": "ai_other",
-      "weight": 9
-    },
-    {
-      "from": "fed",
-      "to": "rates_other",
+      "from": "ai_models",
+      "to": "growth_gdp",
       "weight": 15
     },
     {
-      "from": "fed",
-      "to": "geopolitics_other",
-      "weight": 5
-    },
-    {
-      "from": "fed",
-      "to": "macro_other",
-      "weight": 5
-    },
-    {
-      "from": "fed",
-      "to": "us_china",
-      "weight": 8
-    },
-    {
-      "from": "fed",
-      "to": "treasuries",
+      "from": "ai_models",
+      "to": "fed",
       "weight": 13
     },
     {
-      "from": "fed",
-      "to": "inflation",
-      "weight": 10
-    },
-    {
-      "from": "fed",
-      "to": "ecb_boe",
+      "from": "ai_models",
+      "to": "geopolitics_other",
       "weight": 6
     },
     {
-      "from": "fed",
-      "to": "climate",
+      "from": "ai_models",
+      "to": "ukraine_russia",
       "weight": 4
     },
     {
-      "from": "boj_pboc",
-      "to": "ai_infra",
-      "weight": 4
-    },
-    {
-      "from": "boj_pboc",
-      "to": "crypto",
-      "weight": 12
-    },
-    {
-      "from": "boj_pboc",
-      "to": "growth_gdp",
-      "weight": 8
-    },
-    {
-      "from": "boj_pboc",
-      "to": "iran_war",
-      "weight": 4
-    },
-    {
-      "from": "boj_pboc",
-      "to": "ai_other",
-      "weight": 4
-    },
-    {
-      "from": "boj_pboc",
-      "to": "rates_other",
-      "weight": 10
-    },
-    {
-      "from": "boj_pboc",
-      "to": "macro_other",
-      "weight": 5
-    },
-    {
-      "from": "boj_pboc",
-      "to": "us_china",
-      "weight": 4
-    },
-    {
-      "from": "boj_pboc",
-      "to": "treasuries",
+      "from": "ai_models",
+      "to": "ai_chips",
       "weight": 14
     },
     {
-      "from": "boj_pboc",
-      "to": "inflation",
-      "weight": 12
-    },
-    {
-      "from": "boj_pboc",
-      "to": "ecb_boe",
+      "from": "ai_models",
+      "to": "tariffs",
       "weight": 5
     },
     {
-      "from": "ai_infra",
+      "from": "rates_other",
+      "to": "boj_pboc",
+      "weight": 4
+    },
+    {
+      "from": "rates_other",
       "to": "growth_gdp",
+      "weight": 7
+    },
+    {
+      "from": "rates_other",
+      "to": "fed",
       "weight": 10
     },
     {
-      "from": "ai_infra",
-      "to": "iran_war",
-      "weight": 4
-    },
-    {
-      "from": "ai_infra",
-      "to": "ukraine_russia",
-      "weight": 4
-    },
-    {
-      "from": "ai_infra",
-      "to": "ai_chips",
-      "weight": 7
-    },
-    {
-      "from": "ai_infra",
-      "to": "ai_other",
-      "weight": 8
-    },
-    {
-      "from": "crypto",
-      "to": "growth_gdp",
-      "weight": 5
-    },
-    {
-      "from": "crypto",
-      "to": "rates_other",
-      "weight": 5
-    },
-    {
-      "from": "crypto",
-      "to": "treasuries",
+      "from": "rates_other",
+      "to": "geopolitics_other",
       "weight": 6
     },
     {
-      "from": "crypto",
-      "to": "inflation",
-      "weight": 6
-    },
-    {
-      "from": "growth_gdp",
-      "to": "ukraine_russia",
+      "from": "rates_other",
+      "to": "ai_chips",
       "weight": 4
     },
     {
-      "from": "growth_gdp",
-      "to": "ai_chips",
+      "from": "boj_pboc",
+      "to": "fed",
       "weight": 7
     },
     {
       "from": "growth_gdp",
-      "to": "ai_other",
-      "weight": 4
-    },
-    {
-      "from": "growth_gdp",
-      "to": "rates_other",
-      "weight": 5
+      "to": "fed",
+      "weight": 9
     },
     {
       "from": "growth_gdp",
       "to": "geopolitics_other",
-      "weight": 5
-    },
-    {
-      "from": "growth_gdp",
-      "to": "treasuries",
-      "weight": 6
-    },
-    {
-      "from": "growth_gdp",
-      "to": "credit",
       "weight": 4
     },
     {
-      "from": "iran_war",
-      "to": "ukraine_russia",
-      "weight": 7
-    },
-    {
-      "from": "iran_war",
+      "from": "growth_gdp",
       "to": "ai_chips",
       "weight": 5
     },
     {
-      "from": "iran_war",
-      "to": "ai_other",
+      "from": "growth_gdp",
+      "to": "tariffs",
       "weight": 4
     },
     {
-      "from": "iran_war",
-      "to": "us_china",
+      "from": "fed",
+      "to": "geopolitics_other",
+      "weight": 5
+    },
+    {
+      "from": "fed",
+      "to": "ai_chips",
       "weight": 4
     },
     {
       "from": "ukraine_russia",
-      "to": "fintech",
-      "weight": 4
-    },
-    {
-      "from": "ai_chips",
-      "to": "ai_other",
-      "weight": 7
-    },
-    {
-      "from": "ai_chips",
-      "to": "rates_other",
-      "weight": 4
-    },
-    {
-      "from": "ai_chips",
-      "to": "geopolitics_other",
-      "weight": 5
-    },
-    {
-      "from": "ai_chips",
       "to": "us_china",
       "weight": 4
-    },
-    {
-      "from": "ai_chips",
-      "to": "treasuries",
-      "weight": 4
-    },
-    {
-      "from": "rates_other",
-      "to": "treasuries",
-      "weight": 9
-    },
-    {
-      "from": "rates_other",
-      "to": "inflation",
-      "weight": 8
-    },
-    {
-      "from": "rates_other",
-      "to": "ecb_boe",
-      "weight": 4
-    },
-    {
-      "from": "geopolitics_other",
-      "to": "us_china",
-      "weight": 4
-    },
-    {
-      "from": "macro_other",
-      "to": "treasuries",
-      "weight": 6
-    },
-    {
-      "from": "us_china",
-      "to": "treasuries",
-      "weight": 4
-    },
-    {
-      "from": "treasuries",
-      "to": "inflation",
-      "weight": 5
-    },
-    {
-      "from": "inflation",
-      "to": "ecb_boe",
-      "weight": 5
     }
   ],
   "markets": [
@@ -2458,7 +2030,7 @@
     {
       "ticker": "^IXIC",
       "name": "Nasdaq",
-      "price": 26522.5449,
+      "price": 26522.5391,
       "prev_close": 26418.3008,
       "change_pct": 0.395,
       "unit": "price",
@@ -2521,36 +2093,36 @@
     {
       "ticker": "GC=F",
       "name": "Gold",
-      "price": 4415.8999,
+      "price": 4424.8999,
       "prev_close": 4399.7002,
-      "change_pct": 0.368,
+      "change_pct": 0.573,
       "unit": "price",
       "group": "commod"
     },
     {
       "ticker": "BZ=F",
       "name": "Brent",
-      "price": 98.77,
+      "price": 103.87,
       "prev_close": 104.82,
-      "change_pct": -5.772,
+      "change_pct": -0.906,
       "unit": "price",
       "group": "commod"
     },
     {
       "ticker": "CL=F",
       "name": "WTI",
-      "price": 95.47,
+      "price": 100.3,
       "prev_close": 101.91,
-      "change_pct": -6.319,
+      "change_pct": -1.58,
       "unit": "price",
       "group": "commod"
     },
     {
       "ticker": "DX-Y.NYB",
       "name": "DXY",
-      "price": 100.215,
+      "price": 100.22,
       "prev_close": 100.22,
-      "change_pct": -0.005,
+      "change_pct": 0.0,
       "unit": "price",
       "group": "fx"
     },
@@ -2558,46 +2130,46 @@
       "ticker": "JPY=X",
       "name": "USD/JPY",
       "price": 156.855,
-      "prev_close": 156.014,
-      "change_pct": 0.539,
+      "prev_close": 156.129,
+      "change_pct": 0.465,
       "unit": "price",
       "group": "fx"
     },
     {
       "ticker": "BTC-USD",
       "name": "Bitcoin",
-      "price": 81240.5234,
-      "prev_close": 76403.7734,
-      "change_pct": 6.331,
+      "price": 81153.4609,
+      "prev_close": 80901.4609,
+      "change_pct": 0.311,
       "unit": "price",
       "group": "crypto"
     }
   ],
   "stats": {
-    "total_stories": 105,
-    "total_bubbles": 27,
-    "total_links": 98,
+    "total_stories": 96,
+    "total_bubbles": 21,
+    "total_links": 52,
     "by_theme": {
-      "geopolitics": 16,
       "ai": 25,
-      "rates": 25,
-      "tech": 25,
-      "macro": 10,
-      "sustainability": 4
+      "tech": 18,
+      "macro": 8,
+      "geopolitics": 22,
+      "rates": 20,
+      "sustainability": 3
     },
     "by_region": {
-      "us": 82,
-      "asia": 17,
-      "eu": 6
+      "us": 75,
+      "eu": 6,
+      "asia": 15
     },
     "by_publisher": {
-      "Bloomberg": 31,
-      "CNBC": 23,
+      "CNBC": 19,
+      "Bloomberg": 27,
+      "Yahoo Finance": 11,
       "FT": 19,
-      "SCMP": 8,
-      "BBC": 3,
-      "Yahoo Finance": 9,
-      "Nikkei Asia": 12
+      "SCMP": 3,
+      "Nikkei Asia": 16,
+      "BBC": 1
     },
     "feeds_active": 20,
     "feeds_total": 21
